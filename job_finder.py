@@ -338,6 +338,7 @@ def generate_markdown_report(jobs):
         md += f"- **CTC / Compensation:** 💰 `{ctc_str}`\n"
         md += f"- **Relevance Score:** ⭐ `{job['relevance_score']} pts`\n"
         md += f"- **Matched Core Skills:** {skills_str}\n"
+        md += f"- **Direct Apply Link:** 🚀 [{job['url']}]({job['url']})\n"
         
         # Tailored Resume Strategy Advice
         md += f"- 💡 **Tailored Resume Pitch Focus:**\n"
@@ -407,6 +408,11 @@ def send_email_digest(report_md, smtp_user, smtp_pass, recipient_email):
                 html_body += f"<p style='margin: 4px 0;'><strong>Relevance Score:</strong> <span style='background: #e8f8f5; color: #27ae60; padding: 2px 8px; border-radius: 3px; font-weight: bold;'>{line.replace('- **Relevance Score:**', '').strip()}</span></p>"
             elif line.startswith("- **Matched Core Skills:**"):
                 html_body += f"<p style='margin: 4px 0;'><strong>Matched Skills:</strong> {line.replace('- **Matched Core Skills:**', '').strip()}</p>"
+            elif line.startswith("- **Direct Apply Link:**"):
+                apply_url = re.search(r'\[(.*?)\]\((.*?)\)', line)
+                if apply_url:
+                    target_link = apply_url.group(2)
+                    html_body += f"<div style='margin-top: 10px; margin-bottom: 8px;'><a href='{target_link}' target='_blank' style='background-color: #27ae60; color: #ffffff; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block; font-size: 13px;'>🚀 Click Here to Apply Now</a></div>"
             elif "Tailored Resume Pitch Focus:" in line or line.strip().startswith("> *"):
                 clean_pitch = line.replace("- 💡 **Tailored Resume Pitch Focus:**", "").replace("> *", "").replace("*", "").strip()
                 if clean_pitch:
