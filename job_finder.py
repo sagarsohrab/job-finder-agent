@@ -166,13 +166,58 @@ def fetch_jobicy_jobs():
         print(f"Error fetching Jobicy jobs: {e}")
     return jobs
 
-def fetch_google_news_jobs():
+def fetch_linkedin_jobs():
     jobs = []
     queries = [
-        '"Business Analyst" hiring Bengaluru OR Bangalore',
-        '"Data Analyst" opening Mumbai OR India',
-        '"Product Analyst" site:lever.co OR site:greenhouse.io India',
-        '"Analytics Engineer" hiring India remote'
+        ("Business Analyst", "Bengaluru, Karnataka, India"),
+        ("Data Analyst", "Bengaluru, Karnataka, India"),
+        ("Product Analyst", "Mumbai, Maharashtra, India"),
+        ("Analytics Engineer", "India")
+    ]
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+
+    for keyword, location in queries:
+        try:
+            url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={quote_plus(keyword)}&location={quote_plus(location)}&start=0"
+            res = requests.get(url, headers=headers, timeout=10)
+            if res.status_code == 200:
+                soup = BeautifulSoup(res.content, "html.parser")
+                cards = soup.find_all("li")
+                for card in cards[:6]:
+                    title_elem = card.find("h3", class_="base-search-card__title")
+                    comp_elem = card.find("h4", class_="base-search-card__subtitle")
+                    loc_elem = card.find("span", class_="job-search-card__location")
+                    link_elem = card.find("a", class_="base-card__full-link")
+
+                    title = title_elem.text.strip() if title_elem else ""
+                    company = comp_elem.text.strip() if comp_elem else "Tech Company"
+                    loc = loc_elem.text.strip() if loc_elem else location
+                    job_url = link_elem["href"] if link_elem and "href" in link_elem.attrs else ""
+
+                    if title and job_url:
+                        jobs.append({
+                            "title": title,
+                            "company": company,
+                            "location": loc,
+                            "url": job_url.split("?")[0],  # Clean tracking params
+                            "source": "LinkedIn Jobs",
+                            "date": datetime.date.today().isoformat(),
+                            "description": f"{title} at {company} in {loc}"
+                        })
+        except Exception as e:
+            print(f"Error fetching LinkedIn jobs for '{keyword}': {e}")
+
+    return jobs
+
+def fetch_greenhouse_lever_jobs():
+    jobs = []
+    queries = [
+        'site:boards.greenhouse.io "Business Analyst" Bengaluru OR Bangalore',
+        'site:jobs.lever.co "Data Analyst" India',
+        'site:myworkdayjobs.com "Product Analyst" Bangalore OR Mumbai'
     ]
     for q in queries:
         try:
@@ -183,33 +228,30 @@ def fetch_google_news_jobs():
                 for item in soup.find_all("item")[:5]:
                     title = item.find("title").get_text() if item.find("title") else ""
                     link = item.find("link").get_text() if item.find("link") else ""
-                    source_name = item.find("source").get_text() if item.find("source") else "Job Alert"
-                    
-                    # Ensure title looks like a job posting, not an article
-                    title_lower = title.lower()
-                    if any(bad in title_lower for bad in ["salary", "guide", "tips", "course", "how to", "vs", "review"]):
-                        continue
+                    source_name = item.find("source").get_text() if item.find("source") else "Company Career Site"
 
-                    jobs.append({
-                        "title": title.split(" - ")[0] if " - " in title else title,
-                        "company": source_name,
-                        "location": "Bengaluru / Mumbai / India",
-                        "url": link,
-                        "source": "Direct Hiring Alert",
-                        "date": datetime.date.today().isoformat(),
-                        "description": title
-                    })
+                    if "greenhouse" in link.lower() or "lever" in link.lower() or "workday" in link.lower():
+                        jobs.append({
+                            "title": title.split(" - ")[0] if " - " in title else title,
+                            "company": source_name,
+                            "location": "Bengaluru / Mumbai / India",
+                            "url": link,
+                            "source": "Direct Company ATS (Greenhouse/Lever)",
+                            "date": datetime.date.today().isoformat(),
+                            "description": title
+                        })
         except Exception as e:
-            print(f"Error fetching Google News jobs for '{q}': {e}")
+            print(f"Error fetching ATS jobs for '{q}': {e}")
     return jobs
 
 def run_job_search():
     print("Starting automated job search...")
     all_raw_jobs = []
+    all_raw_jobs.extend(fetch_linkedin_jobs())
+    all_raw_jobs.extend(fetch_greenhouse_lever_jobs())
     all_raw_jobs.extend(fetch_remotive_jobs())
     all_raw_jobs.extend(fetch_arbeitnow_jobs())
     all_raw_jobs.extend(fetch_jobicy_jobs())
-    all_raw_jobs.extend(fetch_google_news_jobs())
 
     processed_jobs = []
     seen = set()

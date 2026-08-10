@@ -1,27 +1,157 @@
 # 🎯 Daily Job Digest & Application Copilot for Sagar Sohrab
-**Date:** August 10, 2026 | **Top Mid-Level Matches (1-3 YOE):** 2
+**Date:** August 10, 2026 | **Top Mid-Level Matches (1-3 YOE):** 15
 
 ---
 
-### 1. [Data analyst turns to Reddit for advice as ₹36 lakh p.a. offer in Mumbai pays less in-hand than ₹25 lpa Gurugram job](https://news.google.com/rss/articles/CBMilwJBVV95cUxPTmozU1VvNlphdER4LWM4Z2xvcHZzNEVJN2tsS1JHR1o4MWNJanNnN2Vjc2lKM1F2eXBGb1JPY2RxZEZGampzMldKQ056YW1PUUtkMnpMdjY3akxnc2doeldZYTNPeHh6V01qQ3hDZTNELW92dVJzNElqYnAtYnB1cnJRakhQNHZpOXp3MnBpb0VtY2FKNm9TLWFFbXVnV0NCQWNBNzBxdDNRR181X3RNUVZ4TU9ULXNURDM2eFY0V0ZBU0ZoU0ZvWFlPUnFjVjI0cEUzNGVITkVrcVFfLTZQTEw1ei15ZHFDcDQ2b3h6TDVnWkFvRy0wSUFvVEowMktNZWg1UUcwZndya082NTlWaEl1VW5EVFXSAZwCQVVfeXFMT0RQX2s2RDUtMnAxSHNxTmhjMGpzRnBYSS1qejU3QjNZTjIzOTItMUZPUDZMU1Vnd3BtWktybGN1c0g0aFRvM1FiYlFVcVlxRjdJTWNfY09mSWtHRHpKSEhUVV94d0htRjBsc2VQd0x0WktRX3BGWGhVTV9sX2xCNkpXUk1yTXlXY1R2STE5T1Y1SnNWNWdIcVpOTURsZGxRa3dCZ3ROV3hZWVh1ek9YcUxkRWw3b3ZKWXhvb002WXNYbmpBUVZlS3ZYOHNfWjdpTVB3YThEdkQ4ZjdHTnFvOW9TdFZIc3hUZzBUZXVEa0RtOUx3Z2tXTHdvWkNWWC1IVEY5MjY2T1psbDdyaWtMaVpQelFpOWZzWEhvNmc?oc=5)
-- **Company:** livemint.com
-- **Location:** Bengaluru / Mumbai / India
-- **Source:** Direct Hiring Alert | **Posted:** 2026-08-10
+### 1. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-people-prime-worldwide-4451128399)
+- **Company:** People Prime Worldwide
+- **Location:** Greater Bengaluru Area
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *Data analyst turns to Reddit for advice as ₹36 lakh p.a. offer in Mumbai pays less in-hand than ₹25 lpa Gurugram job - livemint.com...*
+- **Snippet:** *Business Analyst at People Prime Worldwide in Greater Bengaluru Area...*
 
-### 2. [Job Application for Senior Product Analyst at Ethos Life](https://news.google.com/rss/articles/CBMiakFVX3lxTFBIaWl2NGRiWDNzTURZYVZiMkdlaWQwSDBpQ2lQRHFGSWVBUjR1NGFvNmhNNGJZbXNVYWNOd0JqdG40cTY1Y09EbDBCNEN0cFV6MkZtc1BjNndUXzBsTjZhNXZlclQzMU0tVVE?oc=5)
-- **Company:** Greenhouse
-- **Location:** Bengaluru / Mumbai / India
-- **Source:** Direct Hiring Alert | **Posted:** 2026-08-10
+### 2. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-emids-4410569233)
+- **Company:** Emids
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *Job Application for Senior Product Analyst at Ethos Life - Greenhouse...*
+- **Snippet:** *Business Analyst at Emids in Bengaluru, Karnataka, India...*
+
+### 3. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-easyecom-4451038653)
+- **Company:** EASYECOM
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Business Analyst at EASYECOM in Bengaluru, Karnataka, India...*
+
+### 4. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-tecnovos-4301174639)
+- **Company:** Tecnovos
+- **Location:** Bengaluru East, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Business Analyst at Tecnovos in Bengaluru East, Karnataka, India...*
+
+### 5. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-accenture-in-india-4448389570)
+- **Company:** Accenture in India
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Business Analyst at Accenture in India in Bengaluru, Karnataka, India...*
+
+### 6. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-portcast-4450798444)
+- **Company:** Portcast
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Data Analyst at Portcast in Bengaluru, Karnataka, India...*
+
+### 7. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-myyogateacher-4451395356)
+- **Company:** MyYogaTeacher
+- **Location:** Bangalore Urban, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Data Analyst at MyYogaTeacher in Bangalore Urban, Karnataka, India...*
+
+### 8. [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-paisasmart-4449507808)
+- **Company:** PaisaSmart
+- **Location:** Mumbai, Maharashtra, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Product Analyst at PaisaSmart in Mumbai, Maharashtra, India...*
+
+### 9. [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213)
+- **Company:** Nua
+- **Location:** Mumbai Metropolitan Region
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Product Analyst at Nua in Mumbai Metropolitan Region...*
+
+### 10. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875)
+- **Company:** Amaha
+- **Location:** Mumbai, Maharashtra, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Data Analyst at Amaha in Mumbai, Maharashtra, India...*
+
+### 11. [Product Analyst- Assistant Manager- Paytm Ads](https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601)
+- **Company:** One97 Communications Limited
+- **Location:** Mumbai, Maharashtra, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Product Analyst- Assistant Manager- Paytm Ads at One97 Communications Limited in Mumbai, Maharashtra, India...*
+
+### 12. [Product Business Analyst](https://in.linkedin.com/jobs/view/product-business-analyst-at-credility-4446177776)
+- **Company:** Credility
+- **Location:** Borivali, Maharashtra, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Product Business Analyst at Credility in Borivali, Maharashtra, India...*
+
+### 13. [Analytics Engineer](https://in.linkedin.com/jobs/view/analytics-engineer-at-dazn-india-4450703285)
+- **Company:** DAZN India
+- **Location:** Hyderabad, Telangana, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Analytics Engineer at DAZN India in Hyderabad, Telangana, India...*
+
+### 14. [Data and Analytics Engineer](https://in.linkedin.com/jobs/view/data-and-analytics-engineer-at-sandisk-4442714732)
+- **Company:** Sandisk
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Data and Analytics Engineer at Sandisk in Bengaluru, Karnataka, India...*
+
+### 15. [Analytics Engineer](https://in.linkedin.com/jobs/view/analytics-engineer-at-cutshort-4441819301)
+- **Company:** Cutshort
+- **Location:** Mumbai Metropolitan Region
+- **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **Relevance Score:** ⭐ `60 pts`
+- **Matched Core Skills:** General Analytics
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Analytics Engineer at Cutshort in Mumbai Metropolitan Region...*
 
 ---
 *Generated automatically by GitHub Actions Job Agent & Resume Copilot*
