@@ -243,14 +243,80 @@ def generate_markdown_report(jobs):
     md += "*Generated automatically by GitHub Actions Job Agent & Resume Copilot*\n"
     return md
 
-def send_telegram_notification(text, bot_token, chat_id):
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+def send_email_digest(report_md, smtp_user, smtp_pass, recipient_email):
     try:
-        url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-        payload = {"chat_id": chat_id, "text": text, "parse_mode": "Markdown"}
-        requests.post(url, json=payload, timeout=10)
-        print("Telegram notification sent successfully!")
+        msg = MIMEMultipart("alternative")
+        today_str = datetime.date.today().strftime("%B %d, %Y")
+        msg["Subject"] = f"🎯 Daily Job Digest & Resume Copilot - {today_str}"
+        msg["From"] = smtp_user
+        msg["To"] = recipient_email
+
+        # Convert markdown to basic HTML for email formatting
+        html_body = f"""
+        <html>
+          <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 650px; margin: 0 auto; padding: 20px;">
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px;">🎯 Daily Job Digest for {PROFILE_NAME}</h2>
+            <p style="color: #7f8c8d; font-size: 14px;">Date: {today_str} | Target: 1-3 YOE Business/Data Analyst Roles</p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+        """
+
+        lines = report_md.split("\n")
+        in_job = False
+        for line in lines:
+            if line.startswith("### "):
+                if in_job:
+                    html_body += "</div><br>"
+                in_job = True
+                html_body += "<div style='background: #f8f9fa; border-left: 4px solid #3498db; padding: 15px; border-radius: 4px; margin-bottom: 15px;'>"
+                # Extract link and title
+                match = re.search(r'### \d+\. \[(.*?)\]\((.*?)\)', line)
+                if match:
+                    title, url = match.group(1), match.group(2)
+                    html_body += f"<h3 style='margin-top:0; color: #2980b9;'><a href='{url}' style='color: #2980b9; text-decoration: none;'>{title}</a></h3>"
+                else:
+                    html_body += f"<h3>{line[4:]}</h3>"
+            elif line.startswith("- **Company:**"):
+                html_body += f"<p style='margin: 4px 0;'><strong>Company:</strong> {line.replace('- **Company:**', '').strip()}</p>"
+            elif line.startswith("- **Location:**"):
+                html_body += f"<p style='margin: 4px 0;'><strong>Location:</strong> {line.replace('- **Location:**', '').strip()}</p>"
+            elif line.startswith("- **Relevance Score:**"):
+                html_body += f"<p style='margin: 4px 0;'><strong>Relevance Score:</strong> <span style='background: #e8f8f5; color: #27ae60; padding: 2px 8px; border-radius: 3px; font-weight: bold;'>{line.replace('- **Relevance Score:**', '').strip()}</span></p>"
+            elif line.startswith("- **Matched Core Skills:**"):
+                html_body += f"<p style='margin: 4px 0;'><strong>Matched Skills:</strong> {line.replace('- **Matched Core Skills:**', '').strip()}</p>"
+            elif "Tailored Resume Pitch Focus:" in line or line.strip().startswith("> *"):
+                clean_pitch = line.replace("- 💡 **Tailored Resume Pitch Focus:**", "").replace("> *", "").replace("*", "").strip()
+                if clean_pitch:
+                    html_body += f"<div style='background: #fff8e1; border-left: 3px solid #f39c12; padding: 8px 12px; margin: 8px 0; font-size: 13px;'>💡 <strong>Tailored Resume Focus:</strong> {clean_pitch}</div>"
+            elif line.startswith("- **Snippet:**"):
+                html_body += f"<p style='margin: 4px 0; color: #555; font-size: 13px;'><em>{line.replace('- **Snippet:**', '').strip()}</em></p>"
+
+        if in_job:
+            html_body += "</div>"
+
+        html_body += """
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+            <p style="font-size: 12px; color: #95a5a6; text-align: center;">Generated automatically by GitHub Actions Job Agent for Sagar Sohrab</p>
+          </body>
+        </html>
+        """
+
+        part_plain = MIMEText(report_md, "plain")
+        part_html = MIMEText(html_body, "html")
+        msg.attach(part_plain)
+        msg.attach(part_html)
+
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(smtp_user, smtp_pass)
+        server.sendmail(smtp_user, recipient_email, msg.as_string())
+        server.quit()
+        print(f"Email digest sent successfully to {recipient_email}!")
     except Exception as e:
-        print(f"Failed to send Telegram notification: {e}")
+        print(f"Failed to send email digest: {e}")
 
 def main():
     top_jobs = run_job_search()
@@ -262,12 +328,16 @@ def main():
         f.write(report_md)
     print(f"Report saved to {digest_path}")
 
-    # Check for optional Telegram notification
-    bot_token = os.environ.get("TELEGRAM_BOT_TOKEN")
-    chat_id = os.environ.get("TELEGRAM_CHAT_ID")
-    if bot_token and chat_id:
-        summary_msg = f"🎯 *Job Finder Update ({datetime.date.today().isoformat()})*\nFound {len(top_jobs)} relevant roles for Sagar!\nTop match: [{top_jobs[0]['title']}]({top_jobs[0]['url']}) at {top_jobs[0]['company']}" if top_jobs else "No new top matches today."
-        send_telegram_notification(summary_msg, bot_token, chat_id)
+    # Check for Email Dispatch
+    email_user = os.environ.get("EMAIL_USERNAME")
+    email_pass = os.environ.get("EMAIL_PASSWORD")
+    recipient_email = os.environ.get("RECIPIENT_EMAIL", "sagar7.sohrab@gmail.com")
+
+    if email_user and email_pass:
+        print("Sending email digest...")
+        send_email_digest(report_md, email_user, email_pass, recipient_email)
+    else:
+        print("EMAIL_USERNAME or EMAIL_PASSWORD not set. Skipping email dispatch.")
 
     # Output for GitHub Actions
     if "GITHUB_STEP_SUMMARY" in os.environ:
