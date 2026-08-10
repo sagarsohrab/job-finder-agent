@@ -2,8 +2,8 @@ name: Daily Job Finder Agent
 
 on:
   schedule:
-    # Runs at 03:00 UTC (8:30 AM IST) every day
-    - cron: '0 3 * * *'
+    # Runs twice daily at 9:00 AM IST (03:30 UTC) and 6:00 PM IST (12:30 UTC)
+    - cron: '30 3,12 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:
