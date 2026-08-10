@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Copilot Pro — Sagar Sohrab</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Apple Translucent Navigation Bar -->
+  <nav class="apple-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">🎯</span>
+        <span class="logo-text">Job Copilot <span class="badge-pro">PRO</span></span>
+      </div>
+      <div class="nav-links">
+        <button class="nav-btn active" data-tab="tab-matches">Top Matches</button>
+        <button class="nav-btn" data-tab="tab-kanban">Pipeline Board</button>
+        <button class="nav-btn" data-tab="tab-resume">Resume Tailorer</button>
+      </div>
+      <div class="nav-profile">
+        <span class="avatar">SS</span>
+        <span class="profile-name">Sagar Sohrab</span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <!-- Hero Header with Ambient Glow -->
+    <header class="hero-header">
+      <div class="ambient-glow"></div>
+      <div class="hero-text">
+        <span class="pill-tag">⚡ 1–3 YOE Targeted • Bengaluru & Mumbai</span>
+        <h1>Career Copilot & Job Command Center</h1>
+        <p>Real-time automated scraper, AI cover letter generator, recruiter finder & ATS application pipeline.</p>
+      </div>
+
+      <!-- KPI Metrics Grid -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-label">Top Matched Roles</span>
+          <span class="kpi-value" id="kpi-total-jobs">0</span>
+          <span class="kpi-sub">Strict 1-3 YOE filter</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Fresh Today (< 24h)</span>
+          <span class="kpi-value highlight-green" id="kpi-fresh-jobs">0</span>
+          <span class="kpi-sub">Early applicant advantage</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Applied Pipeline</span>
+          <span class="kpi-value highlight-blue" id="kpi-applied-jobs">0</span>
+          <span class="kpi-sub">Active applications</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Interview Rate</span>
+          <span class="kpi-value highlight-purple">24.5%</span>
+          <span class="kpi-sub">Targeted ATS benchmark</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tab 1: Top Matches Feed -->
+    <section id="tab-matches" class="tab-content active">
+      <div class="controls-bar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search by role, company, skill (SQL, BigQuery, Tableau)...">
+        </div>
+        <div class="filter-pills">
+          <button class="filter-pill active" data-filter="all">All Roles</button>
+          <button class="filter-pill" data-filter="business analyst">Business Analyst</button>
+          <button class="filter-pill" data-filter="data analyst">Data Analyst</button>
+          <button class="filter-pill" data-filter="product analyst">Product Analyst</button>
+          <button class="filter-pill" data-filter="fresh">⚡ Fresh (< 24h)</button>
+        </div>
+      </div>
+
+      <div id="jobs-container" class="jobs-grid">
+        <!-- Dynamically rendered job cards -->
+      </div>
+    </section>
+
+    <!-- Tab 2: Application Pipeline (Kanban Board) -->
+    <section id="tab-kanban" class="tab-content">
+      <div class="kanban-header">
+        <h2>Application Pipeline</h2>
+        <p>Track your job application stages from saved to offers.</p>
+      </div>
+
+      <div class="kanban-board">
+        <div class="kanban-column" id="col-saved">
+          <div class="col-header">
+            <span class="status-dot dot-gray"></span>
+            <h3>Saved / High Match</h3>
+            <span class="count-badge" id="count-saved">0</span>
+          </div>
+          <div class="kanban-cards" id="cards-saved"></div>
+        </div>
+
+        <div class="kanban-column" id="col-applied">
+          <div class="col-header">
+            <span class="status-dot dot-blue"></span>
+            <h3>Applied</h3>
+            <span class="count-badge" id="count-applied">0</span>
+          </div>
+          <div class="kanban-cards" id="cards-applied"></div>
+        </div>
+
+        <div class="kanban-column" id="col-interview">
+          <div class="col-header">
+            <span class="status-dot dot-purple"></span>
+            <h3>Interviewing</h3>
+            <span class="count-badge" id="count-interview">0</span>
+          </div>
+          <div class="kanban-cards" id="cards-interview"></div>
+        </div>
+
+        <div class="kanban-column" id="col-offer">
+          <div class="col-header">
+            <span class="status-dot dot-green"></span>
+            <h3>Offer Received</h3>
+            <span class="count-badge" id="count-offer">0</span>
+          </div>
+          <div class="kanban-cards" id="cards-offer"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 3: Dynamic Resume Tailorer -->
+    <section id="tab-resume" class="tab-content">
+      <div class="resume-wrapper">
+        <div class="resume-sidebar">
+          <h3>Tailor Spec Generator</h3>
+          <p>Select a job role to automatically re-order and highlight your Razorpay achievements for ATS matching.</p>
+          <div class="form-group">
+            <label>Select Target Job:</label>
+            <select id="resume-job-select" class="apple-select"></select>
+          </div>
+          <button id="btn-copy-resume-spec" class="btn-apple btn-primary">📋 Copy Tailored Bullets</button>
+        </div>
+
+        <div class="resume-preview-card">
+          <div class="resume-header-preview">
+            <h2>SAGAR SOHRAB</h2>
+            <p>Bengaluru / Mumbai | sagar7.sohrab@gmail.com | +91 8169052960 | LinkedIn | GitHub</p>
+          </div>
+          <div class="resume-section">
+            <h4 class="res-title">DYNAMICALLY TAILORED SUMMARY</h4>
+            <p id="res-summary-text">High-Impact Business Analyst & Data Analytics Specialist at Razorpay with 1+ years of experience driving GMV growth ($500M+ global GMV), checkout funnel optimization (+15% SR lift), GCP BigQuery SQL transformations, and Z-score anomaly modeling in Python.</p>
+          </div>
+          <div class="resume-section">
+            <h4 class="res-title">RAZORPAY — PROFESSIONAL EXPERIENCE HIGHLIGHTS</h4>
+            <ul id="res-experience-bullets" class="res-bullets">
+              <!-- Dynamically populated based on target job skills -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- AI Cover Letter Modal -->
+  <div id="cover-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-company-title">AI Cover Letter & Cold DM</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <textarea id="modal-cover-text" class="cover-textarea" readonly></textarea>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-copy-cover" class="btn-apple btn-primary">📋 Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Text copied to clipboard!</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

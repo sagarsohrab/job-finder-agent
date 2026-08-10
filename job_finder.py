@@ -446,6 +446,23 @@ def send_email_digest(report_md, smtp_user, smtp_pass, recipient_email):
 
 def main():
     top_jobs = run_job_search()
+    
+    # Enrich job data for Web UI
+    for job in top_jobs:
+        job["ctc"] = extract_ctc_information(job["title"], job["description"])
+        company_clean = quote_plus(job["company"])
+        job["recruiter_search_url"] = f"https://www.linkedin.com/search/results/people/?keywords={company_clean}%20recruiter%20OR%20analytics%20lead"
+        
+        # Auto-generate custom 3-paragraph cover letter pitch
+        skills_str = ", ".join(job["matched_skills"]) if job["matched_skills"] else "SQL, Python, Business Analytics"
+        job["cover_letter"] = (
+            f"Dear Hiring Team at {job['company']},\n\n"
+            f"I am writing to express my strong interest in the {job['title']} role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\n"
+            f"In my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on {skills_str}, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\n"
+            f"I would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to {job['company']}.\n\n"
+            f"Best regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+        )
+
     report_md = generate_markdown_report(top_jobs)
 
     # Save to JOBS_DIGEST.md
@@ -453,6 +470,12 @@ def main():
     with open(digest_path, "w", encoding="utf-8") as f:
         f.write(report_md)
     print(f"Report saved to {digest_path}")
+
+    # Save to jobs_data.json for Web UI
+    json_path = os.path.join(os.path.dirname(__file__), "jobs_data.json")
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(top_jobs, f, indent=2)
+    print(f"Structured JSON data saved to {json_path}")
 
     # Check for Email Dispatch
     email_user = os.environ.get("EMAIL_USERNAME")
