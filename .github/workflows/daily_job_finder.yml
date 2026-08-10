@@ -2,8 +2,11 @@ name: Daily Job Finder Agent
 
 on:
   schedule:
-    # Runs twice daily at 9:00 AM IST (03:30 UTC) and 6:00 PM IST (12:30 UTC)
-    - cron: '30 3,12 * * *'
+    # Optimized for Recruiter Posting Peaks:
+    # 1. Morning Wave: 9:30 AM IST (04:00 UTC) - India recruiter morning batch
+    # 2. Evening Wave: 7:00 PM IST (13:30 UTC) - US/EU remote & afternoon postings
+    - cron: '0 4 * * *'
+    - cron: '30 13 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:
