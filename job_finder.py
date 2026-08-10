@@ -101,6 +101,10 @@ def calculate_relevance_score(title, description, location, company=""):
             score += 10
             matched_skills.append(skill)
 
+    # 6. Freshness Boost (First to apply advantage)
+    if any(fresh in desc_lower for fresh in ["hour", "hours", "minute", "minutes", "just posted", "today", "1 day"]):
+        score += 20  # +20 pts boost for brand new postings!
+
     return score, list(set(matched_skills))
 
 def fetch_remotive_jobs():
@@ -197,6 +201,10 @@ def fetch_linkedin_jobs():
                     loc = loc_elem.text.strip() if loc_elem else location
                     job_url = link_elem["href"] if link_elem and "href" in link_elem.attrs else ""
 
+                    # Extract relative posting time (e.g. 2 hours ago, 1 day ago)
+                    time_elem = card.find("time")
+                    posted_time = time_elem.text.strip() if time_elem else "Recently"
+
                     if title and job_url:
                         jobs.append({
                             "title": title,
@@ -204,8 +212,8 @@ def fetch_linkedin_jobs():
                             "location": loc,
                             "url": job_url.split("?")[0],  # Clean tracking params
                             "source": "LinkedIn Jobs",
-                            "date": datetime.date.today().isoformat(),
-                            "description": f"{title} at {company} in {loc}"
+                            "date": posted_time,
+                            "description": f"{title} at {company} in {loc}. Posted {posted_time}."
                         })
         except Exception as e:
             print(f"Error fetching LinkedIn jobs for '{keyword}': {e}")
@@ -319,10 +327,14 @@ def generate_markdown_report(jobs):
         skills_str = ", ".join([f"`{s}`" for s in job["matched_skills"]]) if job["matched_skills"] else "General Analytics"
         ctc_str = extract_ctc_information(job["title"], job["description"])
 
+        date_raw = job['date']
+        is_fresh = any(kw in date_raw.lower() for kw in ["hour", "minute", "just posted", "today", "1 day", "2 day", "3 day"])
+        posted_display = f"⚡ `{date_raw}` *(Early Applicant Advantage)*" if is_fresh else f"`{date_raw}`"
+
         md += f"### {idx}. [{job['title']}]({job['url']})\n"
         md += f"- **Company:** {job['company']}\n"
         md += f"- **Location:** {job['location']}\n"
-        md += f"- **Source:** {job['source']} | **Posted:** {job['date']}\n"
+        md += f"- **Source:** {job['source']} | **Posted:** {posted_display}\n"
         md += f"- **CTC / Compensation:** 💰 `{ctc_str}`\n"
         md += f"- **Relevance Score:** ⭐ `{job['relevance_score']} pts`\n"
         md += f"- **Matched Core Skills:** {skills_str}\n"
