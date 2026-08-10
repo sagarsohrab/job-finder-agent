@@ -19,28 +19,52 @@ TARGET_ROLES = [
     "Data Analytics Specialist",
     "Operations Analyst"
 ]
-EXCLUDE_SENIORITY = [
+EXCLUDE_TITLE_TERMS = [
     "director", "vp", "vice president", "head of", "principal", 
-    "lead analyst", "staff analyst", "senior manager", "10+ years", "8+ years", "7+ years"
+    "lead analyst", "staff analyst", "senior manager", "10+ years", "8+ years", "7+ years",
+    "salary", "guide", "how to", "tips", "course", "certification", "career", "interview questions",
+    "making", "make?", "vs", "overview", "roadmap", "turns to reddit", "reddit"
 ]
-TARGET_LOCATIONS = ["bengaluru", "bangalore", "mumbai", "remote", "india"]
+EXCLUDE_NEWS_SOURCES = [
+    "livemint.com", "moneycontrol", "timesofindia", "economic times", "hindustantimes", 
+    "gadgets360", "ndtv", "quora", "reddit", "medium.com", "towardsdatascience"
+]
+EXCLUDE_LOCATION_TERMS = [
+    "usa", "us only", "latam", "mexico", "canada", "uk only", "europe only", "germany", "france"
+]
+TARGET_LOCATIONS = ["bengaluru", "bangalore", "mumbai", "remote", "india", "worldwide", "anywhere"]
 SKILL_KEYWORDS = [
     "sql", "bigquery", "postgresql", "mysql", "python", "pandas", "numpy",
     "scipy", "tableau", "power bi", "streamlit", "etl", "funnel", "a/b testing",
     "anomaly detection", "z-score", "fintech", "payments", "gcp"
 ]
 
-def calculate_relevance_score(title, description, location):
+def calculate_relevance_score(title, description, location, company=""):
     score = 0
     title_lower = title.lower()
     desc_lower = description.lower()
     loc_lower = location.lower()
+    comp_lower = company.lower()
     full_text = f"{title_lower} {desc_lower}"
 
-    # 1. Seniority Check (Penalize or Exclude overly senior positions)
-    for senior_term in EXCLUDE_SENIORITY:
-        if senior_term in title_lower:
-            return 0, []  # Hard filter out executive/lead positions
+    # 1. Filter out Articles, News Sites, Blogs, & Reddit Posts
+    for bad_source in EXCLUDE_NEWS_SOURCES:
+        if bad_source in comp_lower or bad_source in title_lower or bad_source in desc_lower:
+            return 0, []
+
+    for bad_term in EXCLUDE_TITLE_TERMS:
+        if bad_term in title_lower:
+            return 0, []
+
+    # 2. Filter out Non-India / Non-Worldwide Locations (e.g. US Only, LATAM, Mexico)
+    for bad_loc in EXCLUDE_LOCATION_TERMS:
+        if bad_loc in loc_lower:
+            return 0, []
+
+    # Check that location is India or Worldwide Remote
+    loc_valid = any(loc in loc_lower for loc in TARGET_LOCATIONS)
+    if not loc_valid:
+        return 0, []
 
     # Boost for Junior / Mid / Associate roles (1-3 YOE)
     if any(term in title_lower for term in ["junior", "associate", "analyst i", "analyst ii", "mid"]):
@@ -58,19 +82,19 @@ def calculate_relevance_score(title, description, location):
         except ValueError:
             pass
 
-    # 2. Title match
+    # 3. Title match
     for role in TARGET_ROLES:
         if role.lower() in title_lower:
             score += 35
             break
 
-    # 3. Location match
-    for loc in TARGET_LOCATIONS:
-        if loc in loc_lower or "remote" in loc_lower or "india" in loc_lower:
-            score += 20
-            break
+    # 4. Location match bonus
+    if "bengaluru" in loc_lower or "bangalore" in loc_lower or "mumbai" in loc_lower or "india" in loc_lower:
+        score += 25
+    elif "worldwide" in loc_lower or "anywhere" in loc_lower:
+        score += 15
 
-    # 4. Skill keywords match
+    # 5. Skill keywords match
     matched_skills = []
     for skill in SKILL_KEYWORDS:
         if re.search(r'\b' + re.escape(skill) + r'\b', title_lower) or re.search(r'\b' + re.escape(skill) + r'\b', desc_lower):
@@ -145,10 +169,10 @@ def fetch_jobicy_jobs():
 def fetch_google_news_jobs():
     jobs = []
     queries = [
-        "Business Analyst jobs Bengaluru",
-        "Data Analyst hiring Bangalore",
-        "Analytics Engineer jobs Mumbai",
-        "Product Analyst hiring India remote"
+        '"Business Analyst" hiring Bengaluru OR Bangalore',
+        '"Data Analyst" opening Mumbai OR India',
+        '"Product Analyst" site:lever.co OR site:greenhouse.io India',
+        '"Analytics Engineer" hiring India remote'
     ]
     for q in queries:
         try:
@@ -159,15 +183,19 @@ def fetch_google_news_jobs():
                 for item in soup.find_all("item")[:5]:
                     title = item.find("title").get_text() if item.find("title") else ""
                     link = item.find("link").get_text() if item.find("link") else ""
-                    pub_date = item.find("pubDate").get_text() if item.find("pubDate") else ""
-                    source_name = item.find("source").get_text() if item.find("source") else "Google Jobs"
+                    source_name = item.find("source").get_text() if item.find("source") else "Job Alert"
                     
+                    # Ensure title looks like a job posting, not an article
+                    title_lower = title.lower()
+                    if any(bad in title_lower for bad in ["salary", "guide", "tips", "course", "how to", "vs", "review"]):
+                        continue
+
                     jobs.append({
-                        "title": title,
+                        "title": title.split(" - ")[0] if " - " in title else title,
                         "company": source_name,
                         "location": "Bengaluru / Mumbai / India",
                         "url": link,
-                        "source": "India Job Alerts",
+                        "source": "Direct Hiring Alert",
                         "date": datetime.date.today().isoformat(),
                         "description": title
                     })
@@ -192,7 +220,7 @@ def run_job_search():
             continue
         seen.add(key)
 
-        score, matched_skills = calculate_relevance_score(job["title"], job["description"], job["location"])
+        score, matched_skills = calculate_relevance_score(job["title"], job["description"], job["location"], job["company"])
         if score >= 30:  # Relevance threshold
             job["relevance_score"] = score
             job["matched_skills"] = matched_skills
