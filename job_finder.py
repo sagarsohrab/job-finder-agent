@@ -1,0 +1,278 @@
+import os
+import sys
+import json
+import re
+import datetime
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import quote_plus
+
+# User Profile Configuration
+PROFILE_NAME = "Sagar Sohrab"
+TARGET_YOE_MIN = 1
+TARGET_YOE_MAX = 3
+TARGET_ROLES = [
+    "Business Analyst",
+    "Data Analyst",
+    "Product Analyst",
+    "Analytics Engineer",
+    "Data Analytics Specialist",
+    "Operations Analyst"
+]
+EXCLUDE_SENIORITY = [
+    "director", "vp", "vice president", "head of", "principal", 
+    "lead analyst", "staff analyst", "senior manager", "10+ years", "8+ years", "7+ years"
+]
+TARGET_LOCATIONS = ["bengaluru", "bangalore", "mumbai", "remote", "india"]
+SKILL_KEYWORDS = [
+    "sql", "bigquery", "postgresql", "mysql", "python", "pandas", "numpy",
+    "scipy", "tableau", "power bi", "streamlit", "etl", "funnel", "a/b testing",
+    "anomaly detection", "z-score", "fintech", "payments", "gcp"
+]
+
+def calculate_relevance_score(title, description, location):
+    score = 0
+    title_lower = title.lower()
+    desc_lower = description.lower()
+    loc_lower = location.lower()
+    full_text = f"{title_lower} {desc_lower}"
+
+    # 1. Seniority Check (Penalize or Exclude overly senior positions)
+    for senior_term in EXCLUDE_SENIORITY:
+        if senior_term in title_lower:
+            return 0, []  # Hard filter out executive/lead positions
+
+    # Boost for Junior / Mid / Associate roles (1-3 YOE)
+    if any(term in title_lower for term in ["junior", "associate", "analyst i", "analyst ii", "mid"]):
+        score += 15
+
+    # Check YOE mentions in description
+    yoe_matches = re.findall(r'(\d+)\+?\s*(?:-\s*(\d+)\+?)?\s*(?:years|yoe|yrs)', full_text)
+    for min_y, max_y in yoe_matches:
+        try:
+            min_val = int(min_y)
+            if min_val > 5:
+                return 0, [] # Exclude 6+ years required
+            elif 1 <= min_val <= 3:
+                score += 20
+        except ValueError:
+            pass
+
+    # 2. Title match
+    for role in TARGET_ROLES:
+        if role.lower() in title_lower:
+            score += 35
+            break
+
+    # 3. Location match
+    for loc in TARGET_LOCATIONS:
+        if loc in loc_lower or "remote" in loc_lower or "india" in loc_lower:
+            score += 20
+            break
+
+    # 4. Skill keywords match
+    matched_skills = []
+    for skill in SKILL_KEYWORDS:
+        if re.search(r'\b' + re.escape(skill) + r'\b', title_lower) or re.search(r'\b' + re.escape(skill) + r'\b', desc_lower):
+            score += 10
+            matched_skills.append(skill)
+
+    return score, list(set(matched_skills))
+
+def fetch_remotive_jobs():
+    jobs = []
+    try:
+        url = "https://remotive.com/api/remote-jobs?category=data"
+        res = requests.get(url, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            for item in data.get("jobs", []):
+                jobs.append({
+                    "title": item.get("title", ""),
+                    "company": item.get("company_name", ""),
+                    "location": item.get("candidate_required_location", "Remote"),
+                    "url": item.get("url", ""),
+                    "source": "Remotive",
+                    "date": item.get("publication_date", "")[:10],
+                    "description": BeautifulSoup(item.get("description", ""), "html.parser").get_text()[:500]
+                })
+    except Exception as e:
+        print(f"Error fetching Remotive jobs: {e}")
+    return jobs
+
+def fetch_arbeitnow_jobs():
+    jobs = []
+    try:
+        url = "https://www.arbeitnow.com/api/job-board-api"
+        res = requests.get(url, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            for item in data.get("data", []):
+                jobs.append({
+                    "title": item.get("title", ""),
+                    "company": item.get("company_name", ""),
+                    "location": item.get("location", "Remote/Global"),
+                    "url": item.get("url", ""),
+                    "source": "Arbeitnow",
+                    "date": datetime.date.today().isoformat(),
+                    "description": BeautifulSoup(item.get("description", ""), "html.parser").get_text()[:500]
+                })
+    except Exception as e:
+        print(f"Error fetching Arbeitnow jobs: {e}")
+    return jobs
+
+def fetch_jobicy_jobs():
+    jobs = []
+    try:
+        url = "https://jobicy.com/api/v2/remote-jobs?count=20&industry=data-science"
+        res = requests.get(url, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            for item in data.get("jobs", []):
+                jobs.append({
+                    "title": item.get("jobTitle", ""),
+                    "company": item.get("companyName", ""),
+                    "location": item.get("jobGeo", "Remote"),
+                    "url": item.get("url", ""),
+                    "source": "Jobicy",
+                    "date": item.get("pubDate", "")[:10] if item.get("pubDate") else datetime.date.today().isoformat(),
+                    "description": item.get("jobExcerpt", "")[:500]
+                })
+    except Exception as e:
+        print(f"Error fetching Jobicy jobs: {e}")
+    return jobs
+
+def fetch_google_news_jobs():
+    jobs = []
+    queries = [
+        "Business Analyst jobs Bengaluru",
+        "Data Analyst hiring Bangalore",
+        "Analytics Engineer jobs Mumbai",
+        "Product Analyst hiring India remote"
+    ]
+    for q in queries:
+        try:
+            rss_url = f"https://news.google.com/rss/search?q={quote_plus(q)}&hl=en-IN&gl=IN&ceid=IN:en"
+            res = requests.get(rss_url, timeout=10)
+            if res.status_code == 200:
+                soup = BeautifulSoup(res.content, "xml")
+                for item in soup.find_all("item")[:5]:
+                    title = item.find("title").get_text() if item.find("title") else ""
+                    link = item.find("link").get_text() if item.find("link") else ""
+                    pub_date = item.find("pubDate").get_text() if item.find("pubDate") else ""
+                    source_name = item.find("source").get_text() if item.find("source") else "Google Jobs"
+                    
+                    jobs.append({
+                        "title": title,
+                        "company": source_name,
+                        "location": "Bengaluru / Mumbai / India",
+                        "url": link,
+                        "source": "India Job Alerts",
+                        "date": datetime.date.today().isoformat(),
+                        "description": title
+                    })
+        except Exception as e:
+            print(f"Error fetching Google News jobs for '{q}': {e}")
+    return jobs
+
+def run_job_search():
+    print("Starting automated job search...")
+    all_raw_jobs = []
+    all_raw_jobs.extend(fetch_remotive_jobs())
+    all_raw_jobs.extend(fetch_arbeitnow_jobs())
+    all_raw_jobs.extend(fetch_jobicy_jobs())
+    all_raw_jobs.extend(fetch_google_news_jobs())
+
+    processed_jobs = []
+    seen = set()
+
+    for job in all_raw_jobs:
+        key = (job["title"].lower(), job["company"].lower())
+        if key in seen:
+            continue
+        seen.add(key)
+
+        score, matched_skills = calculate_relevance_score(job["title"], job["description"], job["location"])
+        if score >= 30:  # Relevance threshold
+            job["relevance_score"] = score
+            job["matched_skills"] = matched_skills
+            processed_jobs.append(job)
+
+    # Sort by relevance score descending
+    processed_jobs.sort(key=lambda x: x["relevance_score"], reverse=True)
+    return processed_jobs[:15]
+
+def generate_markdown_report(jobs):
+    today = datetime.date.today().strftime("%B %d, %Y")
+    md = f"# 🎯 Daily Job Digest & Application Copilot for {PROFILE_NAME}\n"
+    md += f"**Date:** {today} | **Top Mid-Level Matches (1-3 YOE):** {len(jobs)}\n\n"
+    md += "---\n\n"
+
+    if not jobs:
+        md += "No high-confidence 1-3 YOE matching roles found today. Check back tomorrow!\n"
+        return md
+
+    for idx, job in enumerate(jobs, 1):
+        skills_str = ", ".join([f"`{s}`" for s in job["matched_skills"]]) if job["matched_skills"] else "General Analytics"
+        md += f"### {idx}. [{job['title']}]({job['url']})\n"
+        md += f"- **Company:** {job['company']}\n"
+        md += f"- **Location:** {job['location']}\n"
+        md += f"- **Source:** {job['source']} | **Posted:** {job['date']}\n"
+        md += f"- **Relevance Score:** ⭐ `{job['relevance_score']} pts`\n"
+        md += f"- **Matched Core Skills:** {skills_str}\n"
+        
+        # Tailored Resume Strategy Advice
+        md += f"- 💡 **Tailored Resume Pitch Focus:**\n"
+        if "sql" in job["matched_skills"] or "bigquery" in job["matched_skills"]:
+            md += f"  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* \n"
+        if "funnel" in job["matched_skills"] or "a/b testing" in job["matched_skills"]:
+            md += f"  > *Highlight Meta & Airbnb checkout funnel optimization (+15% SR lift).* \n"
+        if "tableau" in job["matched_skills"] or "power bi" in job["matched_skills"]:
+            md += f"  > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* \n"
+        if "anomaly detection" in job["matched_skills"] or "python" in job["matched_skills"]:
+            md += f"  > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* \n"
+        if not job["matched_skills"]:
+            md += f"  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* \n"
+
+        if job["description"]:
+            clean_desc = job["description"].replace("\n", " ").strip()
+            md += f"- **Snippet:** *{clean_desc[:220]}...*\n"
+        md += "\n"
+
+    md += "---\n"
+    md += "*Generated automatically by GitHub Actions Job Agent & Resume Copilot*\n"
+    return md
+
+def send_telegram_notification(text, bot_token, chat_id):
+    try:
+        url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+        payload = {"chat_id": chat_id, "text": text, "parse_mode": "Markdown"}
+        requests.post(url, json=payload, timeout=10)
+        print("Telegram notification sent successfully!")
+    except Exception as e:
+        print(f"Failed to send Telegram notification: {e}")
+
+def main():
+    top_jobs = run_job_search()
+    report_md = generate_markdown_report(top_jobs)
+
+    # Save to JOBS_DIGEST.md
+    digest_path = os.path.join(os.path.dirname(__file__), "JOBS_DIGEST.md")
+    with open(digest_path, "w", encoding="utf-8") as f:
+        f.write(report_md)
+    print(f"Report saved to {digest_path}")
+
+    # Check for optional Telegram notification
+    bot_token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+    if bot_token and chat_id:
+        summary_msg = f"🎯 *Job Finder Update ({datetime.date.today().isoformat()})*\nFound {len(top_jobs)} relevant roles for Sagar!\nTop match: [{top_jobs[0]['title']}]({top_jobs[0]['url']}) at {top_jobs[0]['company']}" if top_jobs else "No new top matches today."
+        send_telegram_notification(summary_msg, bot_token, chat_id)
+
+    # Output for GitHub Actions
+    if "GITHUB_STEP_SUMMARY" in os.environ:
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+            f.write(report_md)
+
+if __name__ == "__main__":
+    main()

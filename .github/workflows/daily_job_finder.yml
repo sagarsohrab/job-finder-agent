@@ -1,0 +1,52 @@
+name: Daily Job Finder Agent
+
+on:
+  schedule:
+    # Runs at 03:00 UTC (8:30 AM IST) every day
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  find-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Job Finder Script
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python job_finder.py
+
+      - name: Commit Updated Job Digest
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add JOBS_DIGEST.md
+          git diff-index --quiet HEAD || git commit -m "chore: update daily job digest [skip ci]"
+          git push
+
+      - name: Create GitHub Issue Notification
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🎯 Daily Job Digest - ${{ date }}"
+          content-filepath: ./JOBS_DIGEST.md
+          labels: job-digest, automated
