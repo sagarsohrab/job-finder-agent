@@ -41,6 +41,8 @@ jobs:
           python job_finder.py
 
       - name: Commit Updated Job Digest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -51,6 +53,6 @@ jobs:
       - name: Create GitHub Issue Notification
         uses: peter-evans/create-issue-from-file@v5
         with:
-          title: "🎯 Daily Job Digest - ${{ date }}"
+          title: "🎯 Daily Job Digest"
           content-filepath: ./JOBS_DIGEST.md
           labels: job-digest, automated
