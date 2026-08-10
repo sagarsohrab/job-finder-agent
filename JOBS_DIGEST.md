@@ -7,6 +7,7 @@
 - **Company:** People Prime Worldwide
 - **Location:** Greater Bengaluru Area
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -17,6 +18,7 @@
 - **Company:** Emids
 - **Location:** Bengaluru, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -27,6 +29,7 @@
 - **Company:** EASYECOM
 - **Location:** Bengaluru, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -37,6 +40,7 @@
 - **Company:** Tecnovos
 - **Location:** Bengaluru East, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -47,6 +51,7 @@
 - **Company:** Accenture in India
 - **Location:** Bengaluru, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -57,6 +62,7 @@
 - **Company:** Portcast
 - **Location:** Bengaluru, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -67,6 +73,7 @@
 - **Company:** MyYogaTeacher
 - **Location:** Bangalore Urban, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -77,6 +84,7 @@
 - **Company:** PaisaSmart
 - **Location:** Mumbai, Maharashtra, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -87,6 +95,7 @@
 - **Company:** Nua
 - **Location:** Mumbai Metropolitan Region
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -97,6 +106,7 @@
 - **Company:** Amaha
 - **Location:** Mumbai, Maharashtra, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -107,6 +117,7 @@
 - **Company:** One97 Communications Limited
 - **Location:** Mumbai, Maharashtra, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -117,6 +128,7 @@
 - **Company:** Credility
 - **Location:** Borivali, Maharashtra, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -127,6 +139,7 @@
 - **Company:** DAZN India
 - **Location:** Hyderabad, Telangana, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -137,6 +150,7 @@
 - **Company:** Sandisk
 - **Location:** Bengaluru, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**
@@ -147,6 +161,7 @@
 - **Company:** Cutshort
 - **Location:** Mumbai Metropolitan Region
 - **Source:** LinkedIn Jobs | **Posted:** 2026-08-10
+- **CTC / Compensation:** 💰 `₹8L - ₹18L PA (Est. 1-3 YOE Market Range)`
 - **Relevance Score:** ⭐ `60 pts`
 - **Matched Core Skills:** General Analytics
 - 💡 **Tailored Resume Pitch Focus:**

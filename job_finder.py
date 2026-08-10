@@ -272,6 +272,39 @@ def run_job_search():
     processed_jobs.sort(key=lambda x: x["relevance_score"], reverse=True)
     return processed_jobs[:15]
 
+def extract_ctc_information(title, description):
+    text = f"{title} {description}"
+    
+    # Check for LPA / Lakhs pattern (e.g., 12 - 18 LPA, 15LPA, 10-15 Lacs)
+    lpa_match = re.search(r'(?:₹|INR|\b)\s*(\d+\.?\d*)\s*(?:-\s*(\d+\.?\d*))?\s*(?:LPA|L|Lacs|Lakhs|Lac|Lakh)\b', text, re.IGNORECASE)
+    if lpa_match:
+        min_sal = lpa_match.group(1)
+        max_sal = lpa_match.group(2)
+        if max_sal:
+            return f"₹{min_sal}L - ₹{max_sal}L PA (Listed)"
+        return f"₹{min_sal}L PA (Listed)"
+
+    # Check for USD / k salary (e.g., $80k - $120k, 90k USD)
+    usd_match = re.search(r'\$\s*(\d+k?)\s*(?:-\s*\$?\s*(\d+k?))?\s*(?:/yr|/year|USD|annual)?\b', text, re.IGNORECASE)
+    if usd_match:
+        min_sal = usd_match.group(1)
+        max_sal = usd_match.group(2)
+        if max_sal:
+            return f"${min_sal} - ${max_sal}/yr (Listed)"
+        return f"${min_sal}/yr (Listed)"
+
+    # Monthly salary check (e.g., ₹25,000 - ₹40,000 /month)
+    month_match = re.search(r'₹?\s*(\d{2,3},?\d{3})\s*(?:-\s*₹?\s*(\d{2,3},?\d{3}))?\s*/\s*(?:month|mo|pm)\b', text, re.IGNORECASE)
+    if month_match:
+        min_sal = month_match.group(1)
+        max_sal = month_match.group(2)
+        if max_sal:
+            return f"₹{min_sal} - ₹{max_sal}/mo (Listed)"
+        return f"₹{min_sal}/mo (Listed)"
+
+    # Estimated Benchmark Fallback for 1-3 YOE BA/DA/PA Roles in India
+    return "₹8L - ₹18L PA (Est. 1-3 YOE Market Range)"
+
 def generate_markdown_report(jobs):
     today = datetime.date.today().strftime("%B %d, %Y")
     md = f"# 🎯 Daily Job Digest & Application Copilot for {PROFILE_NAME}\n"
@@ -284,10 +317,13 @@ def generate_markdown_report(jobs):
 
     for idx, job in enumerate(jobs, 1):
         skills_str = ", ".join([f"`{s}`" for s in job["matched_skills"]]) if job["matched_skills"] else "General Analytics"
+        ctc_str = extract_ctc_information(job["title"], job["description"])
+
         md += f"### {idx}. [{job['title']}]({job['url']})\n"
         md += f"- **Company:** {job['company']}\n"
         md += f"- **Location:** {job['location']}\n"
         md += f"- **Source:** {job['source']} | **Posted:** {job['date']}\n"
+        md += f"- **CTC / Compensation:** 💰 `{ctc_str}`\n"
         md += f"- **Relevance Score:** ⭐ `{job['relevance_score']} pts`\n"
         md += f"- **Matched Core Skills:** {skills_str}\n"
         
@@ -353,6 +389,8 @@ def send_email_digest(report_md, smtp_user, smtp_pass, recipient_email):
                 html_body += f"<p style='margin: 4px 0;'><strong>Company:</strong> {line.replace('- **Company:**', '').strip()}</p>"
             elif line.startswith("- **Location:**"):
                 html_body += f"<p style='margin: 4px 0;'><strong>Location:</strong> {line.replace('- **Location:**', '').strip()}</p>"
+            elif line.startswith("- **CTC / Compensation:**"):
+                html_body += f"<p style='margin: 4px 0;'><strong>CTC / Compensation:</strong> <span style='background: #eef9ff; color: #0077b5; padding: 2px 8px; border-radius: 3px; font-weight: bold;'>{line.replace('- **CTC / Compensation:**', '').strip()}</span></p>"
             elif line.startswith("- **Relevance Score:**"):
                 html_body += f"<p style='margin: 4px 0;'><strong>Relevance Score:</strong> <span style='background: #e8f8f5; color: #27ae60; padding: 2px 8px; border-radius: 3px; font-weight: bold;'>{line.replace('- **Relevance Score:**', '').strip()}</span></p>"
             elif line.startswith("- **Matched Core Skills:**"):
