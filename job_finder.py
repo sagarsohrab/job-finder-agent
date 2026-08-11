@@ -88,23 +88,29 @@ def calculate_relevance_score(title, description, location, company=""):
     elif any(loc in loc_lower for loc in ["worldwide", "anywhere"]):
         breakdown["Location Alignment"] = 10
 
-    # Rigorous YOE Verification
-    yoe_matches = re.findall(r'(\d+)\+?\s*(?:-\s*(\d+)\+?)?\s*(?:years|yoe|yrs)', full_text)
+    # Rigorous YOE Verification (HARD EXCLUDE >= 4 YOE or 4-6 YOE)
+    yoe_matches = re.findall(r'(\d+)\s*[\u2010\u2013-]\s*(\d+)\s*(?:years|yoe|yrs|year)|(\d+)\+\s*(?:years|yoe|yrs|year)', full_text)
     exceeded_yoe = False
-    for min_y, max_y in yoe_matches:
+    for m1, m2, m3 in yoe_matches:
         try:
-            min_val = int(min_y)
-            if min_val > 5:
-                exceeded_yoe = True
-            elif 1 <= min_val <= 3:
-                breakdown["Experience Match (1-3 YOE)"] = 20
-            elif min_val <= 5 and breakdown["Experience Match (1-3 YOE)"] == 0:
-                breakdown["Experience Match (1-3 YOE)"] = 10
+            if m1 and m2:
+                min_val = int(m1)
+                max_val = int(m2)
+                if min_val >= 4 or max_val > 4:
+                    exceeded_yoe = True
+                elif 1 <= min_val <= 3:
+                    breakdown["Experience Match (1-3 YOE)"] = 20
+            elif m3:
+                val = int(m3)
+                if val >= 4:
+                    exceeded_yoe = True
+                elif 1 <= val <= 3:
+                    breakdown["Experience Match (1-3 YOE)"] = 20
         except ValueError:
             pass
 
     if exceeded_yoe:
-        return 0, [], {}  # Rigorous hard-exclude if 6+ YOE required
+        return 0, [], {}  # HARD EXCLUDE 4+ or 4-6 YOE
 
     if breakdown["Experience Match (1-3 YOE)"] == 0:
         if any(term in title_lower for term in ["junior", "associate", "analyst i", "analyst ii", "mid"]):
@@ -282,15 +288,29 @@ def fetch_linkedin_jobs():
                     time_elem = card.find("time")
                     posted_time = time_elem.text.strip() if time_elem else "Recently"
 
+                    clean_url = job_url.split("?")[0]
+                    full_desc = f"{title} at {company} in {loc}. Posted {posted_time}."
+
+                    # Fetch full job detail text for rigorous YOE & Qualification verification
+                    try:
+                        detail_res = requests.get(clean_url, headers=headers, timeout=5)
+                        if detail_res.status_code == 200:
+                            d_soup = BeautifulSoup(detail_res.content, "html.parser")
+                            desc_div = d_soup.find("div", class_="description__text")
+                            if desc_div:
+                                full_desc += "\n\n" + desc_div.get_text()
+                    except Exception as e:
+                        pass
+
                     if title and job_url:
                         jobs.append({
                             "title": title,
                             "company": company,
                             "location": loc,
-                            "url": job_url.split("?")[0],
+                            "url": clean_url,
                             "source": "LinkedIn Jobs",
                             "date": posted_time,
-                            "description": f"{title} at {company} in {loc}. Posted {posted_time}."
+                            "description": full_desc
                         })
         except Exception as e:
             print(f"Error fetching LinkedIn jobs for '{keyword}': {e}")
