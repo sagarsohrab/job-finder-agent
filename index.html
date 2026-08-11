@@ -21,7 +21,6 @@
       <div class="nav-links">
         <button class="nav-btn active" data-tab="tab-matches">Top Matches</button>
         <button class="nav-btn" data-tab="tab-kanban">Pipeline Board</button>
-        <button class="nav-btn" data-tab="tab-resume">Resume Tailorer</button>
       </div>
       <div class="nav-profile">
         <span class="avatar">SS</span>
@@ -132,38 +131,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Tab 3: Dynamic Resume Tailorer -->
-    <section id="tab-resume" class="tab-content">
-      <div class="resume-wrapper">
-        <div class="resume-sidebar">
-          <h3>Tailor Spec Generator</h3>
-          <p>Select a job role to automatically re-order and highlight your Razorpay achievements for ATS matching.</p>
-          <div class="form-group">
-            <label>Select Target Job:</label>
-            <select id="resume-job-select" class="apple-select"></select>
-          </div>
-          <button id="btn-copy-resume-spec" class="btn-apple btn-primary">📋 Copy Tailored Bullets</button>
-        </div>
-
-        <div class="resume-preview-card">
-          <div class="resume-header-preview">
-            <h2>SAGAR SOHRAB</h2>
-            <p>Bengaluru / Mumbai | sagar7.sohrab@gmail.com | +91 8169052960 | LinkedIn | GitHub</p>
-          </div>
-          <div class="resume-section">
-            <h4 class="res-title">DYNAMICALLY TAILORED SUMMARY</h4>
-            <p id="res-summary-text">High-Impact Business Analyst & Data Analytics Specialist at Razorpay with 1+ years of experience driving GMV growth ($500M+ global GMV), checkout funnel optimization (+15% SR lift), GCP BigQuery SQL transformations, and Z-score anomaly modeling in Python.</p>
-          </div>
-          <div class="resume-section">
-            <h4 class="res-title">RAZORPAY — PROFESSIONAL EXPERIENCE HIGHLIGHTS</h4>
-            <ul id="res-experience-bullets" class="res-bullets">
-              <!-- Dynamically populated based on target job skills -->
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- AI Cover Letter Modal -->
@@ -186,11 +153,38 @@
   <div id="score-modal" class="modal-overlay">
     <div class="modal-card">
       <div class="modal-header">
-        <h3 id="score-modal-title">⭐ Relevance Scoreboard</h3>
+        <h3 id="score-modal-title">⭐ Fact-Checked Relevance Scoreboard</h3>
         <button class="close-score-modal close-modal">&times;</button>
       </div>
       <div class="modal-body">
         <div id="score-breakdown-list" class="score-breakdown-box"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Resume Gap-Bridging Modal -->
+  <div id="gap-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 680px;">
+      <div class="modal-header">
+        <h3 id="gap-modal-title">⚡ Resume Gap-Bridging & Alignment Copilot</h3>
+        <button class="close-gap-modal close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="gap-section">
+          <h4 class="gap-subtitle" style="color: var(--accent-green);">✅ Resume Coincidences & Direct Matches</h4>
+          <ul id="gap-coincidences-list" class="gap-list"></ul>
+        </div>
+        <div class="gap-section" style="margin-top: 16px;">
+          <h4 class="gap-subtitle" style="color: var(--accent-amber);">⚠️ Skill & Positioning Gaps to Emphasize</h4>
+          <ul id="gap-gaps-list" class="gap-list"></ul>
+        </div>
+        <div class="gap-section" style="margin-top: 16px;">
+          <h4 class="gap-subtitle" style="color: #70b4ff;">📋 Tailored Resume Bullets (Ready to Plug In)</h4>
+          <div id="gap-bullets-box" class="gap-bullets-container"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-copy-gap-bullets" class="btn-apple btn-primary">📋 Copy Tailored Bullets</button>
       </div>
     </div>
   </div>

@@ -96,23 +96,16 @@ function renderJobs(jobs) {
           <span class="meta-item">💰 ${escapeHtml(job.ctc)}</span>
         </div>
 
-        <div class="skills-list">
+        <div class="skills-list" style="margin-bottom: 20px;">
           ${job.matched_skills.map(s => `<span class="skill-tag">${escapeHtml(s)}</span>`).join("")}
-        </div>
-
-        <div class="pitch-box">
-          <div class="pitch-title">💡 Tailored Resume Focus</div>
-          ${escapeHtml(job.tailored_pitch || getPitchAdvice(job))}
         </div>
       </div>
 
-      <div class="card-actions">
+      <div class="card-actions" style="grid-template-columns: 1fr 1fr;">
         <a href="${job.url}" target="_blank" class="btn-apple btn-primary">🚀 Apply Now</a>
+        <button class="btn-apple btn-secondary btn-gap" data-url="${job.url}">⚡ Bridge Resume Gap</button>
         <button class="btn-apple btn-secondary btn-cover" data-url="${job.url}">✉️ Cover Letter</button>
         <a href="${job.recruiter_search_url}" target="_blank" class="btn-apple btn-secondary">🔍 Recruiter</a>
-        <button class="btn-apple btn-secondary btn-toggle-apply" data-url="${job.url}">
-          ${isApplied ? '✓ Applied' : '📌 Track'}
-        </button>
       </div>
     `;
     container.appendChild(card);
@@ -127,7 +120,14 @@ function renderJobs(jobs) {
     });
   });
 
-  // Attach card events
+  document.querySelectorAll(".btn-gap").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const jobUrl = btn.getAttribute("data-url");
+      const job = allJobs.find(j => j.url === jobUrl);
+      if (job) openGapModal(job);
+    });
+  });
+
   document.querySelectorAll(".btn-cover").forEach(btn => {
     btn.addEventListener("click", () => {
       const jobUrl = btn.getAttribute("data-url");
@@ -301,12 +301,26 @@ function initModal() {
   const scoreModal = document.getElementById("score-modal");
   document.querySelector(".close-score-modal").addEventListener("click", () => scoreModal.classList.remove("active"));
 
+  const gapModal = document.getElementById("gap-modal");
+  const closeGapBtn = document.querySelector(".close-gap-modal");
+  if (closeGapBtn) closeGapBtn.addEventListener("click", () => gapModal.classList.remove("active"));
+
   document.getElementById("btn-copy-cover").addEventListener("click", () => {
     const text = document.getElementById("modal-cover-text").value;
     navigator.clipboard.writeText(text);
     showToast("Cover Letter copied to clipboard!");
     coverModal.classList.remove("active");
   });
+
+  const copyGapBtn = document.getElementById("btn-copy-gap-bullets");
+  if (copyGapBtn) {
+    copyGapBtn.addEventListener("click", () => {
+      const bulletsBox = document.getElementById("gap-bullets-box");
+      navigator.clipboard.writeText(bulletsBox.innerText);
+      showToast("Tailored bullets copied to clipboard!");
+      gapModal.classList.remove("active");
+    });
+  }
 
   const scraperBtn = document.getElementById("btn-run-scraper");
   if (scraperBtn) {
@@ -335,15 +349,17 @@ function openCoverModal(job) {
 
 function openScoreModal(job) {
   const modal = document.getElementById("score-modal");
-  document.getElementById("score-modal-title").innerText = `⭐ Relevance Scoreboard — ${job.title} at ${job.company}`;
+  document.getElementById("score-modal-title").innerText = `⭐ Fact-Checked Scoreboard — ${job.title} at ${job.company}`;
   
   const breakdownList = document.getElementById("score-breakdown-list");
   breakdownList.innerHTML = "";
 
   const breakdown = job.score_breakdown || {
-    "Title Match": 35,
+    "Role Relevance": 35,
     "Location Alignment": 25,
-    "Freshness Boost (<24h)": 20
+    "Experience Match (1-3 YOE)": 20,
+    "Core Skill Overlap": 10,
+    "Freshness Velocity (<24h)": 15
   };
 
   Object.keys(breakdown).forEach(key => {
@@ -366,6 +382,44 @@ function openScoreModal(job) {
     <span class="score-pts" style="font-size: 1.1rem; background: var(--accent-green); color: #000;">⭐ ${job.relevance_score} pts</span>
   `;
   breakdownList.appendChild(totalRow);
+
+  modal.classList.add("active");
+}
+
+function openGapModal(job) {
+  const modal = document.getElementById("gap-modal");
+  document.getElementById("gap-modal-title").innerText = `⚡ Resume Gap-Bridging — ${job.title} at ${job.company}`;
+
+  const coincidencesList = document.getElementById("gap-coincidences-list");
+  coincidencesList.innerHTML = "";
+  const gapsList = document.getElementById("gap-gaps-list");
+  gapsList.innerHTML = "";
+  const bulletsBox = document.getElementById("gap-bullets-box");
+  bulletsBox.innerHTML = "";
+
+  const gapData = job.gap_analysis || {
+    coincidences: ["1+ year Business Analyst experience at Razorpay managing $500M+ global GMV & enterprise accounts"],
+    gaps_to_bridge: ["Highlight cross-functional stakeholder communication with engineering & product leads."],
+    tailored_bullets: [
+      `Managed portfolio performance analytics at Razorpay for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.`,
+      `Authored complex SQL transformations and statistical anomaly detection models (Z-score), reducing failure detection latency by 10x.`,
+      `Designed interactive KPI dashboards in Tableau and Power BI, translating high-throughput transactional data into strategic readouts.`
+    ]
+  };
+
+  gapData.coincidences.forEach(c => {
+    const li = document.createElement("li");
+    li.innerText = `• ${c}`;
+    coincidencesList.appendChild(li);
+  });
+
+  gapData.gaps_to_bridge.forEach(g => {
+    const li = document.createElement("li");
+    li.innerText = `• ${g}`;
+    gapsList.appendChild(li);
+  });
+
+  bulletsBox.innerHTML = gapData.tailored_bullets.map(b => `<p style="margin-bottom: 8px;">• ${escapeHtml(b)}</p>`).join("");
 
   modal.classList.add("active");
 }

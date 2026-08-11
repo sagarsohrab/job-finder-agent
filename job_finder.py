@@ -46,7 +46,7 @@ def calculate_relevance_score(title, description, location, company=""):
     comp_lower = company.lower()
     full_text = f"{title_lower} {desc_lower}"
 
-    # 1. Filter out Articles, News Sites, Blogs, & Reddit Posts
+    # 1. Hard Exclusions (Non-Jobs, Blogs, Reddit, Overseas Locked)
     for bad_source in EXCLUDE_NEWS_SOURCES:
         if bad_source in comp_lower or bad_source in title_lower or bad_source in desc_lower:
             return 0, [], {}
@@ -55,7 +55,6 @@ def calculate_relevance_score(title, description, location, company=""):
         if bad_term in title_lower:
             return 0, [], {}
 
-    # 2. Filter out Non-India / Non-Worldwide Locations
     for bad_loc in EXCLUDE_LOCATION_TERMS:
         if bad_loc in loc_lower:
             return 0, [], {}
@@ -65,53 +64,126 @@ def calculate_relevance_score(title, description, location, company=""):
         return 0, [], {}
 
     breakdown = {
-        "Title Match": 0,
+        "Role Relevance": 0,
         "Location Alignment": 0,
-        "1-3 YOE Match": 0,
-        "Skill Matches": 0,
-        "Freshness Boost (<24h)": 0
+        "Experience Match (1-3 YOE)": 0,
+        "Core Skill Overlap": 0,
+        "Freshness Velocity (<24h)": 0
     }
 
-    # Title match
+    # Role Relevance (Exact vs Related)
     for role in TARGET_ROLES:
         if role.lower() in title_lower:
-            breakdown["Title Match"] = 35
+            breakdown["Role Relevance"] = 35
             break
+    if breakdown["Role Relevance"] == 0:
+        if any(r in title_lower for r in ["analyst", "analytics", "bi", "data"]):
+            breakdown["Role Relevance"] = 20
 
-    # Location match
-    if any(loc in loc_lower for loc in ["bengaluru", "bangalore", "mumbai", "india"]):
+    # Location Alignment
+    if any(loc in loc_lower for loc in ["bengaluru", "bangalore", "mumbai"]):
         breakdown["Location Alignment"] = 25
+    elif "india" in loc_lower or "remote" in loc_lower:
+        breakdown["Location Alignment"] = 20
     elif any(loc in loc_lower for loc in ["worldwide", "anywhere"]):
-        breakdown["Location Alignment"] = 15
+        breakdown["Location Alignment"] = 10
 
-    # Junior/Associate/Mid YOE Match
-    if any(term in title_lower for term in ["junior", "associate", "analyst i", "analyst ii", "mid"]):
-        breakdown["1-3 YOE Match"] += 15
-
+    # Rigorous YOE Verification
     yoe_matches = re.findall(r'(\d+)\+?\s*(?:-\s*(\d+)\+?)?\s*(?:years|yoe|yrs)', full_text)
+    exceeded_yoe = False
     for min_y, max_y in yoe_matches:
         try:
             min_val = int(min_y)
             if min_val > 5:
-                return 0, [], {} # Exclude 6+ years
+                exceeded_yoe = True
             elif 1 <= min_val <= 3:
-                breakdown["1-3 YOE Match"] += 20
+                breakdown["Experience Match (1-3 YOE)"] = 20
+            elif min_val <= 5 and breakdown["Experience Match (1-3 YOE)"] == 0:
+                breakdown["Experience Match (1-3 YOE)"] = 10
         except ValueError:
             pass
 
-    # Skill keywords match
+    if exceeded_yoe:
+        return 0, [], {}  # Rigorous hard-exclude if 6+ YOE required
+
+    if breakdown["Experience Match (1-3 YOE)"] == 0:
+        if any(term in title_lower for term in ["junior", "associate", "analyst i", "analyst ii", "mid"]):
+            breakdown["Experience Match (1-3 YOE)"] = 15
+        else:
+            breakdown["Experience Match (1-3 YOE)"] = 10
+
+    # Skill Overlap Ratio
     matched_skills = []
     for skill in SKILL_KEYWORDS:
         if re.search(r'\b' + re.escape(skill) + r'\b', title_lower) or re.search(r'\b' + re.escape(skill) + r'\b', desc_lower):
-            breakdown["Skill Matches"] += 10
+            breakdown["Core Skill Overlap"] += 5
             matched_skills.append(skill)
+    breakdown["Core Skill Overlap"] = min(breakdown["Core Skill Overlap"], 20)
 
-    # Freshness Boost
-    if any(fresh in desc_lower for fresh in ["hour", "hours", "minute", "minutes", "just posted", "today", "1 day"]):
-        breakdown["Freshness Boost (<24h)"] = 20
+    # Freshness Velocity
+    if any(fresh in desc_lower for fresh in ["hour", "hours", "minute", "minutes", "just posted"]):
+        breakdown["Freshness Velocity (<24h)"] = 25
+    elif any(fresh in desc_lower for fresh in ["today", "1 day", "2 day"]):
+        breakdown["Freshness Velocity (<24h)"] = 15
 
     total_score = sum(breakdown.values())
     return total_score, list(set(matched_skills)), breakdown
+
+def generate_resume_gap_analysis(job):
+    title = job["title"].lower()
+    company = job["company"].lower()
+    matched_skills = [s.lower() for s in job["matched_skills"]]
+
+    # Coincidences / Direct Skill Overlaps with Sagar's Resume
+    coincidences = []
+    if "sql" in matched_skills or "bigquery" in matched_skills:
+        coincidences.append("Complex SQL transformations (CTEs, window functions) on GCP BigQuery & PostgreSQL")
+    if "python" in matched_skills or "etl" in matched_skills or "pandas" in matched_skills:
+        coincidences.append("Automated Python ETL pipelines (Pandas, SciPy) & real-time observability alerting")
+    if "funnel" in matched_skills or "a/b testing" in matched_skills:
+        coincidences.append("Checkout funnel analytics & conversion rate lift (+15% SR lift across Meta & Airbnb)")
+    if "tableau" in matched_skills or "power bi" in matched_skills:
+        coincidences.append("Interactive KPI executive dashboards in Tableau & Power BI for $500M+ GMV accounts")
+    if "anomaly detection" in matched_skills or "z-score" in matched_skills:
+        coincidences.append("Statistical Z-score anomaly modeling reducing discrepancy latency by 10x")
+    
+    if not coincidences:
+        coincidences.append("1+ year Business Analyst experience at Razorpay managing $500M+ global GMV & enterprise accounts")
+
+    # Gaps to Bridge
+    gaps_to_bridge = []
+    if "product" in title:
+        gaps_to_bridge.append("Emphasize Product UX drop-off metrics & feature adoption tracking alongside payment funnel analytics.")
+    if "engineer" in title:
+        gaps_to_bridge.append("Highlight data model architecture (dbt/dataform concepts) and data warehouse execution.")
+    if not gaps_to_bridge:
+        gaps_to_bridge.append("Highlight cross-functional stakeholder communication with engineering & product leads.")
+
+    # 3 Custom Tailored Bullets to Bridge the Gap
+    if "product" in title:
+        tailored_bullets = [
+            f"Led product conversion funnel analytics for enterprise accounts at Razorpay, driving a +15% checkout SR lift across Meta and Airbnb.",
+            f"Authored complex GCP BigQuery SQL queries to analyze user drop-off trends, cohort retention, and checkout UX bottlenecks.",
+            f"Architected real-time monitoring and Z-score anomaly alerts, compressing discrepancy detection latency by 10x."
+        ]
+    elif "engineer" in title:
+        tailored_bullets = [
+            f"Designed and deployed automated Python (Pandas, SciPy) ETL pipelines and GCP BigQuery data transformations for 15+ Tier-1 accounts.",
+            f"Optimized large-scale SQL query execution (CTEs, window functions) across PostgreSQL and BigQuery databases processing $500M+ annual GMV.",
+            f"Built real-time data observability and alerting frameworks, eliminating 40% of manual reporting workloads."
+        ]
+    else:
+        tailored_bullets = [
+            f"Managed portfolio performance analytics at Razorpay for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.",
+            f"Authored complex SQL transformations and statistical anomaly detection models (Z-score), reducing failure detection latency by 10x.",
+            f"Designed interactive KPI dashboards in Tableau and Power BI, translating high-throughput transactional data into strategic readouts."
+        ]
+
+    return {
+        "coincidences": coincidences,
+        "gaps_to_bridge": gaps_to_bridge,
+        "tailored_bullets": tailored_bullets
+    }
 
 def fetch_remotive_jobs():
     jobs = []
@@ -282,6 +354,7 @@ def run_job_search():
             job["score_breakdown"] = breakdown
             job["ctc"] = extract_ctc_information(job["title"], job["description"], job["company"])
             job["tailored_pitch"] = generate_tailored_pitch(job)
+            job["gap_analysis"] = generate_resume_gap_analysis(job)
             processed_jobs.append(job)
 
     processed_jobs.sort(key=lambda x: x["relevance_score"], reverse=True)
