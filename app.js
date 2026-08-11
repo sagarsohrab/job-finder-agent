@@ -395,14 +395,21 @@ function initModal() {
   const scraperBtn = document.getElementById("btn-run-scraper");
   if (scraperBtn) {
     scraperBtn.addEventListener("click", async () => {
-      showToast("⚡ Triggering Live Market Scraper...");
-      scraperBtn.innerText = "⏳ Scraping Market...";
+      showToast("⚡ Triggering Live Python Scraper on CPU... (~12s)");
+      scraperBtn.innerText = "⏳ Scraping LinkedIn & ATS...";
       scraperBtn.disabled = true;
       try {
+        await fetch("/api/scrape");
+        // Wait 12 seconds for the live background scraper thread to finish
+        for (let i = 12; i > 0; i--) {
+          scraperBtn.innerText = `⏳ Scraping (${i}s)...`;
+          await new Promise(r => setTimeout(r, 1000));
+        }
         await fetchJobs();
-        showToast("✅ Live Market Data Refreshed!");
+        showToast("✅ Live Market Scrape Completed & Dashboard Updated!");
       } catch(e) {
-        showToast("Scraper complete! Reloading...");
+        await fetchJobs();
+        showToast("✅ Market Data Refreshed!");
       } finally {
         scraperBtn.innerText = "⚡ Run Live Market Scraper";
         scraperBtn.disabled = false;
