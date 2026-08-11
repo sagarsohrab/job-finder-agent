@@ -74,11 +74,11 @@ def calculate_relevance_score(title, description, location, company=""):
     # Role Relevance (Exact vs Related)
     for role in TARGET_ROLES:
         if role.lower() in title_lower:
-            breakdown["Role Relevance"] = 35
+            breakdown["Role Relevance"] = 30
             break
     if breakdown["Role Relevance"] == 0:
         if any(r in title_lower for r in ["analyst", "analytics", "bi", "data"]):
-            breakdown["Role Relevance"] = 20
+            breakdown["Role Relevance"] = 15
 
     # Location Alignment
     if any(loc in loc_lower for loc in ["bengaluru", "bangalore", "mumbai"]):
@@ -118,21 +118,19 @@ def calculate_relevance_score(title, description, location, company=""):
         else:
             breakdown["Experience Match (1-3 YOE)"] = 10
 
-    # Skill Overlap Ratio
+    # Skill Overlap Ratio (Max 15 pts)
     matched_skills = []
     for skill in SKILL_KEYWORDS:
         if re.search(r'\b' + re.escape(skill) + r'\b', title_lower) or re.search(r'\b' + re.escape(skill) + r'\b', desc_lower):
             breakdown["Core Skill Overlap"] += 5
             matched_skills.append(skill)
-    breakdown["Core Skill Overlap"] = min(breakdown["Core Skill Overlap"], 20)
+    breakdown["Core Skill Overlap"] = min(breakdown["Core Skill Overlap"], 15)
 
-    # Freshness Velocity
-    if any(fresh in desc_lower for fresh in ["hour", "hours", "minute", "minutes", "just posted"]):
-        breakdown["Freshness Velocity (<24h)"] = 25
-    elif any(fresh in desc_lower for fresh in ["today", "1 day", "2 day"]):
-        breakdown["Freshness Velocity (<24h)"] = 15
+    # Freshness Velocity (Max 10 pts)
+    if any(fresh in desc_lower for fresh in ["hour", "hours", "minute", "minutes", "just posted", "today", "1 day"]):
+        breakdown["Freshness Velocity (<24h)"] = 10
 
-    total_score = sum(breakdown.values())
+    total_score = min(sum(breakdown.values()), 100)
     return total_score, list(set(matched_skills)), breakdown
 
 def generate_resume_gap_analysis(job):
