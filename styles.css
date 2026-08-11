@@ -443,6 +443,100 @@ body {
   color: #e6e6ea;
 }
 
+.studio-modal-card {
+  max-width: 1100px !important;
+  width: 95vw !important;
+  height: 88vh !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 20px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.studio-copilot-pane {
+  overflow-y: auto;
+  padding-right: 10px;
+  border-right: 1px solid var(--border-glass);
+}
+
+.studio-editor-pane {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.editor-header {
+  margin-bottom: 10px;
+}
+
+.editor-header h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 0.5px;
+}
+
+.editor-sub {
+  font-size: 0.75rem;
+  color: var(--text-sub);
+}
+
+.live-resume-editor {
+  flex: 1;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  color: #f0f0f5;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.live-resume-editor:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 12px rgba(10, 132, 255, 0.2);
+}
+
+.bullet-inject-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(10, 132, 255, 0.15);
+}
+
+.btn-inject-bullet {
+  background: rgba(10, 132, 255, 0.2);
+  color: #70b4ff;
+  border: 1px solid rgba(10, 132, 255, 0.4);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-inject-bullet:hover {
+  background: var(--accent-blue);
+  color: #fff;
+}
+
 .job-meta {
   display: flex;
   flex-wrap: wrap;

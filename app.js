@@ -312,12 +312,12 @@ function initModal() {
     coverModal.classList.remove("active");
   });
 
-  const copyGapBtn = document.getElementById("btn-copy-gap-bullets");
+  const copyGapBtn = document.getElementById("btn-copy-full-resume");
   if (copyGapBtn) {
     copyGapBtn.addEventListener("click", () => {
-      const bulletsBox = document.getElementById("gap-bullets-box");
-      navigator.clipboard.writeText(bulletsBox.innerText);
-      showToast("Tailored bullets copied to clipboard!");
+      const editorText = document.getElementById("live-resume-textarea").value;
+      navigator.clipboard.writeText(editorText);
+      showToast("Complete Tailored Resume copied to clipboard!");
       gapModal.classList.remove("active");
     });
   }
@@ -355,11 +355,11 @@ function openScoreModal(job) {
   breakdownList.innerHTML = "";
 
   const breakdown = job.score_breakdown || {
-    "Role Relevance": 35,
+    "Role Relevance": 30,
     "Location Alignment": 25,
     "Experience Match (1-3 YOE)": 20,
-    "Core Skill Overlap": 10,
-    "Freshness Velocity (<24h)": 15
+    "Core Skill Overlap": 15,
+    "Freshness Velocity (<24h)": 10
   };
 
   Object.keys(breakdown).forEach(key => {
@@ -388,7 +388,7 @@ function openScoreModal(job) {
 
 function openGapModal(job) {
   const modal = document.getElementById("gap-modal");
-  document.getElementById("gap-modal-title").innerText = `⚡ Resume Gap-Bridging — ${job.title} at ${job.company}`;
+  document.getElementById("gap-modal-title").innerText = `⚡ AI Resume Studio — ${job.title} at ${job.company}`;
 
   const coincidencesList = document.getElementById("gap-coincidences-list");
   coincidencesList.innerHTML = "";
@@ -419,8 +419,62 @@ function openGapModal(job) {
     gapsList.appendChild(li);
   });
 
-  bulletsBox.innerHTML = gapData.tailored_bullets.map(b => `<p style="margin-bottom: 8px;">• ${escapeHtml(b)}</p>`).join("");
+  // Render recommended bullets with [+ Inject] buttons
+  gapData.tailored_bullets.forEach((b) => {
+    const row = document.createElement("div");
+    row.className = "bullet-inject-row";
+    row.innerHTML = `
+      <button class="btn-inject-bullet" data-bullet="${escapeHtml(b)}">+ Inject</button>
+      <span style="flex: 1;">${escapeHtml(b)}</span>
+    `;
+    bulletsBox.appendChild(row);
+  });
 
+  // Attach inject listeners
+  document.querySelectorAll(".btn-inject-bullet").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const textToInject = btn.getAttribute("data-bullet");
+      const editor = document.getElementById("live-resume-textarea");
+      
+      if (editor.value.includes("[EXPERIENCE - RAZORPAY]")) {
+        editor.value = editor.value.replace(
+          "[EXPERIENCE - RAZORPAY]",
+          `[EXPERIENCE - RAZORPAY]\n• ${textToInject}`
+        );
+      } else {
+        editor.value += `\n• ${textToInject}`;
+      }
+      showToast("Bullet injected into live resume!");
+    });
+  });
+
+  // Load Sagar's full base resume into live editor
+  const baseResumeText = 
+`SAGAR SOHRAB
+Bengaluru / Mumbai | sagar7.sohrab@gmail.com | +91 8169052960 | LinkedIn: linkedin.com/in/sagar-sohrab | GitHub: github.com/sagarsohrab
+
+PROFESSIONAL SUMMARY
+High-Impact Business Analyst & Data Specialist with 1+ years at Razorpay driving GMV growth ($500M+ global GMV), checkout funnel optimization (+15% SR lift), GCP BigQuery SQL transformations, and Z-score anomaly modeling in Python.
+
+[EXPERIENCE - RAZORPAY]
+Business Analyst | Razorpay (2025 – Present)
+• Led checkout funnel analytics & success rate optimization for Meta & Airbnb across $500M+ annual GMV, driving +15% Success Rate (SR) lift.
+• Authored complex SQL transformations (CTEs, window functions) on GCP BigQuery, PostgreSQL, and MySQL databases for cohort and transaction trend analysis.
+• Deployed Z-score statistical thresholding models across high-throughput data streams, reducing discrepancy detection latency by 10x.
+• Designed interactive KPI executive dashboards in Tableau and Power BI for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.
+• Built automated Python (Pandas, NumPy, SciPy) ETL pipelines with real-time PagerDuty alerting, eliminating 40% of manual reporting workload.
+
+Data Analytics Intern | Alpha Payments (2024 – 2025)
+• Performed exploratory data analysis (EDA) on transaction reconciliation logs, identifying patterns that reduced settlement disputes by 18%.
+• Constructed SQL scripts for daily automated data auditing and internal KPI dashboards.
+
+TECHNICAL SKILLS & COMPETENCIES
+• Analytics & SQL: BigQuery, PostgreSQL, MySQL, CTEs, Window Functions, Funnel Analysis, Cohort Analysis, A/B Testing.
+• Programming & Data: Python, Pandas, NumPy, SciPy, Scikit-learn, Automated ETL, Z-Score Anomaly Detection.
+• Visualization & BI: Tableau, Power BI, Streamlit, Executive Dashboarding.
+• Education: B.Tech, K.J. Somaiya College of Engineering (CGPA: 7.58).`;
+
+  document.getElementById("live-resume-textarea").value = baseResumeText;
   modal.classList.add("active");
 }
 

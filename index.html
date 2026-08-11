@@ -162,29 +162,41 @@
     </div>
   </div>
 
-  <!-- Interactive Resume Gap-Bridging Modal -->
+  <!-- Interactive Resume Studio & Split-Pane Workspace -->
   <div id="gap-modal" class="modal-overlay">
-    <div class="modal-card" style="max-width: 680px;">
+    <div class="modal-card studio-modal-card">
       <div class="modal-header">
-        <h3 id="gap-modal-title">⚡ Resume Gap-Bridging & Alignment Copilot</h3>
-        <button class="close-gap-modal close-modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div class="gap-section">
-          <h4 class="gap-subtitle" style="color: var(--accent-green);">✅ Resume Coincidences & Direct Matches</h4>
-          <ul id="gap-coincidences-list" class="gap-list"></ul>
-        </div>
-        <div class="gap-section" style="margin-top: 16px;">
-          <h4 class="gap-subtitle" style="color: var(--accent-amber);">⚠️ Skill & Positioning Gaps to Emphasize</h4>
-          <ul id="gap-gaps-list" class="gap-list"></ul>
-        </div>
-        <div class="gap-section" style="margin-top: 16px;">
-          <h4 class="gap-subtitle" style="color: #70b4ff;">📋 Tailored Resume Bullets (Ready to Plug In)</h4>
-          <div id="gap-bullets-box" class="gap-bullets-container"></div>
+        <h3 id="gap-modal-title">⚡ AI Resume Studio & Application Copilot</h3>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <button id="btn-copy-full-resume" class="btn-apple btn-primary">📋 Copy Complete Resume</button>
+          <button class="close-gap-modal close-modal">&times;</button>
         </div>
       </div>
-      <div class="modal-footer">
-        <button id="btn-copy-gap-bullets" class="btn-apple btn-primary">📋 Copy Tailored Bullets</button>
+      <div class="modal-body studio-grid">
+        <!-- Left Pane: AI Gap Analysis & Bullet Injector -->
+        <div class="studio-copilot-pane">
+          <div class="gap-section">
+            <h4 class="gap-subtitle" style="color: var(--accent-green);">✅ Resume Coincidences</h4>
+            <ul id="gap-coincidences-list" class="gap-list"></ul>
+          </div>
+          <div class="gap-section" style="margin-top: 14px;">
+            <h4 class="gap-subtitle" style="color: var(--accent-amber);">⚠️ Gaps & Focus Areas</h4>
+            <ul id="gap-gaps-list" class="gap-list"></ul>
+          </div>
+          <div class="gap-section" style="margin-top: 14px;">
+            <h4 class="gap-subtitle" style="color: #70b4ff;">⚡ Recommended Bullets (Click + Inject)</h4>
+            <div id="gap-bullets-box" class="gap-bullets-container"></div>
+          </div>
+        </div>
+
+        <!-- Right Pane: Live Editable Resume Document -->
+        <div class="studio-editor-pane">
+          <div class="editor-header">
+            <h4>📄 LIVE RESUME EDITOR & SANDBOX</h4>
+            <span class="editor-sub">Edit directly or click [+ Inject] on the left to add bullets</span>
+          </div>
+          <textarea id="live-resume-textarea" class="live-resume-editor" spellcheck="false"></textarea>
+        </div>
       </div>
     </div>
   </div>
