@@ -302,6 +302,8 @@ function updateResumePreview(job) {
   });
 }
 
+let currentStudioJob = null;
+
 // Modal Logic
 function initModal() {
   const coverModal = document.getElementById("cover-modal");
@@ -332,6 +334,51 @@ function initModal() {
       navigator.clipboard.writeText(text);
       showToast("Interview Prep Notes copied to clipboard!");
       interviewModal.classList.remove("active");
+    });
+  }
+
+  const downloadPdfBtn = document.getElementById("btn-download-pdf-resume");
+  if (downloadPdfBtn) {
+    downloadPdfBtn.addEventListener("click", () => {
+      const editorText = document.getElementById("live-resume-textarea").value;
+      const targetCompany = currentStudioJob ? currentStudioJob.company.replace(/[^a-zA-Z0-9]/g, "_") : "Tailored";
+
+      const container = document.getElementById("pdf-export-container");
+      const lines = editorText.split("\n");
+      let formattedHtml = `<div style="font-family: Arial, sans-serif; font-size: 10pt; line-height: 1.4; color: #111; padding: 20px 25px; background: #fff;">`;
+
+      lines.forEach(line => {
+        const trimmed = line.trim();
+        if (trimmed.startsWith("SAGAR SOHRAB")) {
+          formattedHtml += `<h1 style="font-size: 17pt; margin: 0 0 3px 0; text-align: center; color: #000; letter-spacing: 0.5px; text-transform: uppercase;">${trimmed}</h1>`;
+        } else if (trimmed.includes("@gmail.com") || trimmed.includes("LinkedIn")) {
+          formattedHtml += `<p style="font-size: 9pt; text-align: center; margin: 0 0 12px 0; color: #333; border-bottom: 1.5px solid #000; padding-bottom: 6px;">${trimmed}</p>`;
+        } else if (trimmed === "PROFESSIONAL SUMMARY" || trimmed === "TECHNICAL SKILLS & COMPETENCIES" || trimmed.startsWith("[EXPERIENCE")) {
+          const titleText = trimmed.replace("[EXPERIENCE - RAZORPAY]", "PROFESSIONAL EXPERIENCE");
+          formattedHtml += `<h2 style="font-size: 10.5pt; margin: 12px 0 4px 0; color: #000; border-bottom: 1px solid #444; text-transform: uppercase; letter-spacing: 0.5px; font-weight: bold;">${titleText}</h2>`;
+        } else if (trimmed.startsWith("•")) {
+          formattedHtml += `<div style="margin-left: 12px; margin-bottom: 3px; font-size: 9pt; color: #222;">${trimmed}</div>`;
+        } else if (trimmed.length > 0) {
+          formattedHtml += `<p style="margin: 3px 0; font-size: 9pt; font-weight: ${trimmed.includes("|") ? "bold" : "normal"}; color: #111;">${trimmed}</p>`;
+        }
+      });
+
+      formattedHtml += `</div>`;
+      container.innerHTML = formattedHtml;
+
+      showToast("📥 Generating ATS PDF Resume...");
+
+      const opt = {
+        margin: [0.3, 0.4, 0.3, 0.4],
+        filename: `Sagar_Sohrab_Resume_${targetCompany}.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+
+      html2pdf().set(opt).from(container).save().then(() => {
+        showToast("✅ PDF Resume Downloaded!");
+      });
     });
   }
 
@@ -449,6 +496,7 @@ function openInterviewModal(job) {
 }
 
 function openGapModal(job) {
+  currentStudioJob = job;
   const modal = document.getElementById("gap-modal");
   document.getElementById("gap-modal-title").innerText = `⚡ AI Resume Studio — ${job.title} at ${job.company}`;
 

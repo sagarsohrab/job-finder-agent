@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- html2pdf.js Bundle for Instant Client-Side PDF Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -153,7 +155,7 @@
   <div id="score-modal" class="modal-overlay">
     <div class="modal-card">
       <div class="modal-header">
-        <h3 id="score-modal-title">⭐ Fact-Checked Relevance Scoreboard</h3>
+        <h3 id="score-modal-title">⭐ Fact-Checked Scoreboard</h3>
         <button class="close-score-modal close-modal">&times;</button>
       </div>
       <div class="modal-body">
@@ -168,7 +170,8 @@
       <div class="modal-header">
         <h3 id="gap-modal-title">⚡ AI Resume Studio & Application Copilot</h3>
         <div style="display: flex; gap: 10px; align-items: center;">
-          <button id="btn-copy-full-resume" class="btn-apple btn-primary">📋 Copy Complete Resume</button>
+          <button id="btn-download-pdf-resume" class="btn-apple btn-primary" style="background: var(--accent-green); color: #000;">📥 Download Tailored PDF Resume</button>
+          <button id="btn-copy-full-resume" class="btn-apple btn-secondary">📋 Copy Text</button>
           <button class="close-gap-modal close-modal">&times;</button>
         </div>
       </div>
@@ -227,6 +230,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Hidden ATS Printable Container for PDF Generation -->
+  <div id="pdf-export-container" style="position: absolute; left: -9999px; top: -9999px; width: 790px;"></div>
 
   <div id="toast" class="toast">Text copied to clipboard!</div>
 
