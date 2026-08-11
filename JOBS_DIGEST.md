@@ -9,7 +9,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** ⚡ `1 day ago` *(Early Applicant Advantage)*
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `100 pts`
-- **Matched Core Skills:** `python`, `power bi`, `numpy`, `tableau`, `pandas`, `a/b testing`, `postgresql`, `mysql`, `sql`
+- **Matched Core Skills:** `postgresql`, `power bi`, `tableau`, `mysql`, `python`, `pandas`, `sql`, `a/b testing`, `numpy`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-myyogateacher-4451395356](https://in.linkedin.com/jobs/view/data-analyst-at-myyogateacher-4451395356)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -24,7 +24,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `6 days ago`
 - **CTC / Compensation:** 💰 `₹20L PA (Listed)`
 - **Relevance Score:** ⭐ `90 pts`
-- **Matched Core Skills:** `python`, `a/b testing`, `sql`
+- **Matched Core Skills:** `python`, `sql`, `a/b testing`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213](https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -76,7 +76,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `5 days ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `python`, `power bi`, `numpy`, `tableau`, `pandas`, `sql`
+- **Matched Core Skills:** `power bi`, `tableau`, `python`, `pandas`, `sql`, `numpy`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875](https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -90,7 +90,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `2 months ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `power bi`, `tableau`, `payments`, `a/b testing`, `sql`
+- **Matched Core Skills:** `power bi`, `tableau`, `payments`, `sql`, `a/b testing`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601](https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -104,7 +104,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `2 weeks ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `python`, `etl`, `power bi`, `bigquery`, `numpy`, `fintech`, `pandas`, `postgresql`, `sql`
+- **Matched Core Skills:** `bigquery`, `postgresql`, `power bi`, `fintech`, `python`, `pandas`, `sql`, `numpy`, `etl`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/analytics-engineer-at-cutshort-4441819301](https://in.linkedin.com/jobs/view/analytics-engineer-at-cutshort-4441819301)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -136,19 +136,7 @@
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
 - **Snippet:** *Business Analyst at Emids in Bengaluru, Karnataka, India. Posted 4 months ago.     Job DescriptionBusiness Analyst - Incentive Compensation / Functional Analyst Define and implement IC strategies aligned with pharma sale...*
 
-### 11. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-accenture-in-india-4448389570)
-- **Company:** Accenture in India
-- **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
-- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `65 pts`
-- **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-accenture-in-india-4448389570](https://in.linkedin.com/jobs/view/business-analyst-at-accenture-in-india-4448389570)
-- 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *Business Analyst at Accenture in India in Bengaluru, Karnataka, India. Posted 1 week ago.     Project Role : Business AnalystProject Role Description : Analyze an organization and design its processes and systems, assess...*
-
-### 12. [Analyst](https://in.linkedin.com/jobs/view/analyst-at-merck-group-4438647152)
+### 11. [Analyst](https://in.linkedin.com/jobs/view/analyst-at-merck-group-4438647152)
 - **Company:** Merck Group
 - **Location:** Bengaluru, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
@@ -160,7 +148,7 @@
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
 - **Snippet:** *Analyst at Merck Group in Bengaluru, Karnataka, India. Posted 1 week ago.               Work Your Magic with us!Ready to explore, break barriers, and discover more? We know you’ve got big plans – so do we! Our colleagues...*
 
-### 13. [Senior Payment Analyst](https://www.arbeitnow.co.uk/jobs/companies/fanvuecom/senior-payment-analyst-london-445327)
+### 12. [Senior Payment Analyst](https://www.arbeitnow.co.uk/jobs/companies/fanvuecom/senior-payment-analyst-london-445327)
 - **Company:** Fanvue.com
 - **Location:** Remote with London office
 - **Source:** Arbeitnow | **Posted:** `2026-08-11`
@@ -172,7 +160,7 @@
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
 - **Snippet:** *Join us in redefining the creator economy with AI Fanvue is one of the fastest-growing creator monetisation platforms globally. We're an AI-powered, creator-first platform helping creators connect, engage, and earn direc...*
 
-### 14. [Data Engineer - fully remote (working hours 5am-2pm CEST) (m/f/d)](https://www.arbeitnow.co.uk/jobs/companies/jobleads-careers/data-engineer-fully-remote-working-hours-5am-2pm-cest-313475)
+### 13. [Data Engineer - fully remote (working hours 5am-2pm CEST) (m/f/d)](https://www.arbeitnow.co.uk/jobs/companies/jobleads-careers/data-engineer-fully-remote-working-hours-5am-2pm-cest-313475)
 - **Company:** JobLeads Careers
 - **Location:** Remote
 - **Source:** Arbeitnow | **Posted:** `2026-08-11`
@@ -184,7 +172,7 @@
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
 - **Snippet:** *Find Jobs in United Kingdom on Arbeitnow...*
 
-### 15. [Project Manager](https://in.linkedin.com/jobs/view/project-manager-at-exl-4446739131)
+### 14. [Project Manager](https://in.linkedin.com/jobs/view/project-manager-at-exl-4446739131)
 - **Company:** EXL
 - **Location:** Bengaluru, Karnataka, India
 - **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
@@ -195,6 +183,18 @@
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
 - **Snippet:** *Project Manager at EXL in Bengaluru, Karnataka, India. Posted 1 week ago.               Business Analysts analyze business processes and develop requirements for projects. Responsibilities include gathering and documenti...*
+
+### 15. [Manager](https://in.linkedin.com/jobs/view/manager-at-exl-4446581455)
+- **Company:** EXL
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
+- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
+- **Relevance Score:** ⭐ `35 pts`
+- **Matched Core Skills:** General Analytics
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/manager-at-exl-4446581455](https://in.linkedin.com/jobs/view/manager-at-exl-4446581455)
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Manager at EXL in Bengaluru, Karnataka, India. Posted 1 week ago.               Collect, process, and analyze large datasets to extract actionable insights. Develop and maintain dashboards and reports, identify trends an...*
 
 ---
 *Generated automatically by GitHub Actions Job Agent & Resume Copilot*

@@ -347,6 +347,50 @@ def fetch_greenhouse_lever_jobs():
             print(f"Error fetching ATS jobs for '{q}': {e}")
     return jobs
 
+def generate_interview_prep(job):
+    title = job["title"].lower()
+    company = job["company"]
+
+    if "product" in title:
+        questions = [
+            f"1. How do you analyze user drop-off across a multi-step checkout funnel at {company}?",
+            f"2. Describe an A/B test or experiment you ran that delivered measurable conversion lift.",
+            f"3. How do you prioritize product analytics features when engineering bandwidth is limited?"
+        ]
+        star_answer = f"SITUATION: At Razorpay, checkout conversion for Tier-1 accounts like Meta & Airbnb dropped during high-volume sales.\nTASK: Diagnose root causes and improve Success Rate (SR).\nACTION: Wrote GCP BigQuery SQL CTEs to isolate drop-off steps and built real-time Z-score anomaly alerts.\nRESULT: Achieved +15% SR lift across $500M+ annual GMV."
+        questions_to_ask = [
+            f"What primary product engagement metrics is the team focusing on this quarter at {company}?",
+            f"How closely does the product analytics team partner with core engineering and design?"
+        ]
+    elif "engineer" in title:
+        questions = [
+            f"1. How do you optimize heavy SQL queries (CTEs, window functions) in BigQuery/PostgreSQL at scale?",
+            f"2. Walk me through a Python ETL pipeline you designed that reduced latency or manual workload.",
+            f"3. How do you ensure data quality and schema consistency for downstream BI reporting?"
+        ]
+        star_answer = f"SITUATION: Manual data validation at Razorpay caused 40% bandwidth drain on daily reporting.\nTASK: Automate ETL pipelines and reduce discrepancy detection latency.\nACTION: Built Python (Pandas, SciPy) ETL scripts with automated Z-score thresholding & PagerDuty alerts.\nRESULT: Reduced incident detection latency by 10x and eliminated manual workloads."
+        questions_to_ask = [
+            f"What data orchestration (Airflow/dbt) and data warehouse tech stack does {company} currently use?",
+            f"What is the biggest data pipeline scaling bottleneck your team is currently solving?"
+        ]
+    else:
+        questions = [
+            f"1. How do you translate complex transactional data into executive readouts for enterprise stakeholders?",
+            f"2. Give an example of a SQL-driven insight that directly influenced revenue or GMV growth.",
+            f"3. How do you handle conflicting requirements from sales, product, and finance leaders?"
+        ]
+        star_answer = f"SITUATION: Razorpay's 15+ Tier-1 enterprise accounts required real-time visibility into $500M+ annual GMV.\nTASK: Build centralized executive dashboards for C-suite readouts.\nACTION: Designed automated Tableau & Power BI dashboards integrated with GCP BigQuery.\nRESULT: Empowered leadership with real-time GMV tracking and instant anomaly alerts."
+        questions_to_ask = [
+            f"What are the key growth drivers and analytics priorities for {company} over the next 6-12 months?",
+            f"How is data success measured within the analytics team at {company}?"
+        ]
+
+    return {
+        "questions": questions,
+        "star_answer": star_answer,
+        "questions_to_ask": questions_to_ask
+    }
+
 def run_job_search():
     print("Starting automated job search...")
     all_raw_jobs = []
@@ -373,6 +417,7 @@ def run_job_search():
             job["ctc"] = extract_ctc_information(job["title"], job["description"], job["company"])
             job["tailored_pitch"] = generate_tailored_pitch(job)
             job["gap_analysis"] = generate_resume_gap_analysis(job)
+            job["interview_prep"] = generate_interview_prep(job)
             processed_jobs.append(job)
 
     processed_jobs.sort(key=lambda x: x["relevance_score"], reverse=True)

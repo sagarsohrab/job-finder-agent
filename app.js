@@ -104,8 +104,9 @@ function renderJobs(jobs) {
       <div class="card-actions" style="grid-template-columns: 1fr 1fr;">
         <a href="${job.url}" target="_blank" class="btn-apple btn-primary">🚀 Apply Now</a>
         <button class="btn-apple btn-secondary btn-gap" data-url="${job.url}">⚡ Bridge Resume Gap</button>
+        <button class="btn-apple btn-secondary btn-interview" data-url="${job.url}">🎙️ Interview Ace</button>
         <button class="btn-apple btn-secondary btn-cover" data-url="${job.url}">✉️ Cover Letter</button>
-        <a href="${job.recruiter_search_url}" target="_blank" class="btn-apple btn-secondary">🔍 Recruiter</a>
+        <a href="${job.recruiter_search_url}" target="_blank" class="btn-apple btn-secondary" style="grid-column: 1 / -1;">🔍 Find Recruiter on LinkedIn</a>
       </div>
     `;
     container.appendChild(card);
@@ -125,6 +126,14 @@ function renderJobs(jobs) {
       const jobUrl = btn.getAttribute("data-url");
       const job = allJobs.find(j => j.url === jobUrl);
       if (job) openGapModal(job);
+    });
+  });
+
+  document.querySelectorAll(".btn-interview").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const jobUrl = btn.getAttribute("data-url");
+      const job = allJobs.find(j => j.url === jobUrl);
+      if (job) openInterviewModal(job);
     });
   });
 
@@ -312,6 +321,20 @@ function initModal() {
     coverModal.classList.remove("active");
   });
 
+  const interviewModal = document.getElementById("interview-modal");
+  const closeInterviewBtn = document.querySelector(".close-interview-modal");
+  if (closeInterviewBtn) closeInterviewBtn.addEventListener("click", () => interviewModal.classList.remove("active"));
+
+  const copyInterviewBtn = document.getElementById("btn-copy-interview-prep");
+  if (copyInterviewBtn) {
+    copyInterviewBtn.addEventListener("click", () => {
+      const text = `${document.getElementById("interview-questions-list").innerText}\n\n${document.getElementById("interview-star-box").innerText}\n\n${document.getElementById("interview-ask-list").innerText}`;
+      navigator.clipboard.writeText(text);
+      showToast("Interview Prep Notes copied to clipboard!");
+      interviewModal.classList.remove("active");
+    });
+  }
+
   const copyGapBtn = document.getElementById("btn-copy-full-resume");
   if (copyGapBtn) {
     copyGapBtn.addEventListener("click", () => {
@@ -382,6 +405,45 @@ function openScoreModal(job) {
     <span class="score-pts" style="font-size: 1.1rem; background: var(--accent-green); color: #000;">⭐ ${job.relevance_score} pts</span>
   `;
   breakdownList.appendChild(totalRow);
+
+  modal.classList.add("active");
+}
+
+function openInterviewModal(job) {
+  const modal = document.getElementById("interview-modal");
+  document.getElementById("interview-modal-title").innerText = `🎙️ Interview Ace Copilot — ${job.title} at ${job.company}`;
+
+  const qList = document.getElementById("interview-questions-list");
+  qList.innerHTML = "";
+  const starBox = document.getElementById("interview-star-box");
+  starBox.innerText = "";
+  const askList = document.getElementById("interview-ask-list");
+  askList.innerHTML = "";
+
+  const prep = job.interview_prep || {
+    questions: [
+      `1. How do you analyze user drop-off across a multi-step checkout funnel at ${job.company}?`,
+      `2. Describe an A/B test or experiment you ran that delivered measurable conversion lift.`
+    ],
+    star_answer: `SITUATION: At Razorpay, checkout conversion for Tier-1 accounts like Meta & Airbnb dropped during high-volume sales.\nTASK: Diagnose root causes and improve Success Rate (SR).\nACTION: Wrote GCP BigQuery SQL CTEs to isolate drop-off steps and built real-time Z-score anomaly alerts.\nRESULT: Achieved +15% SR lift across $500M+ annual GMV.`,
+    questions_to_ask: [
+      `What primary product engagement metrics is the team focusing on this quarter at ${job.company}?`
+    ]
+  };
+
+  prep.questions.forEach(q => {
+    const li = document.createElement("li");
+    li.innerText = q;
+    qList.appendChild(li);
+  });
+
+  starBox.innerText = prep.star_answer;
+
+  prep.questions_to_ask.forEach(a => {
+    const li = document.createElement("li");
+    li.innerText = `• ${a}`;
+    askList.appendChild(li);
+  });
 
   modal.classList.add("active");
 }

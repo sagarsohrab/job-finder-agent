@@ -201,6 +201,33 @@
     </div>
   </div>
 
+  <!-- Interview Prep & Q&A Copilot Modal -->
+  <div id="interview-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 680px;">
+      <div class="modal-header">
+        <h3 id="interview-modal-title">🎙️ Interview Prep & Ace Copilot</h3>
+        <button class="close-interview-modal close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="gap-section">
+          <h4 class="gap-subtitle" style="color: var(--accent-purple);">❓ Likely Technical & Behavioral Interview Questions</h4>
+          <ul id="interview-questions-list" class="gap-list"></ul>
+        </div>
+        <div class="gap-section" style="margin-top: 16px;">
+          <h4 class="gap-subtitle" style="color: var(--accent-green);">⭐ Recommended STAR Method Story (Razorpay)</h4>
+          <div id="interview-star-box" class="gap-bullets-container" style="white-space: pre-wrap; font-family: monospace; font-size: 0.8rem;"></div>
+        </div>
+        <div class="gap-section" style="margin-top: 16px;">
+          <h4 class="gap-subtitle" style="color: #70b4ff;">💡 High-Impact Questions to Ask Hiring Manager</h4>
+          <ul id="interview-ask-list" class="gap-list"></ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-copy-interview-prep" class="btn-apple btn-primary">📋 Copy Interview Prep Notes</button>
+      </div>
+    </div>
+  </div>
+
   <div id="toast" class="toast">Text copied to clipboard!</div>
 
   <script src="app.js"></script>
