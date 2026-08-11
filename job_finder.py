@@ -40,7 +40,6 @@ SKILL_KEYWORDS = [
 ]
 
 def calculate_relevance_score(title, description, location, company=""):
-    score = 0
     title_lower = title.lower()
     desc_lower = description.lower()
     loc_lower = location.lower()
@@ -50,62 +49,69 @@ def calculate_relevance_score(title, description, location, company=""):
     # 1. Filter out Articles, News Sites, Blogs, & Reddit Posts
     for bad_source in EXCLUDE_NEWS_SOURCES:
         if bad_source in comp_lower or bad_source in title_lower or bad_source in desc_lower:
-            return 0, []
+            return 0, [], {}
 
     for bad_term in EXCLUDE_TITLE_TERMS:
         if bad_term in title_lower:
-            return 0, []
+            return 0, [], {}
 
-    # 2. Filter out Non-India / Non-Worldwide Locations (e.g. US Only, LATAM, Mexico)
+    # 2. Filter out Non-India / Non-Worldwide Locations
     for bad_loc in EXCLUDE_LOCATION_TERMS:
         if bad_loc in loc_lower:
-            return 0, []
+            return 0, [], {}
 
-    # Check that location is India or Worldwide Remote
     loc_valid = any(loc in loc_lower for loc in TARGET_LOCATIONS)
     if not loc_valid:
-        return 0, []
+        return 0, [], {}
 
-    # Boost for Junior / Mid / Associate roles (1-3 YOE)
+    breakdown = {
+        "Title Match": 0,
+        "Location Alignment": 0,
+        "1-3 YOE Match": 0,
+        "Skill Matches": 0,
+        "Freshness Boost (<24h)": 0
+    }
+
+    # Title match
+    for role in TARGET_ROLES:
+        if role.lower() in title_lower:
+            breakdown["Title Match"] = 35
+            break
+
+    # Location match
+    if any(loc in loc_lower for loc in ["bengaluru", "bangalore", "mumbai", "india"]):
+        breakdown["Location Alignment"] = 25
+    elif any(loc in loc_lower for loc in ["worldwide", "anywhere"]):
+        breakdown["Location Alignment"] = 15
+
+    # Junior/Associate/Mid YOE Match
     if any(term in title_lower for term in ["junior", "associate", "analyst i", "analyst ii", "mid"]):
-        score += 15
+        breakdown["1-3 YOE Match"] += 15
 
-    # Check YOE mentions in description
     yoe_matches = re.findall(r'(\d+)\+?\s*(?:-\s*(\d+)\+?)?\s*(?:years|yoe|yrs)', full_text)
     for min_y, max_y in yoe_matches:
         try:
             min_val = int(min_y)
             if min_val > 5:
-                return 0, [] # Exclude 6+ years required
+                return 0, [], {} # Exclude 6+ years
             elif 1 <= min_val <= 3:
-                score += 20
+                breakdown["1-3 YOE Match"] += 20
         except ValueError:
             pass
 
-    # 3. Title match
-    for role in TARGET_ROLES:
-        if role.lower() in title_lower:
-            score += 35
-            break
-
-    # 4. Location match bonus
-    if "bengaluru" in loc_lower or "bangalore" in loc_lower or "mumbai" in loc_lower or "india" in loc_lower:
-        score += 25
-    elif "worldwide" in loc_lower or "anywhere" in loc_lower:
-        score += 15
-
-    # 5. Skill keywords match
+    # Skill keywords match
     matched_skills = []
     for skill in SKILL_KEYWORDS:
         if re.search(r'\b' + re.escape(skill) + r'\b', title_lower) or re.search(r'\b' + re.escape(skill) + r'\b', desc_lower):
-            score += 10
+            breakdown["Skill Matches"] += 10
             matched_skills.append(skill)
 
-    # 6. Freshness Boost (First to apply advantage)
+    # Freshness Boost
     if any(fresh in desc_lower for fresh in ["hour", "hours", "minute", "minutes", "just posted", "today", "1 day"]):
-        score += 20  # +20 pts boost for brand new postings!
+        breakdown["Freshness Boost (<24h)"] = 20
 
-    return score, list(set(matched_skills))
+    total_score = sum(breakdown.values())
+    return total_score, list(set(matched_skills)), breakdown
 
 def fetch_remotive_jobs():
     jobs = []
@@ -201,7 +207,6 @@ def fetch_linkedin_jobs():
                     loc = loc_elem.text.strip() if loc_elem else location
                     job_url = link_elem["href"] if link_elem and "href" in link_elem.attrs else ""
 
-                    # Extract relative posting time (e.g. 2 hours ago, 1 day ago)
                     time_elem = card.find("time")
                     posted_time = time_elem.text.strip() if time_elem else "Recently"
 
@@ -210,7 +215,7 @@ def fetch_linkedin_jobs():
                             "title": title,
                             "company": company,
                             "location": loc,
-                            "url": job_url.split("?")[0],  # Clean tracking params
+                            "url": job_url.split("?")[0],
                             "source": "LinkedIn Jobs",
                             "date": posted_time,
                             "description": f"{title} at {company} in {loc}. Posted {posted_time}."
@@ -270,20 +275,37 @@ def run_job_search():
             continue
         seen.add(key)
 
-        score, matched_skills = calculate_relevance_score(job["title"], job["description"], job["location"], job["company"])
-        if score >= 30:  # Relevance threshold
+        score, matched_skills, breakdown = calculate_relevance_score(job["title"], job["description"], job["location"], job["company"])
+        if score >= 30:
             job["relevance_score"] = score
             job["matched_skills"] = matched_skills
+            job["score_breakdown"] = breakdown
+            job["ctc"] = extract_ctc_information(job["title"], job["description"], job["company"])
+            job["tailored_pitch"] = generate_tailored_pitch(job)
             processed_jobs.append(job)
 
-    # Sort by relevance score descending
     processed_jobs.sort(key=lambda x: x["relevance_score"], reverse=True)
     return processed_jobs[:15]
 
-def extract_ctc_information(title, description):
-    text = f"{title} {description}"
+def generate_tailored_pitch(job):
+    title = job["title"].lower()
+    company = job["company"].lower()
     
-    # Check for LPA / Lakhs pattern (e.g., 12 - 18 LPA, 15LPA, 10-15 Lacs)
+    if "product" in title:
+        return f"Highlight checkout conversion drop-off analysis, user cohort retention, and Meta/Airbnb A/B testing (+15% SR lift) for {job['company']}'s product team."
+    elif "analytics engineer" in title or "data engineer" in title:
+        return f"Focus on GCP BigQuery/PostgreSQL SQL CTEs, window functions, and Z-score automated Python ETL pipelines (10x latency drop) for {job['company']}."
+    elif "business analyst" in title:
+        return f"Emphasize 1+ year Business Analyst experience at Razorpay managing $500M+ GMV across Tier-1 accounts and Tableau/Power BI executive dashboards for {job['company']}."
+    elif "data analyst" in title:
+        return f"Focus on exploratory data analysis (EDA), anomaly detection algorithms, SQL query optimization, and KPI dashboards for {job['company']}."
+    else:
+        return f"Highlight 1+ year Razorpay data analytics track record driving GMV growth and automated statistical modeling for {job['company']}."
+
+def extract_ctc_information(title, description, company=""):
+    text = f"{title} {description} {company}".lower()
+    
+    # Explicit LPA / Lakhs pattern
     lpa_match = re.search(r'(?:₹|INR|\b)\s*(\d+\.?\d*)\s*(?:-\s*(\d+\.?\d*))?\s*(?:LPA|L|Lacs|Lakhs|Lac|Lakh)\b', text, re.IGNORECASE)
     if lpa_match:
         min_sal = lpa_match.group(1)
@@ -292,7 +314,7 @@ def extract_ctc_information(title, description):
             return f"₹{min_sal}L - ₹{max_sal}L PA (Listed)"
         return f"₹{min_sal}L PA (Listed)"
 
-    # Check for USD / k salary (e.g., $80k - $120k, 90k USD)
+    # Explicit USD pattern
     usd_match = re.search(r'\$\s*(\d+k?)\s*(?:-\s*\$?\s*(\d+k?))?\s*(?:/yr|/year|USD|annual)?\b', text, re.IGNORECASE)
     if usd_match:
         min_sal = usd_match.group(1)
@@ -301,17 +323,17 @@ def extract_ctc_information(title, description):
             return f"${min_sal} - ${max_sal}/yr (Listed)"
         return f"${min_sal}/yr (Listed)"
 
-    # Monthly salary check (e.g., ₹25,000 - ₹40,000 /month)
-    month_match = re.search(r'₹?\s*(\d{2,3},?\d{3})\s*(?:-\s*₹?\s*(\d{2,3},?\d{3}))?\s*/\s*(?:month|mo|pm)\b', text, re.IGNORECASE)
-    if month_match:
-        min_sal = month_match.group(1)
-        max_sal = month_match.group(2)
-        if max_sal:
-            return f"₹{min_sal} - ₹{max_sal}/mo (Listed)"
-        return f"₹{min_sal}/mo (Listed)"
+    # Tier-based CTC estimates for 1-3 YOE roles in Bengaluru/Mumbai
+    tier1_fintech = ["paytm", "one97", "razorpay", "phonepe", "cred", "swiggy", "uber", "sandisk", "circles", "slice", "jupiter", "grofers", "blinkit", "zepto", "meesho", "flipkart", "dazn"]
+    enterprise_consulting = ["accenture", "capgemini", "emids", "phdata", "cognizant", "tcs", "wipro", "infosys"]
 
-    # Estimated Benchmark Fallback for 1-3 YOE BA/DA/PA Roles in India
-    return "₹8L - ₹18L PA (Est. 1-3 YOE Market Range)"
+    comp_lower = company.lower()
+    if any(t in comp_lower for t in tier1_fintech):
+        return "₹14L - ₹26L PA (Est. Tier-1 Tech/Fintech)"
+    elif any(t in comp_lower for t in enterprise_consulting):
+        return "₹8L - ₹15L PA (Est. Enterprise Analytics)"
+    else:
+        return "₹10L - ₹20L PA (Est. Growth Tech Market Range)"
 
 def generate_markdown_report(jobs):
     today = datetime.date.today().strftime("%B %d, %Y")

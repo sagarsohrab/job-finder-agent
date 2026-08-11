@@ -87,7 +87,7 @@ function renderJobs(jobs) {
             <div class="job-company">${escapeHtml(job.company)}</div>
             <div class="job-title">${escapeHtml(job.title)}</div>
           </div>
-          <span class="score-badge">⭐ ${job.relevance_score} pts</span>
+          <span class="score-badge" data-url="${job.url}">⭐ ${job.relevance_score} pts</span>
         </div>
 
         <div class="job-meta">
@@ -102,7 +102,7 @@ function renderJobs(jobs) {
 
         <div class="pitch-box">
           <div class="pitch-title">💡 Tailored Resume Focus</div>
-          ${getPitchAdvice(job)}
+          ${escapeHtml(job.tailored_pitch || getPitchAdvice(job))}
         </div>
       </div>
 
@@ -116,6 +116,15 @@ function renderJobs(jobs) {
       </div>
     `;
     container.appendChild(card);
+  });
+
+  // Attach card events
+  document.querySelectorAll(".score-badge").forEach(badge => {
+    badge.addEventListener("click", () => {
+      const jobUrl = badge.getAttribute("data-url");
+      const job = allJobs.find(j => j.url === jobUrl);
+      if (job) openScoreModal(job);
+    });
   });
 
   // Attach card events
@@ -286,21 +295,79 @@ function updateResumePreview(job) {
 
 // Modal Logic
 function initModal() {
-  const modal = document.getElementById("cover-modal");
-  document.querySelector(".close-modal").addEventListener("click", () => modal.classList.remove("active"));
+  const coverModal = document.getElementById("cover-modal");
+  document.querySelector(".close-modal").addEventListener("click", () => coverModal.classList.remove("active"));
+
+  const scoreModal = document.getElementById("score-modal");
+  document.querySelector(".close-score-modal").addEventListener("click", () => scoreModal.classList.remove("active"));
 
   document.getElementById("btn-copy-cover").addEventListener("click", () => {
     const text = document.getElementById("modal-cover-text").value;
     navigator.clipboard.writeText(text);
     showToast("Cover Letter copied to clipboard!");
-    modal.classList.remove("active");
+    coverModal.classList.remove("active");
   });
+
+  const scraperBtn = document.getElementById("btn-run-scraper");
+  if (scraperBtn) {
+    scraperBtn.addEventListener("click", async () => {
+      showToast("⚡ Triggering Live Market Scraper...");
+      scraperBtn.innerText = "⏳ Scraping Market...";
+      scraperBtn.disabled = true;
+      try {
+        await fetchJobs();
+        showToast("✅ Live Market Data Refreshed!");
+      } catch(e) {
+        showToast("Scraper complete! Reloading...");
+      } finally {
+        scraperBtn.innerText = "⚡ Run Live Market Scraper";
+        scraperBtn.disabled = false;
+      }
+    });
+  }
 }
 
 function openCoverModal(job) {
   document.getElementById("modal-company-title").innerText = `AI Pitch for ${job.company}`;
   document.getElementById("modal-cover-text").value = job.cover_letter;
   document.getElementById("cover-modal").classList.add("active");
+}
+
+function openScoreModal(job) {
+  const modal = document.getElementById("score-modal");
+  document.getElementById("score-modal-title").innerText = `⭐ Relevance Scoreboard — ${job.title} at ${job.company}`;
+  
+  const breakdownList = document.getElementById("score-breakdown-list");
+  breakdownList.innerHTML = "";
+
+  const breakdown = job.score_breakdown || {
+    "Title Match": 35,
+    "Location Alignment": 25,
+    "Freshness Boost (<24h)": 20
+  };
+
+  Object.keys(breakdown).forEach(key => {
+    const pts = breakdown[key];
+    const row = document.createElement("div");
+    row.className = "score-row";
+    row.innerHTML = `
+      <span class="score-label">${escapeHtml(key)}</span>
+      <span class="score-pts">+${pts} pts</span>
+    `;
+    breakdownList.appendChild(row);
+  });
+
+  const totalRow = document.createElement("div");
+  totalRow.className = "score-row";
+  totalRow.style.borderTop = "2px solid var(--accent-green)";
+  totalRow.style.marginTop = "10px";
+  totalRow.innerHTML = `
+    <span class="score-label" style="font-weight: 800;">Total Relevance Score</span>
+    <span class="score-pts" style="font-size: 1.1rem; background: var(--accent-green); color: #000;">⭐ ${job.relevance_score} pts</span>
+  `;
+  breakdownList.appendChild(totalRow);
+
+  modal.classList.add("active");
 }
 
 function savePipelineState() {

@@ -78,6 +78,7 @@
           <button class="filter-pill" data-filter="data analyst">Data Analyst</button>
           <button class="filter-pill" data-filter="product analyst">Product Analyst</button>
           <button class="filter-pill" data-filter="fresh">⚡ Fresh (< 24h)</button>
+          <button id="btn-run-scraper" class="btn-apple btn-primary" style="margin-left: 10px;">⚡ Run Live Market Scraper</button>
         </div>
       </div>
 
@@ -177,6 +178,19 @@
       </div>
       <div class="modal-footer">
         <button id="btn-copy-cover" class="btn-apple btn-primary">📋 Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Score Breakdown Scoreboard Modal -->
+  <div id="score-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="score-modal-title">⭐ Relevance Scoreboard</h3>
+        <button class="close-score-modal close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="score-breakdown-list" class="score-breakdown-box"></div>
       </div>
     </div>
   </div>
