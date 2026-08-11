@@ -323,17 +323,20 @@ def extract_ctc_information(title, description, company=""):
             return f"${min_sal} - ${max_sal}/yr (Listed)"
         return f"${min_sal}/yr (Listed)"
 
-    # Tier-based CTC estimates for 1-3 YOE roles in Bengaluru/Mumbai
-    tier1_fintech = ["paytm", "one97", "razorpay", "phonepe", "cred", "swiggy", "uber", "sandisk", "circles", "slice", "jupiter", "grofers", "blinkit", "zepto", "meesho", "flipkart", "dazn"]
-    enterprise_consulting = ["accenture", "capgemini", "emids", "phdata", "cognizant", "tcs", "wipro", "infosys"]
-
+    # Company-tier specific CTC estimates for 1-3 YOE in Bengaluru / Mumbai
     comp_lower = company.lower()
-    if any(t in comp_lower for t in tier1_fintech):
-        return "₹14L - ₹26L PA (Est. Tier-1 Tech/Fintech)"
-    elif any(t in comp_lower for t in enterprise_consulting):
-        return "₹8L - ₹15L PA (Est. Enterprise Analytics)"
+    tier1_unicorns = ["paytm", "one97", "razorpay", "phonepe", "cred", "swiggy", "uber", "sandisk", "circles", "slice", "jupiter", "grofers", "blinkit", "zepto", "meesho", "flipkart", "dazn", "zomato", "dream11"]
+    high_growth_startups = ["easyecom", "portcast", "nua", "paisasmart", "myyogateacher", "action tour guide", "credility", "amaha"]
+    global_consulting = ["accenture", "capgemini", "emids", "phdata", "capco", "cognizant", "tcs", "wipro", "infosys", "deloitte", "ey", "pwc", "kpmg"]
+
+    if any(t in comp_lower for t in tier1_unicorns):
+        return "₹16L - ₹28L PA (Est. Tier-1 Product Unicorn)"
+    elif any(t in comp_lower for t in high_growth_startups):
+        return "₹11L - ₹20L PA (Est. High-Growth Tech Startup)"
+    elif any(t in comp_lower for t in global_consulting):
+        return "₹8L - ₹15L PA (Est. Enterprise Consultancy)"
     else:
-        return "₹10L - ₹20L PA (Est. Growth Tech Market Range)"
+        return "₹9L - ₹18L PA (Est. Mid-Market Tech Standard)"
 
 def generate_markdown_report(jobs):
     today = datetime.date.today().strftime("%B %d, %Y")

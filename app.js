@@ -33,10 +33,10 @@ function initTabs() {
   });
 }
 
-// Fetch structured job JSON
+// Fetch structured job JSON with cache-busting
 async function fetchJobs() {
   try {
-    const res = await fetch("jobs_data.json");
+    const res = await fetch(`jobs_data.json?t=${Date.now()}`);
     allJobs = await res.json();
     
     // Seed pipeline saved jobs if empty
