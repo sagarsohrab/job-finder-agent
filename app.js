@@ -345,31 +345,93 @@ function initModal() {
 
       const container = document.getElementById("pdf-export-container");
       const lines = editorText.split("\n");
-      let formattedHtml = `<div style="font-family: Arial, sans-serif; font-size: 10pt; line-height: 1.4; color: #111; padding: 20px 25px; background: #fff;">`;
+      
+      let html = `<div style="font-family: 'Times New Roman', Times, serif; font-size: 9.2pt; line-height: 1.32; color: #000; padding: 25px 30px; background: #fff;">`;
+
+      html += `
+        <h1 style="font-size: 19pt; font-weight: bold; text-align: center; margin: 0 0 4px 0; text-transform: uppercase; color: #000; letter-spacing: 0.5px;">SAGAR SOHRAB</h1>
+        <div style="font-size: 9pt; text-align: center; margin-bottom: 12px; border-bottom: 1.5px solid #000; padding-bottom: 6px; color: #111;">
+          Bengaluru / Mumbai &nbsp;|&nbsp; sagar7.sohrab@gmail.com &nbsp;|&nbsp; +91 8169052960 &nbsp;|&nbsp; <u>LinkedIn</u> &nbsp;|&nbsp; <u>GitHub</u>
+        </div>
+      `;
+
+      let currentSection = "";
 
       lines.forEach(line => {
         const trimmed = line.trim();
-        if (trimmed.startsWith("SAGAR SOHRAB")) {
-          formattedHtml += `<h1 style="font-size: 17pt; margin: 0 0 3px 0; text-align: center; color: #000; letter-spacing: 0.5px; text-transform: uppercase;">${trimmed}</h1>`;
-        } else if (trimmed.includes("@gmail.com") || trimmed.includes("LinkedIn")) {
-          formattedHtml += `<p style="font-size: 9pt; text-align: center; margin: 0 0 12px 0; color: #333; border-bottom: 1.5px solid #000; padding-bottom: 6px;">${trimmed}</p>`;
-        } else if (trimmed === "PROFESSIONAL SUMMARY" || trimmed === "TECHNICAL SKILLS & COMPETENCIES" || trimmed.startsWith("[EXPERIENCE")) {
-          const titleText = trimmed.replace("[EXPERIENCE - RAZORPAY]", "PROFESSIONAL EXPERIENCE");
-          formattedHtml += `<h2 style="font-size: 10.5pt; margin: 12px 0 4px 0; color: #000; border-bottom: 1px solid #444; text-transform: uppercase; letter-spacing: 0.5px; font-weight: bold;">${titleText}</h2>`;
-        } else if (trimmed.startsWith("•")) {
-          formattedHtml += `<div style="margin-left: 12px; margin-bottom: 3px; font-size: 9pt; color: #222;">${trimmed}</div>`;
-        } else if (trimmed.length > 0) {
-          formattedHtml += `<p style="margin: 3px 0; font-size: 9pt; font-weight: ${trimmed.includes("|") ? "bold" : "normal"}; color: #111;">${trimmed}</p>`;
+        if (!trimmed) return;
+
+        if (["PROFESSIONAL SUMMARY", "PROFESSIONAL EXPERIENCE", "PROJECTS", "TECHNICAL & PROFESSIONAL SKILLS", "EDUCATION"].includes(trimmed)) {
+          currentSection = trimmed;
+          html += `<div style="font-size: 10pt; font-weight: bold; text-transform: uppercase; margin-top: 10px; margin-bottom: 4px; border-bottom: 1px solid #000; padding-bottom: 2px; color: #000;">${trimmed}</div>`;
+        } 
+        else if (trimmed.startsWith("Razorpay")) {
+          html += `
+            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 9.5pt; margin-top: 6px;">
+              <span>Razorpay</span>
+              <span>October 2025 – Present</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-style: italic; font-size: 9pt; margin-bottom: 4px; color: #222;">
+              <span>Analytics Specialist</span>
+              <span>Bengaluru, Karnataka</span>
+            </div>
+          `;
+        }
+        else if (trimmed.startsWith("Alpha Payments")) {
+          html += `
+            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 9.5pt; margin-top: 8px;">
+              <span>Alpha Payments</span>
+              <span>June 2024 – September 2024</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-style: italic; font-size: 9pt; margin-bottom: 4px; color: #222;">
+              <span>Data & Web Analyst Intern</span>
+              <span>Mumbai, Maharashtra</span>
+            </div>
+          `;
+        }
+        else if (trimmed.startsWith("K.J. Somaiya College of Engineering")) {
+          html += `
+            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 9.5pt; margin-top: 6px;">
+              <span>K.J. Somaiya College of Engineering, Mumbai</span>
+              <span>2021 – 2025</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-style: italic; font-size: 9pt; color: #222;">
+              <span>Bachelor of Engineering in Electronics & Telecommunication Engineering</span>
+              <span style="font-style: normal; font-weight: bold;">CGPA: 7.58</span>
+            </div>
+          `;
+        }
+        else if (trimmed.startsWith("•")) {
+          // Format bold lead-in for bullets if colon exists
+          let bulletContent = trimmed;
+          const colonIndex = trimmed.indexOf(":");
+          if (colonIndex > 0 && colonIndex < 65) {
+            const leadIn = trimmed.substring(0, colonIndex + 1);
+            const rest = trimmed.substring(colonIndex + 1);
+            bulletContent = `<strong>${escapeHtml(leadIn)}</strong>${escapeHtml(rest)}`;
+          } else {
+            bulletContent = escapeHtml(trimmed);
+          }
+          html += `<div style="margin-left: 14px; text-indent: -10px; margin-bottom: 3px; font-size: 9pt; text-align: justify;">${bulletContent}</div>`;
+        }
+        else if (currentSection === "PROFESSIONAL SUMMARY") {
+          html += `<p style="margin: 4px 0 8px 0; font-size: 9pt; text-align: justify;">${escapeHtml(trimmed)}</p>`;
+        }
+        else if (trimmed.includes("Platform") || trimmed.includes("Engine")) {
+          html += `<div style="font-weight: bold; font-size: 9pt; margin-top: 5px;">${escapeHtml(trimmed)}</div>`;
+        }
+        else {
+          html += `<div style="font-size: 9pt; margin-bottom: 2px;">${escapeHtml(trimmed)}</div>`;
         }
       });
 
-      formattedHtml += `</div>`;
-      container.innerHTML = formattedHtml;
+      html += `</div>`;
+      container.innerHTML = html;
 
-      showToast("📥 Generating ATS PDF Resume...");
+      showToast("📥 Generating Exact Format ATS PDF Resume...");
 
       const opt = {
-        margin: [0.3, 0.4, 0.3, 0.4],
+        margin: [0.25, 0.35, 0.25, 0.35],
         filename: `Sagar_Sohrab_Resume_${targetCompany}.pdf`,
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true },
