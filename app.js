@@ -565,31 +565,47 @@ function openGapModal(job) {
     });
   });
 
-  // Load Sagar's full base resume into live editor
+  // Load Sagar's full exact base resume (Re-branded to Analytics Specialist) into live editor
   const baseResumeText = 
 `SAGAR SOHRAB
 Bengaluru / Mumbai | sagar7.sohrab@gmail.com | +91 8169052960 | LinkedIn: linkedin.com/in/sagar-sohrab | GitHub: github.com/sagarsohrab
 
 PROFESSIONAL SUMMARY
-High-Impact Business Analyst & Data Specialist with 1+ years at Razorpay driving GMV growth ($500M+ global GMV), checkout funnel optimization (+15% SR lift), GCP BigQuery SQL transformations, and Z-score anomaly modeling in Python.
+High-Impact Analytics Specialist at Razorpay with 1+ years of experience driving GMV growth, checkout funnel optimization, and data infrastructure across 15+ Tier-1 global and domestic enterprise accounts ($500M+ global GMV & INR 2,000+ Cr domestic GMV). Proven track record of executing exploratory data analysis, writing complex SQL on large-scale schemas (PostgreSQL, GCP BigQuery), and building automated statistical anomaly detection systems (Z-score). Skilled in gateway optimization, ticket-size routing, executive dashboarding (Tableau, Power BI), and Python ETL automation.
 
-[EXPERIENCE - RAZORPAY]
-Business Analyst | Razorpay (2025 – Present)
-• Led checkout funnel analytics & success rate optimization for Meta & Airbnb across $500M+ annual GMV, driving +15% Success Rate (SR) lift.
-• Authored complex SQL transformations (CTEs, window functions) on GCP BigQuery, PostgreSQL, and MySQL databases for cohort and transaction trend analysis.
-• Deployed Z-score statistical thresholding models across high-throughput data streams, reducing discrepancy detection latency by 10x.
-• Designed interactive KPI executive dashboards in Tableau and Power BI for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.
-• Built automated Python (Pandas, NumPy, SciPy) ETL pipelines with real-time PagerDuty alerting, eliminating 40% of manual reporting workload.
+PROFESSIONAL EXPERIENCE
+Razorpay | Analytics Specialist
+Bengaluru, Karnataka (October 2025 – Present)
+• Global Enterprise Optimization (Meta & Airbnb): Led checkout funnel analytics, ticket-size gateway routing, and success rate optimization across $500M+ annual GMV for Meta, driving a +15% Success Rate (SR) lift (58% to 73%) beating competing PGs by a 3% delta and capturing 50%+ volume share across 6-8 competing gateways.
+• Domestic Market Leadership (Edelweiss MF & Swiggy): Managed portfolio performance analytics for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV; established Edelweiss Mutual Fund as the #1 industry leader in Success Rate with a 5%+ SR delta over all competing payment methods.
+• Advanced SQL & Big Data Querying: Authored complex SQL transformations (CTEs, window functions, aggregations) on GCP BigQuery, PostgreSQL, and MySQL databases to perform cohort, conversion funnel, and transaction trend analysis.
+• Statistical Anomaly Modeling: Deployed Z-score statistical thresholding models across high-throughput data streams to identify multi-currency transaction discrepancies, reducing failure detection latency by 10x and safeguarding revenue controls.
+• Executive Insights & Reporting: Designed interactive KPI dashboards in Tableau and Power BI, translating complex transactional data into actionable strategic readouts for senior leadership and client business reviews.
+• Process Automation & Observability: Built automated Python (Pandas, NumPy, SciPy) ETL pipelines and integrated real-time Slack/PagerDuty alerting, eliminating 40% of manual reporting workload and compressing discrepancy MTTD from hours to seconds.
+• Stakeholder Collaboration & Enablement: Partnered with product managers, engineering leads, and client executives to document functional requirements, transformation rules, and scalable analytical operating models.
 
-Data Analytics Intern | Alpha Payments (2024 – 2025)
-• Performed exploratory data analysis (EDA) on transaction reconciliation logs, identifying patterns that reduced settlement disputes by 18%.
-• Constructed SQL scripts for daily automated data auditing and internal KPI dashboards.
+Alpha Payments | Data & Web Analyst Intern
+Mumbai, Maharashtra (June 2024 – September 2024)
+• Behavioral & Conversion Insights: Analyzed consumer checkout behavior and drop-off trends, translating data into actionable recommendations that yielded a 15% performance improvement in checkout conversions.
+• Automated QA Analytics & Reporting: Built cross-browser QA reporting pipelines using Python and JavaScript, evaluating data consistency and ensuring 100% platform stability during peak transaction volumes.
 
-TECHNICAL SKILLS & COMPETENCIES
-• Analytics & SQL: BigQuery, PostgreSQL, MySQL, CTEs, Window Functions, Funnel Analysis, Cohort Analysis, A/B Testing.
-• Programming & Data: Python, Pandas, NumPy, SciPy, Scikit-learn, Automated ETL, Z-Score Anomaly Detection.
-• Visualization & BI: Tableau, Power BI, Streamlit, Executive Dashboarding.
-• Education: B.Tech, K.J. Somaiya College of Engineering (CGPA: 7.58).`;
+PROJECTS
+Financial Markets Analytics & Decision Platform (Python, SQL, Tableau, Power BI, Streamlit)
+• Developed an end-to-end decision support platform with automated ETL pipelines, exploratory data analysis models, and composite KPI scoring, achieving 63% predictive accuracy across backtests.
+
+Payment Infrastructure Real-Time Risk & Observability Engine (Python, SQL, Power BI, Slack API, PagerDuty)
+• Architected a financial monitoring framework with statistical anomaly detection and decision strategies, reducing discrepancy detection latency from hours to seconds.
+
+TECHNICAL & PROFESSIONAL SKILLS
+• Core Competencies: Enterprise Account Analytics, Payment Gateway Optimization, Success Rate (SR) Lift, GMV Growth, Decision Management Support, Process Improvement, Risk & Anomaly Control
+• Analytical Methods: Exploratory Data Analysis (EDA), Checkout Funnel Optimization, Ticket-Size Routing, Cohort Analysis, Statistical Anomaly Detection (Z-score), A/B Testing
+• Data & Databases: SQL (PostgreSQL, MySQL, GCP BigQuery, CTEs, Window Functions), Python (Pandas, NumPy, SciPy), Data Reconciliation, Data Quality Validation
+• BI & Visualization: Tableau, Power BI (DAX, Power Query), ThoughtSpot, Plotly, Streamlit, Advanced Excel (Pivot Tables, VLOOKUP, Power Query)
+• Agile & Ecosystem: Cross-functional Stakeholder Management, Client Advisory, Agile/Scrum, Technical Documentation, GCP Fundamentals, AWS
+
+EDUCATION
+K.J. Somaiya College of Engineering, Mumbai (2021 – 2025)
+Bachelor of Engineering in Electronics & Telecommunication Engineering (CGPA: 7.58)`;
 
   document.getElementById("live-resume-textarea").value = baseResumeText;
   modal.classList.add("active");
