@@ -1,23 +1,22 @@
 import os
 import json
 import http.server
-import socketserver
 import threading
 from urllib.parse import urlparse
-from job_finder import main as run_job_finder_main
 
-PORT = 8080
+PORT = 3000
 is_scraping = False
 
 def background_scrape():
     global is_scraping
     is_scraping = True
-    print("\n⚡ Live Market Scraper started on CPU thread...")
+    print("\nLive Market Scraper started...")
     try:
+        from job_finder import main as run_job_finder_main
         run_job_finder_main()
-        print("✅ Live Market Scrape completed and jobs_data.json updated!")
+        print("Live Market Scrape completed!")
     except Exception as e:
-        print(f"Error during live background scrape: {e}")
+        print(f"Error during scrape: {e}")
     finally:
         is_scraping = False
 
@@ -45,11 +44,9 @@ class CopilotRequestHandler(http.server.SimpleHTTPRequestHandler):
 
 def run_server():
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", PORT), CopilotRequestHandler) as httpd:
-        print(f"Job Copilot Pro Server running at http://localhost:{PORT}")
-        print("Listening for live scraper requests on /api/scrape...")
-        httpd.serve_forever()
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", PORT), CopilotRequestHandler)
+    print(f"Job Copilot Pro Server running at http://127.0.0.1:{PORT}")
+    server.serve_forever()
 
 if __name__ == "__main__":
     run_server()
