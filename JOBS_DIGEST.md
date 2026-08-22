@@ -1,5 +1,5 @@
 # 🎯 Daily Job Digest & Application Copilot for Sagar Sohrab
-**Date:** August 21, 2026 | **Top Mid-Level Matches (1-3 YOE):** 15
+**Date:** August 22, 2026 | **Top Mid-Level Matches (1-3 YOE):** 15
 
 ---
 
@@ -9,7 +9,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** ⚡ `2 days ago` *(Early Applicant Advantage)*
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `90 pts`
-- **Matched Core Skills:** `power bi`, `etl`, `sql`, `tableau`
+- **Matched Core Skills:** `sql`, `tableau`, `power bi`, `etl`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-capco-4454993563](https://in.linkedin.com/jobs/view/data-analyst-at-capco-4454993563)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -22,7 +22,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `2 weeks ago`
 - **CTC / Compensation:** 💰 `₹20L PA (Listed)`
 - **Relevance Score:** ⭐ `90 pts`
-- **Matched Core Skills:** `python`, `sql`, `a/b testing`
+- **Matched Core Skills:** `sql`, `python`, `a/b testing`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213](https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -36,26 +36,26 @@
 - **Source:** LinkedIn Jobs | **Posted:** `1 month ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `90 pts`
-- **Matched Core Skills:** `power bi`, `python`, `sql`, `tableau`
+- **Matched Core Skills:** `sql`, `tableau`, `power bi`, `python`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-marketing-data-analyst-at-pall-aerospace-4449438658](https://in.linkedin.com/jobs/view/product-marketing-data-analyst-at-pall-aerospace-4449438658)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
   > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
-- **Snippet:** *Product Marketing Data Analyst at Pall - Aerospace in Navi Mumbai, Maharashtra, India. Posted 1 month ago.               Back to search resultsPrevious job Next jobJob DescriptionFind what drives you on a team with a mor...*
+- **Snippet:** *Product Marketing Data Analyst at Pall - Aerospace in Navi Mumbai, Maharashtra, India. Posted 1 month ago.               Find what drives you on a team with a more than 75-year history of discovery, determination, and in...*
 
 ### 4. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-portcast-4450798444)
 - **Company:** Portcast
 - **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
+- **Source:** LinkedIn Jobs | **Posted:** `2 weeks ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `85 pts`
-- **Matched Core Skills:** `python`, `sql`
+- **Matched Core Skills:** `sql`, `python`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-portcast-4450798444](https://in.linkedin.com/jobs/view/data-analyst-at-portcast-4450798444)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
-- **Snippet:** *Data Analyst at Portcast in Bengaluru, Karnataka, India. Posted 1 week ago.               Portcast is a venture-backed, Singapore-based logistics technology startup building a real-time transportation visibility platform...*
+- **Snippet:** *Data Analyst at Portcast in Bengaluru, Karnataka, India. Posted 2 weeks ago.               Portcast is a venture-backed, Singapore-based logistics technology startup building a real-time transportation visibility platfor...*
 
 ### 5. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875)
 - **Company:** Amaha
@@ -63,7 +63,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `2 weeks ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `numpy`, `tableau`, `power bi`, `pandas`, `sql`, `python`
+- **Matched Core Skills:** `tableau`, `numpy`, `sql`, `pandas`, `python`, `power bi`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875](https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -77,7 +77,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `3 months ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `power bi`, `tableau`, `sql`, `a/b testing`, `payments`
+- **Matched Core Skills:** `payments`, `a/b testing`, `tableau`, `sql`, `power bi`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601](https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -91,7 +91,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `python`, `sql`, `tableau`
+- **Matched Core Skills:** `sql`, `tableau`, `python`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/senior-analyst-analytics-engineer-at-colgate-palmolive-4452910644](https://in.linkedin.com/jobs/view/senior-analyst-analytics-engineer-at-colgate-palmolive-4452910644)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -105,7 +105,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `3 months ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `tableau`, `python`, `sql`, `bigquery`
+- **Matched Core Skills:** `sql`, `tableau`, `python`, `bigquery`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/lead-analytics-engineer-bi-at-wework-india-4416251123](https://in.linkedin.com/jobs/view/lead-analytics-engineer-bi-at-wework-india-4416251123)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -113,31 +113,20 @@
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
 - **Snippet:** *Lead, Analytics Engineer (BI) at WeWork India in Bengaluru, Karnataka, India. Posted 3 months ago.     About UsWeWork India is the country’s leading flexible workspace provider that offers a personalized experience to di...*
 
-### 9. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-easyecom-4451038653)
-- **Company:** EASYECOM
-- **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
-- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `75 pts`
-- **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-easyecom-4451038653](https://in.linkedin.com/jobs/view/business-analyst-at-easyecom-4451038653)
-- 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *Business Analyst at EASYECOM in Bengaluru, Karnataka, India. Posted 1 week ago.     About The PositionWe are on the lookout for a business analyst to join our project team. Having industry experience in warehouse managem...*
-
-### 10. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-acca-careers-4457304719)
-- **Company:** ACCA Careers
+### 9. [Data Owner](https://in.linkedin.com/jobs/view/data-owner-at-virtusa-4426833956)
+- **Company:** Virtusa
 - **Location:** Bangalore Urban, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** ⚡ `1 day ago` *(Early Applicant Advantage)*
+- **Source:** LinkedIn Jobs | **Posted:** ⚡ `16 hours ago` *(Early Applicant Advantage)*
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `75 pts`
-- **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-acca-careers-4457304719](https://in.linkedin.com/jobs/view/business-analyst-at-acca-careers-4457304719)
+- **Matched Core Skills:** `sql`, `tableau`, `etl`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-owner-at-virtusa-4426833956](https://in.linkedin.com/jobs/view/data-owner-at-virtusa-4426833956)
 - 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *Business Analyst at ACCA Careers in Bangalore Urban, Karnataka, India. Posted 1 day ago.     Project Role : Business AnalystProject Role Description : Analyze an organization and design its processes and systems, assessi...*
+  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
+  > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
+- **Snippet:** *Data Owner at Virtusa in Bangalore Urban, Karnataka, India. Posted 16 hours ago.               SQL & Database Skills and experience conducting data transformation, data discovery, validate, de-duplicate, aggregate, unvei...*
 
-### 11. [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-paisasmart-4449507808)
+### 10. [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-paisasmart-4449507808)
 - **Company:** PaisaSmart
 - **Location:** Mumbai, Maharashtra, India
 - **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
@@ -149,13 +138,13 @@
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
 - **Snippet:** *Product Analyst at PaisaSmart in Mumbai, Maharashtra, India. Posted 1 week ago.     Primary Skillset: Product Analysis, Data Analysis, Product Testing, Backlog ManagementYears of Work Ex: 1 – 3 yrsMinimum Qualifications:...*
 
-### 12. [Data Analytics](https://in.linkedin.com/jobs/view/data-analytics-at-flexmoney-technologies-pvt-ltd-4452447043)
+### 11. [Data Analytics](https://in.linkedin.com/jobs/view/data-analytics-at-flexmoney-technologies-pvt-ltd-4452447043)
 - **Company:** Flexmoney Technologies Pvt Ltd
 - **Location:** Mumbai, Maharashtra, India
 - **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `75 pts`
-- **Matched Core Skills:** `mysql`, `power bi`, `fintech`, `sql`, `postgresql`, `a/b testing`, `funnel`, `python`, `anomaly detection`
+- **Matched Core Skills:** `a/b testing`, `anomaly detection`, `fintech`, `sql`, `postgresql`, `python`, `power bi`, `funnel`, `mysql`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analytics-at-flexmoney-technologies-pvt-ltd-4452447043](https://in.linkedin.com/jobs/view/data-analytics-at-flexmoney-technologies-pvt-ltd-4452447043)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -164,31 +153,19 @@
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
 - **Snippet:** *Data Analytics at Flexmoney Technologies Pvt Ltd in Mumbai, Maharashtra, India. Posted 1 week ago.     Job Description | Data AnalyticsAbout FlexMoney:FlexMoney Technologies is India's embedded credit infrastructure plat...*
 
-### 13. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-ascendion-4453564975)
-- **Company:** Ascendion
+### 12. [PureSoftware - Business Analyst](https://in.linkedin.com/jobs/view/puresoftware-business-analyst-at-puresoftware-ltd-4433534656)
+- **Company:** PureSoftware Ltd
 - **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
-- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `70 pts`
-- **Matched Core Skills:** `sql`
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-ascendion-4453564975](https://in.linkedin.com/jobs/view/business-analyst-at-ascendion-4453564975)
-- 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
-- **Snippet:** *Business Analyst at Ascendion in Bengaluru, Karnataka, India. Posted 1 week ago.     Must-Have Skills Requirements elicitation and Business Requirements Document (BRD) writing User story creation with acceptance criteria...*
-
-### 14. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-emids-4410569233)
-- **Company:** Emids
-- **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `4 months ago`
+- **Source:** LinkedIn Jobs | **Posted:** `1 month ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `65 pts`
 - **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-emids-4410569233](https://in.linkedin.com/jobs/view/business-analyst-at-emids-4410569233)
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/puresoftware-business-analyst-at-puresoftware-ltd-4433534656](https://in.linkedin.com/jobs/view/puresoftware-business-analyst-at-puresoftware-ltd-4433534656)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *Business Analyst at Emids in Bengaluru, Karnataka, India. Posted 4 months ago.     Job DescriptionBusiness Analyst - Incentive Compensation / Functional Analyst Define and implement IC strategies aligned with pharma sale...*
+- **Snippet:** *PureSoftware - Business Analyst at PureSoftware Ltd in Bengaluru, Karnataka, India. Posted 1 month ago.     Job SummaryWe are seeking a highly skilled Senior Business Analyst with extensive experience in Life Asia to joi...*
 
-### 15. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-experity-4455703839)
+### 13. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-experity-4455703839)
 - **Company:** Experity
 - **Location:** Greater Bengaluru Area
 - **Source:** LinkedIn Jobs | **Posted:** ⚡ `3 days ago` *(Early Applicant Advantage)*
@@ -199,6 +176,32 @@
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
 - **Snippet:** *Data Analyst at Experity in Greater Bengaluru Area. Posted 3 days ago.               Equal Opportunity EmployerThis employer is required to notify all applicants of their rights pursuant to federal employment laws. For f...*
+
+### 14. [Business Intelligence Engineer II, AOP](https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-aop-at-amazon-4455902739)
+- **Company:** Amazon
+- **Location:** Gurugram, Haryana, India
+- **Source:** LinkedIn Jobs | **Posted:** ⚡ `2 days ago` *(Early Applicant Advantage)*
+- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
+- **Relevance Score:** ⭐ `55 pts`
+- **Matched Core Skills:** `sql`, `tableau`, `python`, `etl`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-aop-at-amazon-4455902739](https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-aop-at-amazon-4455902739)
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
+  > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
+  > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
+- **Snippet:** *Business Intelligence Engineer II, AOP at Amazon in Gurugram, Haryana, India. Posted 2 days ago.     DescriptionAmazon strives to be Earth's most customer-centric company where people can find and discover virtually anyt...*
+
+### 15. [Professorship (W2) in Business Information Systems, Business Analytics and Applied AI (100 %) (m/f/d)](https://www.arbeitnow.co.uk/jobs/companies/velptec-edutainment/remote-professorship-w2-in-business-information-systems-business-analytics-and-applied-ai-100-122066)
+- **Company:** velpTEC edutainment
+- **Location:** Remote
+- **Source:** Arbeitnow | **Posted:** `2026-08-22`
+- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
+- **Relevance Score:** ⭐ `55 pts`
+- **Matched Core Skills:** General Analytics
+- **Direct Apply Link:** 🚀 [https://www.arbeitnow.co.uk/jobs/companies/velptec-edutainment/remote-professorship-w2-in-business-information-systems-business-analytics-and-applied-ai-100-122066](https://www.arbeitnow.co.uk/jobs/companies/velptec-edutainment/remote-professorship-w2-in-business-information-systems-business-analytics-and-applied-ai-100-122066)
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *CharacteristicsFixed-term employment contract (initially for two years)Full-timeFully remote from Germany or abroad (German working hours) or hybrid from Hanover, Munich or LeipzigPublished on 21.08.2026Application deadl...*
 
 ---
 *Generated automatically by GitHub Actions Job Agent & Resume Copilot*
