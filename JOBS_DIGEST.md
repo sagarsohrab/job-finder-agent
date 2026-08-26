@@ -6,69 +6,68 @@
 ### 1. [Senior Product Analyst](https://in.linkedin.com/jobs/view/senior-product-analyst-at-purplle-com-4456592880)
 - **Company:** Purplle.com
 - **Location:** Mumbai, Maharashtra, India
-- **Source:** LinkedIn Jobs | **Posted:** ⚡ `19 hours ago` *(Early Applicant Advantage)*
+- **Source:** LinkedIn Jobs | **Posted:** ⚡ `1 day ago` *(Early Applicant Advantage)*
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `100 pts`
-- **Matched Core Skills:** `python`, `sql`, `anomaly detection`
+- **Matched Core Skills:** `sql`, `anomaly detection`, `python`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/senior-product-analyst-at-purplle-com-4456592880](https://in.linkedin.com/jobs/view/senior-product-analyst-at-purplle-com-4456592880)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
-- **Snippet:** *Senior Product Analyst at Purplle.com in Mumbai, Maharashtra, India. Posted 19 hours ago.               We’re looking for someone who combines strong analytics skills with a product mindset. You’ll start by going deep in...*
+- **Snippet:** *Senior Product Analyst at Purplle.com in Mumbai, Maharashtra, India. Posted 1 day ago.               We’re looking for someone who combines strong analytics skills with a product mindset. You’ll start by going deep into ...*
 
-### 2. [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-kissht-4458212076)
-- **Company:** Kissht
-- **Location:** Mumbai, Maharashtra, India
-- **Source:** LinkedIn Jobs | **Posted:** ⚡ `1 day ago` *(Early Applicant Advantage)*
-- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `100 pts`
-- **Matched Core Skills:** `payments`, `fintech`, `tableau`, `sql`
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-at-kissht-4458212076](https://in.linkedin.com/jobs/view/product-analyst-at-kissht-4458212076)
-- 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
-  > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
-- **Snippet:** *Product Analyst at Kissht in Mumbai, Maharashtra, India. Posted 1 day ago.     As a Product Analyst – Payments, you will work closely with Product, Engineering, Operations and external payment partners to analyze payment...*
-
-### 3. [Senior Data Analyst](https://in.linkedin.com/jobs/view/senior-data-analyst-at-ada-4401827969)
-- **Company:** ADA
+### 2. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-capco-4454993563)
+- **Company:** Capco
 - **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `4 months ago`
+- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `90 pts`
-- **Matched Core Skills:** `power bi`, `tableau`, `sql`, `python`, `gcp`
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/senior-data-analyst-at-ada-4401827969](https://in.linkedin.com/jobs/view/senior-data-analyst-at-ada-4401827969)
+- **Matched Core Skills:** `sql`, `power bi`, `tableau`, `etl`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-capco-4454993563](https://in.linkedin.com/jobs/view/data-analyst-at-capco-4454993563)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
   > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
-  > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
-- **Snippet:** *Senior Data Analyst at ADA in Bengaluru, Karnataka, India. Posted 4 months ago.     About ADAADA is a leading data and artificial intelligence (AI) company that designs and executes integrated digital, analytics, and mar...*
+- **Snippet:** *Data Analyst at Capco in Bengaluru, Karnataka, India. Posted 1 week ago.     Job Title: Data AnalystAbout Us“Capco, a Wipro company, is a global technology and management consulting firm. Awarded with Consultancy of the ...*
 
-### 4. [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213)
+### 3. [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213)
 - **Company:** Nua
 - **Location:** Mumbai Metropolitan Region
-- **Source:** LinkedIn Jobs | **Posted:** `2 weeks ago`
+- **Source:** LinkedIn Jobs | **Posted:** `3 weeks ago`
 - **CTC / Compensation:** 💰 `₹20L PA (Listed)`
 - **Relevance Score:** ⭐ `90 pts`
-- **Matched Core Skills:** `python`, `a/b testing`, `sql`
+- **Matched Core Skills:** `a/b testing`, `sql`, `python`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213](https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
   > *Highlight Meta & Airbnb checkout funnel optimization (+15% SR lift).* 
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
-- **Snippet:** *Product Analyst at Nua in Mumbai Metropolitan Region. Posted 2 weeks ago.     About Nua:Nua is a digital-ﬁrst, omnichannel brand reimagining women’s wellness with the full attention it has always deserved – instead of th...*
+- **Snippet:** *Product Analyst at Nua in Mumbai Metropolitan Region. Posted 3 weeks ago.     About Nua:Nua is a digital-ﬁrst, omnichannel brand reimagining women’s wellness with the full attention it has always deserved – instead of th...*
 
-### 5. [Senior Data Analyst](https://in.linkedin.com/jobs/view/senior-data-analyst-at-exl-4446724293)
-- **Company:** EXL
-- **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `5 days ago`
+### 4. [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-kissht-4458212076)
+- **Company:** Kissht
+- **Location:** Mumbai, Maharashtra, India
+- **Source:** LinkedIn Jobs | **Posted:** ⚡ `2 days ago` *(Early Applicant Advantage)*
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `power bi`, `tableau`, `sql`
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/senior-data-analyst-at-exl-4446724293](https://in.linkedin.com/jobs/view/senior-data-analyst-at-exl-4446724293)
+- **Relevance Score:** ⭐ `90 pts`
+- **Matched Core Skills:** `fintech`, `sql`, `payments`, `tableau`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-at-kissht-4458212076](https://in.linkedin.com/jobs/view/product-analyst-at-kissht-4458212076)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
   > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
-- **Snippet:** *Senior Data Analyst at EXL in Bengaluru, Karnataka, India. Posted 5 days ago.               Title : Senior Data AnalystLocation : Bangalore Write and optimize complex SQL queries for data extraction, transformation, and ...*
+- **Snippet:** *Product Analyst at Kissht in Mumbai, Maharashtra, India. Posted 2 days ago.     As a Product Analyst – Payments, you will work closely with Product, Engineering, Operations and external payment partners to analyze paymen...*
+
+### 5. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-portcast-4450798444)
+- **Company:** Portcast
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** `2 weeks ago`
+- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
+- **Relevance Score:** ⭐ `85 pts`
+- **Matched Core Skills:** `sql`, `python`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-portcast-4450798444](https://in.linkedin.com/jobs/view/data-analyst-at-portcast-4450798444)
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
+  > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
+- **Snippet:** *Data Analyst at Portcast in Bengaluru, Karnataka, India. Posted 2 weeks ago.               Portcast is a venture-backed, Singapore-based logistics technology startup building a real-time transportation visibility platfor...*
 
 ### 6. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875)
 - **Company:** Amaha
@@ -76,7 +75,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `2 weeks ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `power bi`, `tableau`, `numpy`, `sql`, `python`, `pandas`
+- **Matched Core Skills:** `sql`, `numpy`, `pandas`, `power bi`, `python`, `tableau`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875](https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -84,19 +83,17 @@
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
 - **Snippet:** *Data Analyst at Amaha in Mumbai, Maharashtra, India. Posted 2 weeks ago.     Key ResponsibilitiesExtract, clean, and analyse data using SQL to support business and product decisions.Build, maintain, and automate dashboar...*
 
-### 7. [Product Analyst- Assistant Manager- Paytm Ads](https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601)
-- **Company:** One97 Communications Limited
+### 7. [Business Analyst - Product Management](https://in.linkedin.com/jobs/view/business-analyst-product-management-at-yokohama-atg-4456146854)
+- **Company:** Yokohama-ATG
 - **Location:** Mumbai, Maharashtra, India
-- **Source:** LinkedIn Jobs | **Posted:** `3 months ago`
+- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `payments`, `power bi`, `tableau`, `sql`, `a/b testing`
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601](https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601)
+- **Matched Core Skills:** `power bi`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-product-management-at-yokohama-atg-4456146854](https://in.linkedin.com/jobs/view/business-analyst-product-management-at-yokohama-atg-4456146854)
 - 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
-  > *Highlight Meta & Airbnb checkout funnel optimization (+15% SR lift).* 
   > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
-- **Snippet:** *Product Analyst- Assistant Manager- Paytm Ads at One97 Communications Limited in Mumbai, Maharashtra, India. Posted 3 months ago.     About Us:Paytm is India's leading mobile payments and financial services distribution ...*
+- **Snippet:** *Business Analyst - Product Management at Yokohama-ATG in Mumbai, Maharashtra, India. Posted 1 week ago.     Job Description Form Job Role  :  Business Analyst Departments:  Product ManagementJob Code Location:  Mumbai Re...*
 
 ### 8. [Senior Analyst, Analytics Engineer](https://in.linkedin.com/jobs/view/senior-analyst-analytics-engineer-at-colgate-palmolive-4452910644)
 - **Company:** Colgate-Palmolive
@@ -104,7 +101,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `python`, `tableau`, `sql`
+- **Matched Core Skills:** `sql`, `tableau`, `python`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/senior-analyst-analytics-engineer-at-colgate-palmolive-4452910644](https://in.linkedin.com/jobs/view/senior-analyst-analytics-engineer-at-colgate-palmolive-4452910644)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -118,7 +115,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `3 months ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `80 pts`
-- **Matched Core Skills:** `python`, `tableau`, `sql`, `bigquery`
+- **Matched Core Skills:** `sql`, `tableau`, `bigquery`, `python`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/lead-analytics-engineer-bi-at-wework-india-4416251123](https://in.linkedin.com/jobs/view/lead-analytics-engineer-bi-at-wework-india-4416251123)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -126,83 +123,79 @@
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
 - **Snippet:** *Lead, Analytics Engineer (BI) at WeWork India in Bengaluru, Karnataka, India. Posted 3 months ago.     About UsWeWork India is the country’s leading flexible workspace provider that offers a personalized experience to di...*
 
-### 10. [Data Analytics](https://in.linkedin.com/jobs/view/data-analytics-at-flexmoney-technologies-pvt-ltd-4452447043)
-- **Company:** Flexmoney Technologies Pvt Ltd
-- **Location:** Mumbai, Maharashtra, India
-- **Source:** LinkedIn Jobs | **Posted:** `2 weeks ago`
+### 10. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-accenture-in-india-4448389570)
+- **Company:** Accenture in India
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** ⚡ `22 hours ago` *(Early Applicant Advantage)*
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `75 pts`
-- **Matched Core Skills:** `power bi`, `anomaly detection`, `postgresql`, `fintech`, `python`, `sql`, `mysql`, `a/b testing`, `funnel`
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analytics-at-flexmoney-technologies-pvt-ltd-4452447043](https://in.linkedin.com/jobs/view/data-analytics-at-flexmoney-technologies-pvt-ltd-4452447043)
+- **Matched Core Skills:** General Analytics
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-accenture-in-india-4448389570](https://in.linkedin.com/jobs/view/business-analyst-at-accenture-in-india-4448389570)
 - 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
-  > *Highlight Meta & Airbnb checkout funnel optimization (+15% SR lift).* 
-  > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
-  > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
-- **Snippet:** *Data Analytics at Flexmoney Technologies Pvt Ltd in Mumbai, Maharashtra, India. Posted 2 weeks ago.     Job Description | Data AnalyticsAbout FlexMoney:FlexMoney Technologies is India's embedded credit infrastructure pla...*
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Business Analyst at Accenture in India in Bengaluru, Karnataka, India. Posted 22 hours ago.     Project Role : Business AnalystProject Role Description : Analyze an organization and design its processes and systems, asse...*
 
-### 11. [Business Intelligence Engineer II, Retail Business Service Data Engineering Team](https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-retail-business-service-data-engineering-team-at-amazon-4455795899)
-- **Company:** Amazon
-- **Location:** Chennai, Tamil Nadu, India
-- **Source:** LinkedIn Jobs | **Posted:** `6 days ago`
+### 11. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-ascendion-4453564975)
+- **Company:** Ascendion
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `70 pts`
-- **Matched Core Skills:** `power bi`, `tableau`, `etl`, `sql`, `python`
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-retail-business-service-data-engineering-team-at-amazon-4455795899](https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-retail-business-service-data-engineering-team-at-amazon-4455795899)
+- **Matched Core Skills:** `sql`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-ascendion-4453564975](https://in.linkedin.com/jobs/view/business-analyst-at-ascendion-4453564975)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
-  > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
-  > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
-- **Snippet:** *Business Intelligence Engineer II, Retail Business Service Data Engineering Team at Amazon in Chennai, Tamil Nadu, India. Posted 6 days ago.     DescriptionRetail Business Services (RBS) supports Amazon’s Retail business...*
+- **Snippet:** *Business Analyst at Ascendion in Bengaluru, Karnataka, India. Posted 1 week ago.     Must-Have Skills Requirements elicitation and Business Requirements Document (BRD) writing User story creation with acceptance criteria...*
 
-### 12. [PureSoftware - Business Analyst](https://in.linkedin.com/jobs/view/puresoftware-business-analyst-at-puresoftware-ltd-4433534656)
-- **Company:** PureSoftware Ltd
+### 12. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-emids-4410569233)
+- **Company:** Emids
 - **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `2 months ago`
+- **Source:** LinkedIn Jobs | **Posted:** `4 months ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `65 pts`
 - **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/puresoftware-business-analyst-at-puresoftware-ltd-4433534656](https://in.linkedin.com/jobs/view/puresoftware-business-analyst-at-puresoftware-ltd-4433534656)
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-emids-4410569233](https://in.linkedin.com/jobs/view/business-analyst-at-emids-4410569233)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *PureSoftware - Business Analyst at PureSoftware Ltd in Bengaluru, Karnataka, India. Posted 2 months ago.     Job SummaryWe are seeking a highly skilled Senior Business Analyst with extensive experience in Life Asia to jo...*
+- **Snippet:** *Business Analyst at Emids in Bengaluru, Karnataka, India. Posted 4 months ago.     Job DescriptionBusiness Analyst - Incentive Compensation / Functional Analyst Define and implement IC strategies aligned with pharma sale...*
 
-### 13. [Assistant Manager](https://in.linkedin.com/jobs/view/assistant-manager-at-exl-4446587231)
-- **Company:** EXL
-- **Location:** Bengaluru, Karnataka, India
-- **Source:** LinkedIn Jobs | **Posted:** `5 days ago`
+### 13. [Data Analyst](https://in.linkedin.com/jobs/view/data-analyst-at-experity-4455703839)
+- **Company:** Experity
+- **Location:** Greater Bengaluru Area
+- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `50 pts`
-- **Matched Core Skills:** `power bi`, `tableau`, `sql`
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/assistant-manager-at-exl-4446587231](https://in.linkedin.com/jobs/view/assistant-manager-at-exl-4446587231)
+- **Relevance Score:** ⭐ `65 pts`
+- **Matched Core Skills:** General Analytics
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/data-analyst-at-experity-4455703839](https://in.linkedin.com/jobs/view/data-analyst-at-experity-4455703839)
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Data Analyst at Experity in Greater Bengaluru Area. Posted 1 week ago.               Equal Opportunity EmployerThis employer is required to notify all applicants of their rights pursuant to federal employment laws. For f...*
+
+### 14. [Business Intelligence Engineer II, AOP](https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-aop-at-amazon-4455902739)
+- **Company:** Amazon
+- **Location:** Gurugram, Haryana, India
+- **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
+- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
+- **Relevance Score:** ⭐ `55 pts`
+- **Matched Core Skills:** `sql`, `etl`, `tableau`, `python`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-aop-at-amazon-4455902739](https://in.linkedin.com/jobs/view/business-intelligence-engineer-ii-aop-at-amazon-4455902739)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
   > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
-- **Snippet:** *Assistant Manager at EXL in Bengaluru, Karnataka, India. Posted 5 days ago.               Title - Data AnalystLocation - Bangalore (WFO) Analyze and interpret data to support business decision‑making Write complex SQL qu...*
+  > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
+- **Snippet:** *Business Intelligence Engineer II, AOP at Amazon in Gurugram, Haryana, India. Posted 1 week ago.     DescriptionAmazon strives to be Earth's most customer-centric company where people can find and discover virtually anyt...*
 
-### 14. [Software Engineer, Backend - Data Layer](https://www.arbeitnow.com/jobs/companies/camunda/remote-software-engineer-backend-data-layer-361726)
-- **Company:** Camunda
-- **Location:** Remote
-- **Source:** Arbeitnow | **Posted:** `2026-08-26`
+### 15. [Analytics and Modeling Specialist](https://in.linkedin.com/jobs/view/analytics-and-modeling-specialist-at-accenture-in-india-4458138671)
+- **Company:** Accenture in India
+- **Location:** Bengaluru, Karnataka, India
+- **Source:** LinkedIn Jobs | **Posted:** ⚡ `2 days ago` *(Early Applicant Advantage)*
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `45 pts`
+- **Relevance Score:** ⭐ `50 pts`
 - **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://www.arbeitnow.com/jobs/companies/camunda/remote-software-engineer-backend-data-layer-361726](https://www.arbeitnow.com/jobs/companies/camunda/remote-software-engineer-backend-data-layer-361726)
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/analytics-and-modeling-specialist-at-accenture-in-india-4458138671](https://in.linkedin.com/jobs/view/analytics-and-modeling-specialist-at-accenture-in-india-4458138671)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *Register Here!Camunda is the enterprise platform for agentic orchestration, enabling organizations to coordinate AI agents, people, and systems across complex, end-to-end business processes. With built-in governance, aud...*
-
-### 15. [Lead Data Platform Engineer](https://www.arbeitnow.co.uk/jobs/companies/akersystems/remote-lead-data-platform-engineer-98007)
-- **Company:** Akersystems
-- **Location:** Remote/Home Based
-- **Source:** Arbeitnow | **Posted:** `2026-08-26`
-- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `45 pts`
-- **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://www.arbeitnow.co.uk/jobs/companies/akersystems/remote-lead-data-platform-engineer-98007](https://www.arbeitnow.co.uk/jobs/companies/akersystems/remote-lead-data-platform-engineer-98007)
-- 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *<div class="content-intro"><p>Aker Systems was founded in 2017 by a team of experienced technology professionals who recognised an opportunity to provide highly secure enterprise data platforms to large organisations.&nb...*
+- **Snippet:** *Analytics and Modeling Specialist at Accenture in India in Bengaluru, Karnataka, India. Posted 2 days ago.               THE WORK: Dive into the world of data analysis and interpretation! In this role, you will have the ...*
 
 ---
 *Generated automatically by GitHub Actions Job Agent & Resume Copilot*
