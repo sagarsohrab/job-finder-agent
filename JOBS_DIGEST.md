@@ -1,5 +1,5 @@
 # 🎯 Daily Job Digest & Application Copilot for Sagar Sohrab
-**Date:** August 12, 2026 | **Top Mid-Level Matches (1-3 YOE):** 15
+**Date:** September 01, 2026 | **Top Mid-Level Matches (1-3 YOE):** 15
 
 ---
 
@@ -9,7 +9,7 @@
 - **Source:** LinkedIn Jobs | **Posted:** `1 week ago`
 - **CTC / Compensation:** 💰 `₹20L PA (Listed)`
 - **Relevance Score:** ⭐ `90 pts`
-- **Matched Core Skills:** `sql`, `a/b testing`, `python`
+- **Matched Core Skills:** `a/b testing`, `python`, `sql`
 - **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213](https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
@@ -83,7 +83,7 @@
   > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
   > *Highlight executive dashboarding & KPI readouts in Tableau/Power BI for 15+ Tier-1 accounts.* 
   > *Highlight Z-score statistical anomaly modeling & automated Python ETL latency reduction (10x latency drop).* 
-- **Snippet:** *Analytics Engineer at Cutshort in Mumbai Metropolitan Region. Posted 2 weeks ago.     Must-Have SkillsMinimum 3 years of experience in Data Engineering / Analytics Engineering / Fintech Data rolesMust have worked on SMS ...*
+- **Snippet:** *Analytics Engineer (Position located in Bengaluru, India) at KnowBe4 in Bengaluru, Karnataka, India. Posted 2 weeks ago.               KnowBe4 empowers the modern workforce to make smarter security decisions every day. T...*
 
 ### 7. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-easyecom-4451038653)
 - **Company:** EASYECOM
@@ -102,12 +102,12 @@
 - **Location:** Mumbai, Maharashtra, India
 - **Source:** LinkedIn Jobs | **Posted:** ⚡ `2 days ago` *(Early Applicant Advantage)*
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
-- **Relevance Score:** ⭐ `75 pts`
-- **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/product-analyst-at-paisasmart-4449507808](https://in.linkedin.com/jobs/view/product-analyst-at-paisasmart-4449507808)
+- **Relevance Score:** ⭐ `70 pts`
+- **Matched Core Skills:** `sql`
+- **Direct Apply Link:** 🚀 [https://in.linkedin.com/jobs/view/business-analyst-at-ascendion-4453566913](https://in.linkedin.com/jobs/view/business-analyst-at-ascendion-4453566913)
 - 💡 **Tailored Resume Pitch Focus:**
-  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *Product Analyst at PaisaSmart in Mumbai, Maharashtra, India. Posted 2 days ago.     Primary Skillset: Product Analysis, Data Analysis, Product Testing, Backlog ManagementYears of Work Ex: 1 – 3 yrsMinimum Qualifications:...*
+  > *Emphasize Razorpay BigQuery/PostgreSQL CTEs & window functions ($500M+ GMV).* 
+- **Snippet:** *Business Analyst at Ascendion in Bengaluru, Karnataka, India. Posted 2 weeks ago.     Must-Have Skills Requirements elicitation and Business Requirements Document (BRD) writing User story creation with acceptance criteri...*
 
 ### 9. [Business Analyst](https://in.linkedin.com/jobs/view/business-analyst-at-emids-4410569233)
 - **Company:** Emids
@@ -148,14 +148,26 @@
 ### 12. [AI / ML Engineer (m/w/d)](https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-ai-ml-engineer-berlin-374215)
 - **Company:** Recare Deutschland GmbH
 - **Location:** Remote job
-- **Source:** Arbeitnow | **Posted:** `2026-08-12`
+- **Source:** Arbeitnow | **Posted:** `2026-09-01`
+- **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
+- **Relevance Score:** ⭐ `45 pts`
+- **Matched Core Skills:** General Analytics
+- **Direct Apply Link:** 🚀 [https://www.arbeitnow.com/jobs/companies/makersite-gmbh/remote-senior-data-scientist-berlin-106805](https://www.arbeitnow.com/jobs/companies/makersite-gmbh/remote-senior-data-scientist-berlin-106805)
+- 💡 **Tailored Resume Pitch Focus:**
+  > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
+- **Snippet:** *Data Scientist (m/f/x) Location: EU(Remote)  Who You’ll Work For:  At Makersite, we're pioneering the future of sustainable product development and digital collaboration. As a leading platform for product lifecycle manag...*
+
+### 12. [Knit - Research Manager](https://www.arbeitnow.com/jobs/companies/eleve-talent/remote-knit-research-manager-498582)
+- **Company:** Eleve Talent
+- **Location:** Remote
+- **Source:** Arbeitnow | **Posted:** `2026-09-01`
 - **CTC / Compensation:** 💰 `₹9L - ₹18L PA (Est. Mid-Market Tech Standard)`
 - **Relevance Score:** ⭐ `40 pts`
 - **Matched Core Skills:** General Analytics
-- **Direct Apply Link:** 🚀 [https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-ai-ml-engineer-berlin-374215](https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-ai-ml-engineer-berlin-374215)
+- **Direct Apply Link:** 🚀 [https://www.arbeitnow.com/jobs/companies/eleve-talent/remote-knit-research-manager-498582](https://www.arbeitnow.com/jobs/companies/eleve-talent/remote-knit-research-manager-498582)
 - 💡 **Tailored Resume Pitch Focus:**
   > *Emphasize 1+ year Business Analyst experience at Razorpay driving GMV growth and automated analytics.* 
-- **Snippet:** *About RecareAs one of the leading German HealthTech companies, we are reshaping discharge management – technology-driven, patient-centered, and free from bureaucracy. In addition to our market-leading SaaS platform, we d...*
+- **Snippet:** *Knit is the AI-native consumer research platform helping brands automate and accelerate primary research. With our Researcher-Driven AI, we’ve condensed the entire quant + qual research process from weeks into days (some...*
 
 ### 13. [Project Manager](https://in.linkedin.com/jobs/view/project-manager-at-exl-4446739131)
 - **Company:** EXL
