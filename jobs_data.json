@@ -1,77 +1,17 @@
 [
   {
-    "title": "Data Analyst",
-    "company": "MyYogaTeacher",
-    "location": "Bangalore Urban, Karnataka, India",
-    "url": "https://in.linkedin.com/jobs/view/data-analyst-at-myyogateacher-4451395356",
-    "source": "LinkedIn Jobs",
-    "date": "1 day ago",
-    "description": "Data Analyst at MyYogaTeacher in Bangalore Urban, Karnataka, India. Posted 1 day ago.\n\n\n\n\nAbout MyYogaTeacherWe are a startup in the wellness and healthcare space, connecting students across multiplecountries with expert yoga and fitness teachers from India for live, personalised sessions - andwe're looking to break new growth boundaries.Our decisions are heavily guided by data, and this role is core to how we grow. We are lookingfor someone who is passionate about contributing to that growth and propelling MyYogaTeacherto newer heights.We encourage you to spend some time on myyogateacher.com - and maybe even try a session.It'll give you a real feel for what we're building.About the RoleAs a Data Analyst at MyYogaTeacher, you'll sit at the intersection of product, marketing, sales,and operations - the person teams come to when they need to understand what's happeningand what to do next.This is a hands-on, high-ownership role where you'll be comfortable defining what to measure,analysing what the numbers mean, and building the reports that bring it all together. You won'tbe waiting for briefs - you'll be shaping them.On any given week, you might be:\u25cf Defining event tracking schemas for new product features - working with engineeringand product to make sure every meaningful user action is captured correctly from dayone\u25cf Building insights reports for recent product or marketing initiatives - translating whathappened into what it means and what to do next\u25cf Analysing performance data across teams - helping sales, support, and operationsunderstand how they're doing and where to focus\u25cf Owning the reliability of our reporting ecosystem - keeping existing reports accurate,relevant, and trusted as the product evolves\u25cf Spotting data inconsistencies in the database, raising them as tickets - you own it untilit's fixed\u25cf Identifying opportunities to automate data collection, validation, and reporting workflows -reducing manual effort across the teamRequirements\u25cf 2+ years in a Data Analyst or similar role\u25cf Degree in Engineering, Computer Science, Mathematics, Statistics, Data Science, orrelated field\u25cf Strong SQL skills with hands-on experience in MySQL and PostgreSQL\u25cf Proficient in Python for data analysis (Pandas, NumPy)\u25cf Hands-on experience with statistical analysis and A/B testing\u25cf Hands-on experience with BI tools - Tableau, Power BI, or equivalent\u25cf Familiarity with cloud data infrastructure - Redshift, ClickHouse, or AWS broadlyGood to Have\u25cf Experience with product and web analytics - Google Analytics, Google Search Console,or similar\u25cf Familiarity with session recording tools such as Clarity or Mixpanel\u25cf Exposure to machine learning concepts or hands-on experience building models\u25cf Knowledge of LLMs and AI agent tools\u25cf Experience handling unstructured data such as text, audio, or video\u25cf Background in a B2C product or marketplace environmentAbout You\u25cf Analytical thinker - you dig into the numbers, ask the right questions, and don't stop atsurface-level answers\u25cf Ownership mindset - you follow through without being followed up on, and flag blockersearly rather than after a deadline slips\u25cf Sharp eye for data quality - you catch inconsistencies and act on them, even whennobody asked\u25cf Clear communicator - you can walk a non-technical stakeholder through a complexanalysis and make it land\u25cf Fast adapter - comfortable with ambiguity, new tools, and a pace where most requeststurn around in 1-3 days\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
-    "relevance_score": 100,
-    "matched_skills": [
-      "postgresql",
-      "power bi",
-      "tableau",
-      "mysql",
-      "python",
-      "pandas",
-      "sql",
-      "a/b testing",
-      "numpy"
-    ],
-    "score_breakdown": {
-      "Role Relevance": 30,
-      "Location Alignment": 25,
-      "Experience Match (1-3 YOE)": 20,
-      "Core Skill Overlap": 15,
-      "Freshness Velocity (<24h)": 10
-    },
-    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
-    "tailored_pitch": "Focus on exploratory data analysis (EDA), anomaly detection algorithms, SQL query optimization, and KPI dashboards for MyYogaTeacher.",
-    "gap_analysis": {
-      "coincidences": [
-        "Complex SQL transformations (CTEs, window functions) on GCP BigQuery & PostgreSQL",
-        "Automated Python ETL pipelines (Pandas, SciPy) & real-time observability alerting",
-        "Checkout funnel analytics & conversion rate lift (+15% SR lift across Meta & Airbnb)",
-        "Interactive KPI executive dashboards in Tableau & Power BI for $500M+ GMV accounts"
-      ],
-      "gaps_to_bridge": [
-        "Highlight cross-functional stakeholder communication with engineering & product leads."
-      ],
-      "tailored_bullets": [
-        "Managed portfolio performance analytics at Razorpay for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.",
-        "Authored complex SQL transformations and statistical anomaly detection models (Z-score), reducing failure detection latency by 10x.",
-        "Designed interactive KPI dashboards in Tableau and Power BI, translating high-throughput transactional data into strategic readouts."
-      ]
-    },
-    "interview_prep": {
-      "questions": [
-        "1. How do you translate complex transactional data into executive readouts for enterprise stakeholders?",
-        "2. Give an example of a SQL-driven insight that directly influenced revenue or GMV growth.",
-        "3. How do you handle conflicting requirements from sales, product, and finance leaders?"
-      ],
-      "star_answer": "SITUATION: Razorpay's 15+ Tier-1 enterprise accounts required real-time visibility into $500M+ annual GMV.\nTASK: Build centralized executive dashboards for C-suite readouts.\nACTION: Designed automated Tableau & Power BI dashboards integrated with GCP BigQuery.\nRESULT: Empowered leadership with real-time GMV tracking and instant anomaly alerts.",
-      "questions_to_ask": [
-        "What are the key growth drivers and analytics priorities for MyYogaTeacher over the next 6-12 months?",
-        "How is data success measured within the analytics team at MyYogaTeacher?"
-      ]
-    },
-    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=MyYogaTeacher%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at MyYogaTeacher,\n\nI am writing to express my strong interest in the Data Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on postgresql, power bi, tableau, mysql, python, pandas, sql, a/b testing, numpy, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to MyYogaTeacher.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
-  },
-  {
     "title": "Product Analyst",
     "company": "Nua",
     "location": "Mumbai Metropolitan Region",
     "url": "https://in.linkedin.com/jobs/view/product-analyst-at-nua-4447365213",
     "source": "LinkedIn Jobs",
-    "date": "6 days ago",
-    "description": "Product Analyst at Nua in Mumbai Metropolitan Region. Posted 6 days ago.\n\n\n\n\nAbout Nua:Nua is a digital-\ufb01rst, omnichannel brand reimagining women\u2019s wellness with the full attention it has always deserved \u2013 instead of the superficial solutions it has typically received. We serve nearly 20 lakh women and girls each month with Zero Irritation period care, maternity care, skincare, everyday intimate care, and digital tools like our Period Tracker App and SecretKeeper chat. With a thriving D2C business, we are also the second-largest women\u2019s wellness brand on most Indian e-commerce and quick commerce platforms. We have innovated around the neglected, overlooked frictions women and girls face in their wellness journeys \u2013 the irritations they\u2019ve learned to manage quietly, the problems that others dismiss as \u2018just part of being a woman.\u2019 Our guiding philosophy is \u201cThought Around You,\u201d to ensure we develop wellness products that truly ease your cycle, body, feelings, and life. Founded in 2017, Nua is fast-growing and profitable, powered by a hardworking, supportive, and diverse team that always puts customers first. If you enjoy a fast-paced environment, if creative and collaborative problem-solving excites you, and if you\u2019re looking for an opportunity to own true impact, Nua might be the place for you!Key ResponsibilitiesCollect, organize, and analyse product and customer usage data to help product management and executive leadership make informed decisions.Build and monitor customer data dashboards, identify patterns and set alerts for the same.Work closely with Product Managers and Engineering team for successful execution of product features.Collaborate with other business functions like marketing and category teams for regular updates on the Nua website.Compile reports on recent feature requests and upcoming launches to share with internal stakeholders.Liaise with the Product team to set clear objectives for day to day functions and measure against the set KPI.Qualifications:Have 1-3 years of prior experience in Product Analytics or Product Operations.Have good logical thinking capabilities and should be comfortable working with number.Have no fear to work hands on with APIs and JSON text format.Have strong analytical and reporting skills.Have strong interpersonal skills and be able to work across teams.Be organized and able to juggle multiple priorities and deliverables.Be passionate about the category and the industry of women\u2019s wellness.SQL, Data Visualization, A/B testing, Excel, Cross-functional Collaboration, Problem Solving, Web Technologies (preferred), Python (bonus points), Postman API (bonus).\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
+    "date": "1 week ago",
+    "description": "Product Analyst at Nua in Mumbai Metropolitan Region. Posted 1 week ago.\n\n\n\n\nAbout Nua:Nua is a digital-\ufb01rst, omnichannel brand reimagining women\u2019s wellness with the full attention it has always deserved \u2013 instead of the superficial solutions it has typically received. We serve nearly 20 lakh women and girls each month with Zero Irritation period care, maternity care, skincare, everyday intimate care, and digital tools like our Period Tracker App and SecretKeeper chat. With a thriving D2C business, we are also the second-largest women\u2019s wellness brand on most Indian e-commerce and quick commerce platforms. We have innovated around the neglected, overlooked frictions women and girls face in their wellness journeys \u2013 the irritations they\u2019ve learned to manage quietly, the problems that others dismiss as \u2018just part of being a woman.\u2019 Our guiding philosophy is \u201cThought Around You,\u201d to ensure we develop wellness products that truly ease your cycle, body, feelings, and life. Founded in 2017, Nua is fast-growing and profitable, powered by a hardworking, supportive, and diverse team that always puts customers first. If you enjoy a fast-paced environment, if creative and collaborative problem-solving excites you, and if you\u2019re looking for an opportunity to own true impact, Nua might be the place for you!Key ResponsibilitiesCollect, organize, and analyse product and customer usage data to help product management and executive leadership make informed decisions.Build and monitor customer data dashboards, identify patterns and set alerts for the same.Work closely with Product Managers and Engineering team for successful execution of product features.Collaborate with other business functions like marketing and category teams for regular updates on the Nua website.Compile reports on recent feature requests and upcoming launches to share with internal stakeholders.Liaise with the Product team to set clear objectives for day to day functions and measure against the set KPI.Qualifications:Have 1-3 years of prior experience in Product Analytics or Product Operations.Have good logical thinking capabilities and should be comfortable working with number.Have no fear to work hands on with APIs and JSON text format.Have strong analytical and reporting skills.Have strong interpersonal skills and be able to work across teams.Be organized and able to juggle multiple priorities and deliverables.Be passionate about the category and the industry of women\u2019s wellness.SQL, Data Visualization, A/B testing, Excel, Cross-functional Collaboration, Problem Solving, Web Technologies (preferred), Python (bonus points), Postman API (bonus).\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
     "relevance_score": 90,
     "matched_skills": [
-      "python",
       "sql",
-      "a/b testing"
+      "a/b testing",
+      "python"
     ],
     "score_breakdown": {
       "Role Relevance": 30,
@@ -110,105 +50,7 @@
       ]
     },
     "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Nua%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at Nua,\n\nI am writing to express my strong interest in the Product Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on python, sql, a/b testing, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Nua.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
-  },
-  {
-    "title": "Data Analyst",
-    "company": "Portcast",
-    "location": "Bengaluru, Karnataka, India",
-    "url": "https://in.linkedin.com/jobs/view/data-analyst-at-portcast-4450798444",
-    "source": "LinkedIn Jobs",
-    "date": "3 days ago",
-    "description": "Data Analyst at Portcast in Bengaluru, Karnataka, India. Posted 3 days ago.\n\n\n\n\n          Portcast is a venture-backed, Singapore-based logistics technology startup building a real-time transportation visibility platform for global supply chains. We help shippers, manufacturers, and logistics service providers turn data into decisions and decisions into measurable business impact.Our platform goes beyond visibility. Portcast enables action at scale by surfacing the right risks early, helping teams prevent detention and demurrage, accelerate exception management, and close invoices faster with built-in evidence. We turn visibility into outcomes: reduced costs, improved operational control, and more predictable supply chains.Founded in 2018 and backed by leading technology investors, we are building for an industry at a critical inflection point of digital transformation. Our team of software engineers, data scientists, and logistics experts is on a mission to make supply chains not just visible, but decisively actionable: end to end.ABOUT THE ROLE:Portcast has already been used by global freight forwarding companies, manufacturers and cargo airlines. Our customers trust us to deliver fast, reliable and secure predictions, our engine answers when, where, why, and by how many days a container will be delayed. That trust lives or dies on data quality, and that's what you'll own.As our Data Analyst, you will be reporting directly to our Analytics Manager and work closely with our Data Science, Engineering, Product, and Commercial teams. You'll sit on a data-heavy product that gives customers end-to-end visibility of their cargo across the ocean journey, making sure the data we ingest into the models and share with customers is error-free and of the highest quality. You won't just run the query and close the ticket here. When an anomaly shows up, you'll chase why it's there, trace it to the real source, and fix the process so it doesn't come back. Curiosity isn't a nice-to-have on this team, it's how we build.WHAT YOU'LL OWN:Documentation, reporting, and root-cause analysis of prediction issues: owning the problem end to end, not just flagging it. Analyze ingested and system-generated data for anomalies and gaps, and refer to various data sources to plug those gaps. Turn data into stories: surface the pattern behind an issue, propose the fix (QA process-flow change and/or automation), and own the subsequent plan and execution. Automate performance/accuracy review processes, report generation, and data visualization using Python and SQL: building reusable, scalable workflows, not one-off scripts. Support Engineering and Data Science on system-level data fixes. Understand how the engine makes predictions, and explore improvements by fixing or introducing new data and features. Support Customer Operations and Marketing with insights from the data: performance, accuracy metrics, the impact of real-time events, as needed. Maintain and own internal and customer dashboards based on trial/account requirements (prediction accuracy, timeliness, coverage, explainability). WHAT WE'RE LOOKING FOR:Bachelor's or Master's degree in Computer Science, Engineering, Information Technology, or a related field. At least 2-3+ years in a Data Analyst or Business Analyst role, preferably in a product-based, lean startup particularly in logistics, ecommerce or B2B SaaS data-heavy domain. Exceptionally skilled in Python and SQL, with a demonstrated ability to consistently produce reusable and highly scalable code. An eye for detail: you go looking for anomalies in the system before a customer does, and proven experience turning messy data into clear visualizations. First Principles Thinker: when you explain a past decision, the trade-offs come out before the tools. You name the constraint, the alternatives you considered, and why you picked what you picked. You don't reach for a new tool when a tighter use of an existing one would do the job. Curious by Default: you dig deeper instead of following instructions to the letter. When the data surprises you, you chase the why, not just the fix, and you ask the good questions early. You own your output, AI included. You use AI tools (Claude, Copilot, etc.) where they make you faster on QA, automation, and analysis, and you know exactly where they fall short. You read and validate what they produce \u2014 you don't just paste it. You can explain the anomaly, the root cause, and the fix without saying \"the AI found it,\" and you flag AI-assisted work without being asked. We treat AI as a tool that makes good thinking faster, not a shortcut around thinking. Empathy and Urgency: you feel the customer's pain and react promptly on a day-to-day basis (either programmatically or manually) to meet expectations and deliver on time. You communicate nuanced ideas clearly, from real-time remote brainstorming to explaining a data decision in writing. You may be opinionated, but in disagreements you engage thoughtfully with other perspectives and can compromise when needed. You have experience working in a diverse, dynamic, and cross-cultural team, with a strong ownership mindset, efficiency, and a data-driven approach. Good to have: a basic understanding of machine learning algorithms. WHAT'S IN IT FOR YOU:Globally distributed, remote-first flexibility: Work with a fully distributed team across Asia and Europe, built on trust, accountability, and collaboration. Our diversity of perspectives fuels innovation and keeps us curious. Data-first team: You'll work with like-minded individuals who share a passion for solving difficult problems with data. Accelerated growth: Compress the learning curve in a couple of years by owning data quality and analytics from day one as your own baby. We are building our company to be the next B2B market leader in predictive global supply chains, and you'll be a major part of our story. Impact you can see: With a lean structure, your work is effective from the start. You'll see the results of your ideas and decisions directly moving the business forward. Our CORE Values Guide Everything We Do:Curiosity: We read the data before we trust it. We dig into why a number looks the way it does, not just how to make the anomaly disappear. Ownership: We act like founders. We don't wait for someone to flag a data issue, and we stay on a problem until it's actually fixed at the source. Raising the bar: We don't settle for a report that only works this once. We aim for data pipelines and dashboards that are reliable, reusable, and easy for the team to trust. Effectiveness: We focus on analysis that creates real product and customer impact. We prioritize the right problems, make practical trade-offs, and ship work that improves outcomes, not just output. Join us at Portcast and be part of a high-performing team that is shaping the future of the logistics and shipping industry through cutting-edge predictive analytics!We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.\n        \n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
-    "relevance_score": 85,
-    "matched_skills": [
-      "python",
-      "sql"
-    ],
-    "score_breakdown": {
-      "Role Relevance": 30,
-      "Location Alignment": 25,
-      "Experience Match (1-3 YOE)": 20,
-      "Core Skill Overlap": 10,
-      "Freshness Velocity (<24h)": 0
-    },
-    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
-    "tailored_pitch": "Focus on exploratory data analysis (EDA), anomaly detection algorithms, SQL query optimization, and KPI dashboards for Portcast.",
-    "gap_analysis": {
-      "coincidences": [
-        "Complex SQL transformations (CTEs, window functions) on GCP BigQuery & PostgreSQL",
-        "Automated Python ETL pipelines (Pandas, SciPy) & real-time observability alerting"
-      ],
-      "gaps_to_bridge": [
-        "Highlight cross-functional stakeholder communication with engineering & product leads."
-      ],
-      "tailored_bullets": [
-        "Managed portfolio performance analytics at Razorpay for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.",
-        "Authored complex SQL transformations and statistical anomaly detection models (Z-score), reducing failure detection latency by 10x.",
-        "Designed interactive KPI dashboards in Tableau and Power BI, translating high-throughput transactional data into strategic readouts."
-      ]
-    },
-    "interview_prep": {
-      "questions": [
-        "1. How do you translate complex transactional data into executive readouts for enterprise stakeholders?",
-        "2. Give an example of a SQL-driven insight that directly influenced revenue or GMV growth.",
-        "3. How do you handle conflicting requirements from sales, product, and finance leaders?"
-      ],
-      "star_answer": "SITUATION: Razorpay's 15+ Tier-1 enterprise accounts required real-time visibility into $500M+ annual GMV.\nTASK: Build centralized executive dashboards for C-suite readouts.\nACTION: Designed automated Tableau & Power BI dashboards integrated with GCP BigQuery.\nRESULT: Empowered leadership with real-time GMV tracking and instant anomaly alerts.",
-      "questions_to_ask": [
-        "What are the key growth drivers and analytics priorities for Portcast over the next 6-12 months?",
-        "How is data success measured within the analytics team at Portcast?"
-      ]
-    },
-    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Portcast%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at Portcast,\n\nI am writing to express my strong interest in the Data Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on python, sql, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Portcast.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
-  },
-  {
-    "title": "Product Analyst",
-    "company": "PaisaSmart",
-    "location": "Mumbai, Maharashtra, India",
-    "url": "https://in.linkedin.com/jobs/view/product-analyst-at-paisasmart-4449507808",
-    "source": "LinkedIn Jobs",
-    "date": "1 day ago",
-    "description": "Product Analyst at PaisaSmart in Mumbai, Maharashtra, India. Posted 1 day ago.\n\n\n\n\nPrimary Skillset: Product Analysis, Data Analysis, Product Testing, Backlog ManagementYears of Work Ex: 1 \u2013 3 yrsMinimum Qualifications: Bachelors in Computer Science, Engineering, Design, Business, Economics etc.Location: Nariman Point, MumbaiTimings: 10am \u2013 7pm; Monday to FridayWork Type: On-Site, 5 days a weekCompany Description:PaisaSmart is the operating brand name for Elixir Equities Pvt. Ltd. (EEPL), a financial services firm with operations in Prop Trading, Stock Broking, Portfolio Management & Mutual Fund distribution, and over 20 years in wealth management under founders who are recognised industry leaders.Our mission is to build wealth for the next 100m Indians. PaisaSmart is how \u2014 a WhatsApp chatbot and an Android/iOS app that make investing simple for people who have never invested.We ship fast. We work under broker, RA, PMS and MFD licences, so we ship fast without being careless with other people\u2019s money \u2014 doing both is the actual job.Our values are humility, curiosity and passion. Socials: YT \u00b7 Insta \u00b7 LinkedIn. Try the product: message 8808990978 on WhatsApp.Application Process:Apply on our site. Screening happens immediately by our recruitment AI agent, no waiting -> immediate pass/fail.One day of in-person interviews at our offices (you select a convenient date & time) with the founder and team.If we like you we make a decision immediately and share an offer. No long process, no multi stage screening.What You\u2019ll Own:Product Roadmap: Work closely with the engineering team to identify and prioritize the backlog of work. Track what\u2019s in flight, what\u2019s next and what\u2019s done to build a complete product roadmap.Product Usage Analytics: Analyse and design the dashboards, track how our customers are using the product, what growth we\u2019re generating, what the pain points are and what we can be doing better.Product Testing: Oversee and co-ordinate the testing team. Nothing should be released unless you certify it works.How We Work:Small team, highly collaborative but individual responsibilities. Growth isn\u2019t gated on tenure. If you can do the next job, you get it.You work directly with the founder. No layer in between, nobody to hide behind. No office politics, no blame games, direct visibility.High responsibility, high level of freedom, minimal guidance. Find a problem, design a solution, fix it. You own your work end to end, including when something goes wrong at 9pm.If you\u2019re right you\u2019re right. No hierarchy, no \u201cdo it cause the boss said so\u201d. Best argument wins, regardless of who made it.Everyone is expected to do 2-3 different roles. With AI tooling enabling us to learn and do more than ever before join us with one core skillset and learn & apply 1-2 new skills with us.Who This Is For:You teach yourself things nobody assigned you.The problem is clear, the solution isn\u2019t, and that excites you.You want real responsibility and opportunity to make an impact immediately.Who It Isn\u2019t For:You want a defined ladder and a manager who assigns your work.You want remote or hybrid. This is on-site, five days, and we\u2019re not flexible.You\u2019d rather specialise narrowly than learn new things.Requirements: This is a multi-faceted role, show clear evidence that you excel somewhere and we\u2019ll teach you the rest.Some understanding of coding, software engineering, databases, APIs etc. (Critical to understand and prioritize the backlog)Strong data analysis and logical thinking skills (Required to read and build product usage dashboards)Experience with product analysis. You should be able to look at a product and understand what\u2019s working and what\u2019s not. How features drive users to behave in certain ways, what discourages vs encourages certain actions. This requires a lot of user empathy.Discipline and attention to detail. Product testing is a grind, you need to think in detail to define testing cases, be disciplined to test and oversee testing repeatedly and not authorise release until something is working perfectly.You've owned a product or a company you worked for shipped to its own users, not a client's project built to someone else's requirements.Compensation:15 days paid vacation.Salary is competitive and varies substantially based on the skillset of an individual candidate.EEPL offers an ESOP program to select employees.\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
-    "relevance_score": 85,
-    "matched_skills": [],
-    "score_breakdown": {
-      "Role Relevance": 30,
-      "Location Alignment": 25,
-      "Experience Match (1-3 YOE)": 20,
-      "Core Skill Overlap": 0,
-      "Freshness Velocity (<24h)": 10
-    },
-    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
-    "tailored_pitch": "Highlight checkout conversion drop-off analysis, user cohort retention, and Meta/Airbnb A/B testing (+15% SR lift) for PaisaSmart's product team.",
-    "gap_analysis": {
-      "coincidences": [
-        "1+ year Business Analyst experience at Razorpay managing $500M+ global GMV & enterprise accounts"
-      ],
-      "gaps_to_bridge": [
-        "Emphasize Product UX drop-off metrics & feature adoption tracking alongside payment funnel analytics."
-      ],
-      "tailored_bullets": [
-        "Led product conversion funnel analytics for enterprise accounts at Razorpay, driving a +15% checkout SR lift across Meta and Airbnb.",
-        "Authored complex GCP BigQuery SQL queries to analyze user drop-off trends, cohort retention, and checkout UX bottlenecks.",
-        "Architected real-time monitoring and Z-score anomaly alerts, compressing discrepancy detection latency by 10x."
-      ]
-    },
-    "interview_prep": {
-      "questions": [
-        "1. How do you analyze user drop-off across a multi-step checkout funnel at PaisaSmart?",
-        "2. Describe an A/B test or experiment you ran that delivered measurable conversion lift.",
-        "3. How do you prioritize product analytics features when engineering bandwidth is limited?"
-      ],
-      "star_answer": "SITUATION: At Razorpay, checkout conversion for Tier-1 accounts like Meta & Airbnb dropped during high-volume sales.\nTASK: Diagnose root causes and improve Success Rate (SR).\nACTION: Wrote GCP BigQuery SQL CTEs to isolate drop-off steps and built real-time Z-score anomaly alerts.\nRESULT: Achieved +15% SR lift across $500M+ annual GMV.",
-      "questions_to_ask": [
-        "What primary product engagement metrics is the team focusing on this quarter at PaisaSmart?",
-        "How closely does the product analytics team partner with core engineering and design?"
-      ]
-    },
-    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=PaisaSmart%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at PaisaSmart,\n\nI am writing to express my strong interest in the Product Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to PaisaSmart.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+    "cover_letter": "Dear Hiring Team at Nua,\n\nI am writing to express my strong interest in the Product Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on sql, a/b testing, python, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Nua.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
     "title": "Analytics Engineer",
@@ -220,9 +62,9 @@
     "description": "Analytics Engineer at DAZN India in Hyderabad, Telangana, India. Posted 4 days ago.\n\n\n\n\nWhy Join DAZN?Joining DAZN in Hyderabad means being part of a cutting-edge sports streaming company in a vibrant tech hub. You\u2019ll work alongside passionate, talented professionals on innovative projects that reach millions of fans worldwide. Hyderabad offers a dynamic work environment with a great balance of career growth and lifestyle. If you\u2019re excited about shaping the future of live and on-demand sports entertainment, DAZN Hyderabad is the perfect place to make your mark and grow your career.Role Overview:DAZN is seeking a highly motivated Analytics Engineer to join our Data & Analytics team. This role bridges the gap between Data Engineering and Analytics, enabling trusted, scalable, and business-ready data products that support decision-making across product, marketing, commercial, finance, and customer experience functions.The ideal candidate will have strong expertise in dbt, SQL, and Python, with experience building modern data models, transforming large-scale datasets, and delivering reliable analytics solutions in a cloud data platform environment.Key ResponsibilitiesDesign, develop, and maintain scalable data models using dbt following best practices such as modularity, testing, documentation, and version control. Write complex and optimized SQL transformations to create curated datasets and business metrics. Develop and maintain Python scripts and frameworks for data processing, automation, quality validation, and analytics workflows. Collaborate with Data Engineers to ingest, transform, and manage data from multiple internal and external sources.  Build and maintain dimensional models, fact tables, and semantic layers that support reporting and self-service analytics. Implement data quality checks, monitoring, and testing using dbt tests and custom validation frameworks. Work closely with Product, Marketing, Finance, and Operations stakeholders to understand business requirements and translate them into scalable data solutions.  Optimize data pipelines and transformation processes for performance, reliability, and cost efficiency. Create and maintain technical documentation, data lineage, and metadata standards.Support BI and reporting tools by delivering clean, governed, and trusted datasets.Skills, Knowledge & ExpertiseBachelor's or Master's degree in Computer Science, Data Science, Engineering, Mathematics, Statistics, or a related field. 3+ years of experience in Analytics Engineering, Data Analytics, Data Engineering, or related roles. Strong hands-on experience with dbt (Data Build Tool). Advanced proficiency in SQL, including complex joins, CTEs, window functions, performance optimization, and data modeling. Strong programming experience in Python for data analysis, transformation, automation, and orchestration. Experience with cloud data warehouses such as: Snowflake / Google BigQuery / Amazon Redshift / DatabricksStrong understanding of dimensional modeling, data warehousing concepts, and analytics engineering principles. Experience using Git-based development workflows and CI/CD practices. Excellent problem-solving and stakeholder communication skills.About DAZNAt DAZN, we bring ambition to life. We are innovators, game-changers and pioneers. So, if you want to push boundaries and make an impact, DAZN is the place to be. As part of our team, you'll have the opportunity to make your mark and the power to make change happen. We're doing things no-one has done before, giving fans and customers access to sport anytime, anywhere. We're using world-class technology to transform sports and revolutionise the industry and we're not going to stop.  DAZN VALUES \u2013 THE \u2018HOW\u2019 IN WHAT WE DO:   Agility and creativity fuel growth and innovation, to Make It Happen. Prioritising what matters drives progress and positive outcomes, Focusing On Impact. Collective ambition builds optimism and success, in order to Win As One. At DAZN, we are committed to fostering an inclusive environment that values equality and diversity, where everyone can contribute and have their voices heard. This means hiring and developing talent across all races, ethnicities, religions, age groups, sexual orientations, gender identities and abilities. If you\u2019d like to include a cover letter with your application, please feel free to. Please do not feel you need to apply with a photo or disclose any other information that is not related to your professional experience. Our aim is to make our hiring processes as accessible for everyone as possible, including providing adjustments for interviews where we can. We look forward to hearing from you.\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
     "relevance_score": 85,
     "matched_skills": [
+      "sql",
       "bigquery",
-      "python",
-      "sql"
+      "python"
     ],
     "score_breakdown": {
       "Role Relevance": 30,
@@ -260,7 +102,59 @@
       ]
     },
     "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=DAZN+India%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at DAZN India,\n\nI am writing to express my strong interest in the Analytics Engineer role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on bigquery, python, sql, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to DAZN India.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+    "cover_letter": "Dear Hiring Team at DAZN India,\n\nI am writing to express my strong interest in the Analytics Engineer role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on sql, bigquery, python, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to DAZN India.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+  },
+  {
+    "title": "Senior Data Analyst",
+    "company": "EXL",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/senior-data-analyst-at-exl-4446724293",
+    "source": "LinkedIn Jobs",
+    "date": "1 week ago",
+    "description": "Senior Data Analyst at EXL in Bengaluru, Karnataka, India. Posted 1 week ago.\n\n\n\n\n          Title : Senior Data AnalystLocation : Bangalore Write and optimize complex SQL queries for data extraction, transformation, and analysis Design and develop interactive dashboards and reports using Power BI / Tableau Perform data analysis to identify trends, patterns, and actionable insights Work with stakeholders to gather requirements and translate them into analytical solutions Ensure data accuracy, consistency, and performance optimization Automate reporting processes and improve data workflows\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
+    "relevance_score": 80,
+    "matched_skills": [
+      "power bi",
+      "sql",
+      "tableau"
+    ],
+    "score_breakdown": {
+      "Role Relevance": 30,
+      "Location Alignment": 25,
+      "Experience Match (1-3 YOE)": 10,
+      "Core Skill Overlap": 15,
+      "Freshness Velocity (<24h)": 0
+    },
+    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
+    "tailored_pitch": "Focus on exploratory data analysis (EDA), anomaly detection algorithms, SQL query optimization, and KPI dashboards for EXL.",
+    "gap_analysis": {
+      "coincidences": [
+        "Complex SQL transformations (CTEs, window functions) on GCP BigQuery & PostgreSQL",
+        "Interactive KPI executive dashboards in Tableau & Power BI for $500M+ GMV accounts"
+      ],
+      "gaps_to_bridge": [
+        "Highlight cross-functional stakeholder communication with engineering & product leads."
+      ],
+      "tailored_bullets": [
+        "Managed portfolio performance analytics at Razorpay for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.",
+        "Authored complex SQL transformations and statistical anomaly detection models (Z-score), reducing failure detection latency by 10x.",
+        "Designed interactive KPI dashboards in Tableau and Power BI, translating high-throughput transactional data into strategic readouts."
+      ]
+    },
+    "interview_prep": {
+      "questions": [
+        "1. How do you translate complex transactional data into executive readouts for enterprise stakeholders?",
+        "2. Give an example of a SQL-driven insight that directly influenced revenue or GMV growth.",
+        "3. How do you handle conflicting requirements from sales, product, and finance leaders?"
+      ],
+      "star_answer": "SITUATION: Razorpay's 15+ Tier-1 enterprise accounts required real-time visibility into $500M+ annual GMV.\nTASK: Build centralized executive dashboards for C-suite readouts.\nACTION: Designed automated Tableau & Power BI dashboards integrated with GCP BigQuery.\nRESULT: Empowered leadership with real-time GMV tracking and instant anomaly alerts.",
+      "questions_to_ask": [
+        "What are the key growth drivers and analytics priorities for EXL over the next 6-12 months?",
+        "How is data success measured within the analytics team at EXL?"
+      ]
+    },
+    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=EXL%20recruiter%20OR%20analytics%20lead",
+    "cover_letter": "Dear Hiring Team at EXL,\n\nI am writing to express my strong interest in the Senior Data Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on power bi, sql, tableau, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to EXL.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
     "title": "Data Analyst",
@@ -268,16 +162,16 @@
     "location": "Mumbai, Maharashtra, India",
     "url": "https://in.linkedin.com/jobs/view/data-analyst-at-amaha-4450202875",
     "source": "LinkedIn Jobs",
-    "date": "5 days ago",
-    "description": "Data Analyst at Amaha in Mumbai, Maharashtra, India. Posted 5 days ago.\n\n\n\n\nKey ResponsibilitiesExtract, clean, and analyse data using SQL to support business and product decisions.Build, maintain, and automate dashboards and reports for key organisational initiatives using BI and analytics tools.Perform exploratory and diagnostic data analysis to identify trends, uncover insights, and provide actionable recommendations.Define and track success metrics (KPIs) for product, marketing, operations, and business initiatives.Develop data-driven hypotheses, design experiments, and measure the impact of business initiatives.Collaborate with cross-functional teams (Product, Marketing, Operations, Clinical, and Leadership) to translate business problems into analytical solutions.Ensure data quality, accuracy, and consistency across reporting and analytics workflows.Identify opportunities to automate repetitive reporting and analytics processes using scripting and AI tools.Preferred Qualifications ExperienceStrong hands-on experience with SQL for data extraction, transformation, and analysis.Experience with Mixpanel, Amplitude, Google Analytics (GA4), or similar product analytics platforms.Proficiency in Microsoft Excel/Google Sheets and Google Apps Script for reporting and automation.Basic proficiency in Python, with familiarity in Pandas, NumPy, and common data structures for analysis.Experience working with BI and dashboarding tools such as Metabase, Looker Studio, Tableau, or Power BI is a plus.Comfortable using Agentic AI and LLM-based tools (e.g., ChatGPT, Claude, Gemini, Cursor) to improve productivity, automate workflows, and support data analysis.Bachelor's degree in Statistics, Mathematics, Economics, Engineering, Computer Science, or a related quantitative field.Our Ideal Candidate DemonstratesHigh ownership and accountability, with the ability to independently drive projects from problem definition to execution.Strong analytical and structured problem-solving skills.Curiosity to investigate business problems using data and translate insights into recommendations.Excellent communication skills, with the ability to explain complex analyses to non-technical stakeholders.Attention to detail and commitment to data accuracy.A proactive mindset with a willingness to learn new tools, technologies, and AI-assisted workflows.Ability to prioritise tasks and thrive in a fast-paced startup environment.Strong collaboration skills and the ability to work effectively across teams.QualificationsWhat is it like working at Amaha?The Learning Opportunities Are Limitless And We Guarantee An Exciting And Transparent Work Culture. You Will Get The Chance To Contribute To a Thriving Start-up Providing Mental Health Solutions To Millions Of Indians! This IncludesWorking on multiple exciting projects The opportunity to work with real innovators and leaders in the fieldWorking in a supportive, collaborative, and entrepreneurial atmosphereWorking with people who believe in hard work, sustainability, and ownership Being part of a work culture that is driven by creativity and excellenceOur team is (mostly) young, energetic, the best at what they do, and growing every day.You will be working alongside people who are passionate about their work and can teach you skills across several domains and fields.If you show exemplary commitment, dedication, ambition, and grit, you will likely be working here for a long timeThis is a full-time role, based in Mumbai.\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
+    "date": "6 days ago",
+    "description": "Data Analyst at Amaha in Mumbai, Maharashtra, India. Posted 6 days ago.\n\n\n\n\nKey ResponsibilitiesExtract, clean, and analyse data using SQL to support business and product decisions.Build, maintain, and automate dashboards and reports for key organisational initiatives using BI and analytics tools.Perform exploratory and diagnostic data analysis to identify trends, uncover insights, and provide actionable recommendations.Define and track success metrics (KPIs) for product, marketing, operations, and business initiatives.Develop data-driven hypotheses, design experiments, and measure the impact of business initiatives.Collaborate with cross-functional teams (Product, Marketing, Operations, Clinical, and Leadership) to translate business problems into analytical solutions.Ensure data quality, accuracy, and consistency across reporting and analytics workflows.Identify opportunities to automate repetitive reporting and analytics processes using scripting and AI tools.Preferred Qualifications ExperienceStrong hands-on experience with SQL for data extraction, transformation, and analysis.Experience with Mixpanel, Amplitude, Google Analytics (GA4), or similar product analytics platforms.Proficiency in Microsoft Excel/Google Sheets and Google Apps Script for reporting and automation.Basic proficiency in Python, with familiarity in Pandas, NumPy, and common data structures for analysis.Experience working with BI and dashboarding tools such as Metabase, Looker Studio, Tableau, or Power BI is a plus.Comfortable using Agentic AI and LLM-based tools (e.g., ChatGPT, Claude, Gemini, Cursor) to improve productivity, automate workflows, and support data analysis.Bachelor's degree in Statistics, Mathematics, Economics, Engineering, Computer Science, or a related quantitative field.Our Ideal Candidate DemonstratesHigh ownership and accountability, with the ability to independently drive projects from problem definition to execution.Strong analytical and structured problem-solving skills.Curiosity to investigate business problems using data and translate insights into recommendations.Excellent communication skills, with the ability to explain complex analyses to non-technical stakeholders.Attention to detail and commitment to data accuracy.A proactive mindset with a willingness to learn new tools, technologies, and AI-assisted workflows.Ability to prioritise tasks and thrive in a fast-paced startup environment.Strong collaboration skills and the ability to work effectively across teams.QualificationsWhat is it like working at Amaha?The Learning Opportunities Are Limitless And We Guarantee An Exciting And Transparent Work Culture. You Will Get The Chance To Contribute To a Thriving Start-up Providing Mental Health Solutions To Millions Of Indians! This IncludesWorking on multiple exciting projects The opportunity to work with real innovators and leaders in the fieldWorking in a supportive, collaborative, and entrepreneurial atmosphereWorking with people who believe in hard work, sustainability, and ownership Being part of a work culture that is driven by creativity and excellenceOur team is (mostly) young, energetic, the best at what they do, and growing every day.You will be working alongside people who are passionate about their work and can teach you skills across several domains and fields.If you show exemplary commitment, dedication, ambition, and grit, you will likely be working here for a long timeThis is a full-time role, based in Mumbai.\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
     "relevance_score": 80,
     "matched_skills": [
-      "power bi",
       "tableau",
-      "python",
       "pandas",
+      "numpy",
       "sql",
-      "numpy"
+      "python",
+      "power bi"
     ],
     "score_breakdown": {
       "Role Relevance": 30,
@@ -316,7 +210,7 @@
       ]
     },
     "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Amaha%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at Amaha,\n\nI am writing to express my strong interest in the Data Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on power bi, tableau, python, pandas, sql, numpy, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Amaha.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+    "cover_letter": "Dear Hiring Team at Amaha,\n\nI am writing to express my strong interest in the Data Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on tableau, pandas, numpy, sql, python, power bi, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Amaha.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
     "title": "Product Analyst- Assistant Manager- Paytm Ads",
@@ -324,14 +218,14 @@
     "location": "Mumbai, Maharashtra, India",
     "url": "https://in.linkedin.com/jobs/view/product-analyst-assistant-manager-paytm-ads-at-one97-communications-limited-4414440601",
     "source": "LinkedIn Jobs",
-    "date": "2 months ago",
-    "description": "Product Analyst- Assistant Manager- Paytm Ads at One97 Communications Limited in Mumbai, Maharashtra, India. Posted 2 months ago.\n\n\n\n\nAbout Us:Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the TeamPaytm Ads is the digital advertising platform of Paytm, enabling brands to reach and engage with over 350M+ users across Paytm\u2019s ecosystem of 200+ payment, commerce, and retail services\u2014both online and offline. By leveraging transaction signals and behavioral insights, Paytm Ads enables advertisers to target highly relevant consumer cohorts and deliver performance-driven campaigns. About the RoleWe are looking for a Manager \u2013 Product Analytics to drive data-led decision making across the Paytm Ads platform. This role works closely with Product, Data Engineering, Sales, and Operations teams to analyze product performance, user behavior, and campaign outcomes, translating data into actionable insights that improve advertiser and platform performance. Key Responsibilities:\u25cf Build and maintain automated dashboards and BI reports for key product and revenue metrics. \u25cf Write advanced SQL queries to analyze large datasets and generate actionable insights. \u25cf Analyze product usage, funnels, retention, and feature adoption to identify growth opportunities. \u25cf Conduct A/B testing, cohort analysis, and segmentation to measure product and campaign impact. \u25cf Track and optimize digital marketing performance metrics such as CAC, ROI, CTR, and conversions. \u25cf Translate business/product questions into structured analysis recommendations for stakeholders. Qualifications: \u25cf B.E./B.Tech from a reputed engineering institute \u25cf Experience in Product Analytics, Management Consulting, Business Strategy, or Sales/Marketing Analytics roles. \u25cf Strong SQL expertise for large-scale data analysis and reporting. \u25cf Experience with BI tools such as Superset, Tableau, Power BI, or Looker. \u25cf Solid understanding of product analytics, marketing metrics, funnels, and experimentation frameworks. \u25cf Familiarity with digital marketing platforms such as Google Ads and Meta Ads Manager. \u25cf Experience in AdTech / MarTech ecosystems is preferred but not mandatory. Why join us: Work with a high-performing and passionate product, design, and engineering team. Shape the future of credit for millions of users. Build at scale in one of India\u2019s most dynamic and regulated spaces. Flexible and inclusive work environment with fast decision-making and ownership. Compensation:If you are the right fit, we believe in creating wealth for you with enviable 500 mn+ registered users, 25 mn+ merchants and depth of data in our ecosystem, we are in a unique position to democratize credit for deserving consumers & merchants \u2013 and we are committed to it. India\u2019s largest digital lending story is brewing here. It\u2019s your opportunity to be a part of the story!We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
+    "date": "3 months ago",
+    "description": "Product Analyst- Assistant Manager- Paytm Ads at One97 Communications Limited in Mumbai, Maharashtra, India. Posted 3 months ago.\n\n\n\n\nAbout Us:Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm\u2019s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the TeamPaytm Ads is the digital advertising platform of Paytm, enabling brands to reach and engage with over 350M+ users across Paytm\u2019s ecosystem of 200+ payment, commerce, and retail services\u2014both online and offline. By leveraging transaction signals and behavioral insights, Paytm Ads enables advertisers to target highly relevant consumer cohorts and deliver performance-driven campaigns. About the RoleWe are looking for a Manager \u2013 Product Analytics to drive data-led decision making across the Paytm Ads platform. This role works closely with Product, Data Engineering, Sales, and Operations teams to analyze product performance, user behavior, and campaign outcomes, translating data into actionable insights that improve advertiser and platform performance. Key Responsibilities:\u25cf Build and maintain automated dashboards and BI reports for key product and revenue metrics. \u25cf Write advanced SQL queries to analyze large datasets and generate actionable insights. \u25cf Analyze product usage, funnels, retention, and feature adoption to identify growth opportunities. \u25cf Conduct A/B testing, cohort analysis, and segmentation to measure product and campaign impact. \u25cf Track and optimize digital marketing performance metrics such as CAC, ROI, CTR, and conversions. \u25cf Translate business/product questions into structured analysis recommendations for stakeholders. Qualifications: \u25cf B.E./B.Tech from a reputed engineering institute \u25cf Experience in Product Analytics, Management Consulting, Business Strategy, or Sales/Marketing Analytics roles. \u25cf Strong SQL expertise for large-scale data analysis and reporting. \u25cf Experience with BI tools such as Superset, Tableau, Power BI, or Looker. \u25cf Solid understanding of product analytics, marketing metrics, funnels, and experimentation frameworks. \u25cf Familiarity with digital marketing platforms such as Google Ads and Meta Ads Manager. \u25cf Experience in AdTech / MarTech ecosystems is preferred but not mandatory. Why join us: Work with a high-performing and passionate product, design, and engineering team. Shape the future of credit for millions of users. Build at scale in one of India\u2019s most dynamic and regulated spaces. Flexible and inclusive work environment with fast decision-making and ownership. Compensation:If you are the right fit, we believe in creating wealth for you with enviable 500 mn+ registered users, 25 mn+ merchants and depth of data in our ecosystem, we are in a unique position to democratize credit for deserving consumers & merchants \u2013 and we are committed to it. India\u2019s largest digital lending story is brewing here. It\u2019s your opportunity to be a part of the story!We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
     "relevance_score": 80,
     "matched_skills": [
-      "power bi",
       "tableau",
       "payments",
       "sql",
+      "power bi",
       "a/b testing"
     ],
     "score_breakdown": {
@@ -371,7 +265,7 @@
       ]
     },
     "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=One97+Communications+Limited%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at One97 Communications Limited,\n\nI am writing to express my strong interest in the Product Analyst- Assistant Manager- Paytm Ads role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on power bi, tableau, payments, sql, a/b testing, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to One97 Communications Limited.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+    "cover_letter": "Dear Hiring Team at One97 Communications Limited,\n\nI am writing to express my strong interest in the Product Analyst- Assistant Manager- Paytm Ads role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on tableau, payments, sql, power bi, a/b testing, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to One97 Communications Limited.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
     "title": "Analytics Engineer",
@@ -383,15 +277,15 @@
     "description": "Analytics Engineer at Cutshort in Mumbai Metropolitan Region. Posted 2 weeks ago.\n\n\n\n\nMust-Have SkillsMinimum 3 years of experience in Data Engineering / Analytics Engineering / Fintech Data rolesMust have worked on SMS Parsing, intelligent platform, converting RAW customer SMS data into structured actionable financial signals and enabling downstream usage of SMS derived variablesMust have established a continuous learning cycle to expand parser coverageExperience in Lending / NBFC / Fintech domainExperience working with Bureau, SMS, Device, or Banking dataStrong Python and SQL (production level)Experience handling unstructured data (SMS, logs, JSON, APIs)Experience building data pipelines, schedulers, and cron jobsStrong database design and data modelling skillsAbility to work in a startup environment with high ownershipFamiliarity with modern platforms like AWS, Snowflake, Google BigQuery, RedshiftGood to HaveExperience in STPL, especially less than 25K ticket sizeExperience with streaming (Kafka/Kinesis) and orchestration (Airflow or Step Functions)Experience with feature stores and risk analytics datasetsKnowledge of regex, NLP basics for SMS parsingExperience supporting real-time decision engines/underwriting systemsRole SummaryThis role will be responsible for owning the end-to-end data-structuring layer across the organisation. The individual will transform large volumes of raw, unstructured, and semi-structured data (such as SMS, device, bureau, and app data) into clean, standardised, and analysis-ready datasets. These structured datasets will directly power risk analytics, fraud detection, marketing insights, collections strategy, and policy decisioning.Key Objective of the RoleEnsure all raw lending data (SMS, Bureau, Device, AA, App logs) is captured, parsed, structured, and stored in a clean analytics-ready format inside databases (PostgreSQL, DynamoDB, AWS stack) so that the Risk and Data Science team can directly use it for feature creation, policy building, and portfolio monitoring.Core ResponsibilitiesEnd-to-End Data OwnershipDesign, build, and maintain end-to-end data pipelines (batch + streaming) using AWS native services (Glue, Lambda, Step Functions, Kinesis, S3, Athena, Redshift, EMR/Spark, etc.): ingestion\u2192 parsing \u2192 structuring \u2192 storageWork closely with Tech, Product, and Data Science to define what data should be capturedMaintain data documentation, data dictionaries, and schema governanceEnsure data quality, consistency, and version controlUnstructured Data Processing (Highest Priority)Parse raw SMS dumps and categorise into salary, EMI, loan apps, collections, credits, debits, OTP, etc.Process device fingerprint, behavioural logs, and vendor data (FinBox, AA, Bureau APIs)Convert JSON, logs, and raw API responses into structured feature tablesBuild regex/keyword-based parsers for financial SMS classificationFeature Implementation (From Risk & Data Science Team)Implement feature creation logic provided by Risk/Data Science teamTranslate business and policy logic into SQL/Python pipelinesCreate reusable feature layers for underwriting, fraud, collections, and monitoringMaintain a feature store for consistent model and policy usageLending Data Understanding (Domain-Specific Requirement)Work with Bureau dataStructure SMS-derived financial variables (income, stress, EMI signals)Work with Account Aggregator and bank transaction datasetsUnderstand fintech alternate data used in underwriting and fraud detectionData Pipelines & AutomationBuild and maintain ETL/ELT pipelines using Python & SQLCreate cron jobs for automated data ingestion and feature refreshAutomate vendor data pulls (Bureau, SMS SDK, AA, device data)Ensure low-latency pipelines for real-time underwriting use casesDatabase Structuring & Storage ArchitectureStructure clean datasets in PostgreSQL (analytics layer)Manage raw data storage in DynamoDB / S3 data lakeDesign normalized and denormalised tables for risk analyticsOptimise database performance for large-scale query workloadsDashboards & Readable Data LayerCreate analytics-ready datasets, implement & write Metabase queries and convert into dashboards (Metabase / Power BI)Enable self-serve data access for Risk, Business, and FoundersSupport ad-hoc analysis requirements from leadershipCross-Functional Collaboration (Very Important)The role requires close collaboration with data science, tech, product, and business teams to ensure reliable data pipelines, well-defined schemas, API integrations, logging architecture and high data quality, enabling faster and more accurate decision-making across lending workflows.Tech Stack (Current Environment)AWS ServicesPostgreSQL (Primary analytics DB)DynamoDB (Raw/NoSQL storage)Python (Pandas, NumPy, ETL frameworks)Advanced SQLAPIs, JSON, and Log Data HandlingSkills:- Data Structures, Python, SQL, Amazon Web Services (AWS) and PostgreSQL\n        \n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
     "relevance_score": 80,
     "matched_skills": [
-      "bigquery",
-      "postgresql",
-      "power bi",
-      "fintech",
-      "python",
       "pandas",
-      "sql",
+      "etl",
+      "postgresql",
       "numpy",
-      "etl"
+      "sql",
+      "bigquery",
+      "python",
+      "power bi",
+      "fintech"
     ],
     "score_breakdown": {
       "Role Relevance": 30,
@@ -430,7 +324,7 @@
       ]
     },
     "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Cutshort%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at Cutshort,\n\nI am writing to express my strong interest in the Analytics Engineer role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on bigquery, postgresql, power bi, fintech, python, pandas, sql, numpy, etl, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Cutshort.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+    "cover_letter": "Dear Hiring Team at Cutshort,\n\nI am writing to express my strong interest in the Analytics Engineer role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on pandas, etl, postgresql, numpy, sql, bigquery, python, power bi, fintech, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Cutshort.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
     "title": "Business Analyst",
@@ -438,8 +332,8 @@
     "location": "Bengaluru, Karnataka, India",
     "url": "https://in.linkedin.com/jobs/view/business-analyst-at-easyecom-4451038653",
     "source": "LinkedIn Jobs",
-    "date": "3 days ago",
-    "description": "Business Analyst at EASYECOM in Bengaluru, Karnataka, India. Posted 3 days ago.\n\n\n\n\nAbout The PositionWe are on the lookout for a business analyst to join our project team. Having industry experience in warehouse management/prior experience in software is mandatory. Your main tasks will include performing detailed requirements analysis, documenting processes, and performing some user acceptance testing. To succeed in this role you should have a natural analytical way of thinking and be able to explain difficult concepts to non-technical users.\u200dResponsibilitiesEvaluating business processes, anticipating requirements, uncovering areas forimprovement, and developing and implementing solutions.Leading ongoing reviews of business processes and developing optimization strategies.Staying up-to-date on the latest process and IT advancements to automate and modernizesystems.Conducting meetings and presentations to share ideas and findings.Performing requirements analysis.Defining problem scope and finding solutions.Documenting the product requirements.Effectively communicating your insights and plans to cross-functional team members andmanagement.Gathering critical information from meetings with various stakeholders and producinguseful reports.Working closely with clients, developers, and managerial staff.Ensuring solutions meet business needs and requirements.Performing user acceptance testing.Managing projects, developing project plans, and monitoring performance.Updating, implementing, and maintaining procedures.\u200dRequirementsA bachelor\u2019s degree in BE, Business or related field or an MBA.A minimum of 2 year of experience in business analysis or a related field.Industry experience in warehouse management/prior experience in softwareproduct is mandatory.Exceptional analytical and conceptual thinking skills.The ability to influence stakeholders and work closely with them to determine acceptablesolutions.Advanced technical skills.Excellent documentation skills.Fundamental analytical and conceptual thinking skills.Experience creating detailed reports and giving presentations.Competency in Microsoft applications including Word, Excel, and Outlook.A track record of following through on commitments.Excellent planning, organizational, and time management skills.Experience leading and developing top-performing teams.\u200dReady to get started? Create an account todayTalk to sales\n        \n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
+    "date": "4 days ago",
+    "description": "Business Analyst at EASYECOM in Bengaluru, Karnataka, India. Posted 4 days ago.\n\n\n\n\nAbout The PositionWe are on the lookout for a business analyst to join our project team. Having industry experience in warehouse management/prior experience in software is mandatory. Your main tasks will include performing detailed requirements analysis, documenting processes, and performing some user acceptance testing. To succeed in this role you should have a natural analytical way of thinking and be able to explain difficult concepts to non-technical users.\u200dResponsibilitiesEvaluating business processes, anticipating requirements, uncovering areas forimprovement, and developing and implementing solutions.Leading ongoing reviews of business processes and developing optimization strategies.Staying up-to-date on the latest process and IT advancements to automate and modernizesystems.Conducting meetings and presentations to share ideas and findings.Performing requirements analysis.Defining problem scope and finding solutions.Documenting the product requirements.Effectively communicating your insights and plans to cross-functional team members andmanagement.Gathering critical information from meetings with various stakeholders and producinguseful reports.Working closely with clients, developers, and managerial staff.Ensuring solutions meet business needs and requirements.Performing user acceptance testing.Managing projects, developing project plans, and monitoring performance.Updating, implementing, and maintaining procedures.\u200dRequirementsA bachelor\u2019s degree in BE, Business or related field or an MBA.A minimum of 2 year of experience in business analysis or a related field.Industry experience in warehouse management/prior experience in softwareproduct is mandatory.Exceptional analytical and conceptual thinking skills.The ability to influence stakeholders and work closely with them to determine acceptablesolutions.Advanced technical skills.Excellent documentation skills.Fundamental analytical and conceptual thinking skills.Experience creating detailed reports and giving presentations.Competency in Microsoft applications including Word, Excel, and Outlook.A track record of following through on commitments.Excellent planning, organizational, and time management skills.Experience leading and developing top-performing teams.\u200dReady to get started? Create an account todayTalk to sales\n        \n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
     "relevance_score": 75,
     "matched_skills": [],
     "score_breakdown": {
@@ -478,6 +372,53 @@
     },
     "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=EASYECOM%20recruiter%20OR%20analytics%20lead",
     "cover_letter": "Dear Hiring Team at EASYECOM,\n\nI am writing to express my strong interest in the Business Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to EASYECOM.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+  },
+  {
+    "title": "Product Analyst",
+    "company": "PaisaSmart",
+    "location": "Mumbai, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/product-analyst-at-paisasmart-4449507808",
+    "source": "LinkedIn Jobs",
+    "date": "2 days ago",
+    "description": "Product Analyst at PaisaSmart in Mumbai, Maharashtra, India. Posted 2 days ago.\n\n\n\n\nPrimary Skillset: Product Analysis, Data Analysis, Product Testing, Backlog ManagementYears of Work Ex: 1 \u2013 3 yrsMinimum Qualifications: Bachelors in Computer Science, Engineering, Design, Business, Economics etc.Location: Nariman Point, MumbaiTimings: 10am \u2013 7pm; Monday to FridayWork Type: On-Site, 5 days a weekCompany Description:PaisaSmart is the operating brand name for Elixir Equities Pvt. Ltd. (EEPL), a financial services firm with operations in Prop Trading, Stock Broking, Portfolio Management & Mutual Fund distribution, and over 20 years in wealth management under founders who are recognised industry leaders.Our mission is to build wealth for the next 100m Indians. PaisaSmart is how \u2014 a WhatsApp chatbot and an Android/iOS app that make investing simple for people who have never invested.We ship fast. We work under broker, RA, PMS and MFD licences, so we ship fast without being careless with other people\u2019s money \u2014 doing both is the actual job.Our values are humility, curiosity and passion. Socials: YT \u00b7 Insta \u00b7 LinkedIn. Try the product: message 8808990978 on WhatsApp.Application Process:Apply on our site. Screening happens immediately by our recruitment AI agent, no waiting -> immediate pass/fail.One day of in-person interviews at our offices (you select a convenient date & time) with the founder and team.If we like you we make a decision immediately and share an offer. No long process, no multi stage screening.What You\u2019ll Own:Product Roadmap: Work closely with the engineering team to identify and prioritize the backlog of work. Track what\u2019s in flight, what\u2019s next and what\u2019s done to build a complete product roadmap.Product Usage Analytics: Analyse and design the dashboards, track how our customers are using the product, what growth we\u2019re generating, what the pain points are and what we can be doing better.Product Testing: Oversee and co-ordinate the testing team. Nothing should be released unless you certify it works.How We Work:Small team, highly collaborative but individual responsibilities. Growth isn\u2019t gated on tenure. If you can do the next job, you get it.You work directly with the founder. No layer in between, nobody to hide behind. No office politics, no blame games, direct visibility.High responsibility, high level of freedom, minimal guidance. Find a problem, design a solution, fix it. You own your work end to end, including when something goes wrong at 9pm.If you\u2019re right you\u2019re right. No hierarchy, no \u201cdo it cause the boss said so\u201d. Best argument wins, regardless of who made it.Everyone is expected to do 2-3 different roles. With AI tooling enabling us to learn and do more than ever before join us with one core skillset and learn & apply 1-2 new skills with us.Who This Is For:You teach yourself things nobody assigned you.The problem is clear, the solution isn\u2019t, and that excites you.You want real responsibility and opportunity to make an impact immediately.Who It Isn\u2019t For:You want a defined ladder and a manager who assigns your work.You want remote or hybrid. This is on-site, five days, and we\u2019re not flexible.You\u2019d rather specialise narrowly than learn new things.Requirements: This is a multi-faceted role, show clear evidence that you excel somewhere and we\u2019ll teach you the rest.Some understanding of coding, software engineering, databases, APIs etc. (Critical to understand and prioritize the backlog)Strong data analysis and logical thinking skills (Required to read and build product usage dashboards)Experience with product analysis. You should be able to look at a product and understand what\u2019s working and what\u2019s not. How features drive users to behave in certain ways, what discourages vs encourages certain actions. This requires a lot of user empathy.Discipline and attention to detail. Product testing is a grind, you need to think in detail to define testing cases, be disciplined to test and oversee testing repeatedly and not authorise release until something is working perfectly.You've owned a product or a company you worked for shipped to its own users, not a client's project built to someone else's requirements.Compensation:15 days paid vacation.Salary is competitive and varies substantially based on the skillset of an individual candidate.EEPL offers an ESOP program to select employees.\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
+    "relevance_score": 75,
+    "matched_skills": [],
+    "score_breakdown": {
+      "Role Relevance": 30,
+      "Location Alignment": 25,
+      "Experience Match (1-3 YOE)": 20,
+      "Core Skill Overlap": 0,
+      "Freshness Velocity (<24h)": 0
+    },
+    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
+    "tailored_pitch": "Highlight checkout conversion drop-off analysis, user cohort retention, and Meta/Airbnb A/B testing (+15% SR lift) for PaisaSmart's product team.",
+    "gap_analysis": {
+      "coincidences": [
+        "1+ year Business Analyst experience at Razorpay managing $500M+ global GMV & enterprise accounts"
+      ],
+      "gaps_to_bridge": [
+        "Emphasize Product UX drop-off metrics & feature adoption tracking alongside payment funnel analytics."
+      ],
+      "tailored_bullets": [
+        "Led product conversion funnel analytics for enterprise accounts at Razorpay, driving a +15% checkout SR lift across Meta and Airbnb.",
+        "Authored complex GCP BigQuery SQL queries to analyze user drop-off trends, cohort retention, and checkout UX bottlenecks.",
+        "Architected real-time monitoring and Z-score anomaly alerts, compressing discrepancy detection latency by 10x."
+      ]
+    },
+    "interview_prep": {
+      "questions": [
+        "1. How do you analyze user drop-off across a multi-step checkout funnel at PaisaSmart?",
+        "2. Describe an A/B test or experiment you ran that delivered measurable conversion lift.",
+        "3. How do you prioritize product analytics features when engineering bandwidth is limited?"
+      ],
+      "star_answer": "SITUATION: At Razorpay, checkout conversion for Tier-1 accounts like Meta & Airbnb dropped during high-volume sales.\nTASK: Diagnose root causes and improve Success Rate (SR).\nACTION: Wrote GCP BigQuery SQL CTEs to isolate drop-off steps and built real-time Z-score anomaly alerts.\nRESULT: Achieved +15% SR lift across $500M+ annual GMV.",
+      "questions_to_ask": [
+        "What primary product engagement metrics is the team focusing on this quarter at PaisaSmart?",
+        "How closely does the product analytics team partner with core engineering and design?"
+      ]
+    },
+    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=PaisaSmart%20recruiter%20OR%20analytics%20lead",
+    "cover_letter": "Dear Hiring Team at PaisaSmart,\n\nI am writing to express my strong interest in the Product Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to PaisaSmart.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
     "title": "Business Analyst",
@@ -527,78 +468,83 @@
     "cover_letter": "Dear Hiring Team at Emids,\n\nI am writing to express my strong interest in the Business Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Emids.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
-    "title": "Analyst",
-    "company": "Merck Group",
-    "location": "Bengaluru, Karnataka, India",
-    "url": "https://in.linkedin.com/jobs/view/analyst-at-merck-group-4438647152",
+    "title": "Product Business Analyst",
+    "company": "Credility",
+    "location": "Borivali, Maharashtra, India",
+    "url": "https://in.linkedin.com/jobs/view/product-business-analyst-at-credility-4446177776",
     "source": "LinkedIn Jobs",
-    "date": "1 week ago",
-    "description": "Analyst at Merck Group in Bengaluru, Karnataka, India. Posted 1 week ago.\n\n\n\n\n          Work Your Magic with us!Ready to explore, break barriers, and discover more? We know you\u2019ve got big plans \u2013 so do we! Our colleagues across the globe love innovating with science and technology to enrich people\u2019s lives with our solutions in Healthcare, Life Science, and Electronics. Together, we dream big and are passionate about caring for our rich mix of people, customers, patients, and planet. That`s why we are always looking for curious minds that see themselves imagining the unimageable with us.Your RoleDefine and implement eCommerce data standards and requirements for a portfolio of 350,000+ products, aligned with digital marketing and branding for both B2C and B2B channels.Audit existing digital content for completeness, consistency, quality, and compliance with guidelines.Leverage AI tools and scripting to enhance digital product representations (descriptions, features, spec extraction) and automate workflows (image/video tagging, alt-text generation, SEO enhancements).Build and maintain Python-based workflows to ingest, normalize, and publish product data via APIs; create reusable data-validation and transformation modules.Monitor digital performance metrics, define KPIs, and drive data-driven improvements in product quality and customer engagement.Collaborate cross-functionally with marketing, product management, and IT; establish governance, ownership, and documentation for data standards and changes.Stay current with AI applications for eCommerce and industry best practices; translate insights into scalable implementations.Who You AreBachelor\u2019s degree in data science, Digital Media, Marketing, or a related field.Minimum of 2 years of experience in managing digital product content, data management, or a similar role.Proficiency with scripting languages (e.g., Python) to facilitate and enhance scalable workflows. - non-negotiable (being able to effectively use API such as AI-ML APIs)Familiarity with AI-based tools and techniques for improving digital products.Preferred SkillsLife Sciences degree or previous experience in the life sciences market is a very strong plus.Familiarity with eCommerce platforms and digital marketing strategies.Familiarity with Palantir Foundry/ uptimizeKnowledge of B2C and B2B marketing principles and consumer behavior.Strong analytical skills with the ability to interpret data and make data-driven decisions.Excellent communication and collaboration skills to work effectively within cross-functional teams.What we offer: We are curious minds that come from a broad range of backgrounds, perspectives, and life experiences. We celebrate all dimensions of diversity and believe that it drives excellence and innovation, strengthening our ability to lead in science and technology. We are committed to creating access and opportunities for all to develop and grow at your own pace. Join us in building a culture of inclusion and belonging those impacts millions and empowers everyone to work their magic and champion human progress!Apply now and become a part of our diverse team!\n        \n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
-    "relevance_score": 55,
+    "date": "2 weeks ago",
+    "description": "Product Business Analyst at Credility in Borivali, Maharashtra, India. Posted 2 weeks ago.\n\n\n\n\n          2 to 4Malad WestFull-TimeBrief About The ProfileProfile Name: Product BAEducation: MCA, MBA systemsRequired Experience: 2 to 4 yearsNumber of position: 1Location: Western line- (Churchgate to Virar)Type: Full Time and Work from officeSkillsProject Management tool with Agile Methodology and SprintsStrong knowledge of MySQL / DatabaseProject documentation: BRD/SRF/FRDWireframe toolsAnalytical Know-howResponsibilityLoan Origination System (LOS) - Product ManagementContinuous improvements in the product and improve its efficiency Add new features and implement AI/ML driven featuresAnalytical Dashboards Upgrades for the productManaging Product Team Sprints and its timely deliveriesAnalyze changes and make work flow/data flow diagrams for the sameDo Impact analysis for the changes and document the sameTest the changes and product sanity before every releasePreparing Documentation for product and keep it updated with every releaseShould have worked on Mobile App and APIsVAPT pointers resolution in productDaily Standup with Product team to manage Sprints and its updateAssist Project Implementation team for gap analysis, CRs and client escalation if anyAssist Sales team for product demo whenever requiredReporting to the FounderShare with someone awesomeView all job openings\n        \n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
+    "relevance_score": 65,
     "matched_skills": [
-      "python"
+      "mysql"
     ],
     "score_breakdown": {
-      "Role Relevance": 15,
-      "Location Alignment": 25,
+      "Role Relevance": 30,
+      "Location Alignment": 20,
       "Experience Match (1-3 YOE)": 10,
       "Core Skill Overlap": 5,
       "Freshness Velocity (<24h)": 0
     },
     "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
-    "tailored_pitch": "Highlight 1+ year Razorpay data analytics track record driving GMV growth and automated statistical modeling for Merck Group.",
-    "gap_analysis": {
-      "coincidences": [
-        "Automated Python ETL pipelines (Pandas, SciPy) & real-time observability alerting"
-      ],
-      "gaps_to_bridge": [
-        "Highlight cross-functional stakeholder communication with engineering & product leads."
-      ],
-      "tailored_bullets": [
-        "Managed portfolio performance analytics at Razorpay for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.",
-        "Authored complex SQL transformations and statistical anomaly detection models (Z-score), reducing failure detection latency by 10x.",
-        "Designed interactive KPI dashboards in Tableau and Power BI, translating high-throughput transactional data into strategic readouts."
-      ]
-    },
-    "interview_prep": {
-      "questions": [
-        "1. How do you translate complex transactional data into executive readouts for enterprise stakeholders?",
-        "2. Give an example of a SQL-driven insight that directly influenced revenue or GMV growth.",
-        "3. How do you handle conflicting requirements from sales, product, and finance leaders?"
-      ],
-      "star_answer": "SITUATION: Razorpay's 15+ Tier-1 enterprise accounts required real-time visibility into $500M+ annual GMV.\nTASK: Build centralized executive dashboards for C-suite readouts.\nACTION: Designed automated Tableau & Power BI dashboards integrated with GCP BigQuery.\nRESULT: Empowered leadership with real-time GMV tracking and instant anomaly alerts.",
-      "questions_to_ask": [
-        "What are the key growth drivers and analytics priorities for Merck Group over the next 6-12 months?",
-        "How is data success measured within the analytics team at Merck Group?"
-      ]
-    },
-    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Merck+Group%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at Merck Group,\n\nI am writing to express my strong interest in the Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on python, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Merck Group.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
-  },
-  {
-    "title": "Senior Payment Analyst",
-    "company": "Fanvue.com",
-    "location": "Remote with London office",
-    "url": "https://www.arbeitnow.co.uk/jobs/companies/fanvuecom/senior-payment-analyst-london-445327",
-    "source": "Arbeitnow",
-    "date": "2026-08-11",
-    "description": "Join us in redefining the creator economy with AI Fanvue is one of the fastest-growing creator monetisation platforms globally. We're an AI-powered, creator-first platform helping creators connect, engage, and earn directly from their audiences at scale. Fanvue has surpassed $200M+ in annual recurring revenue, with triple-digit year-on-year growth, supporting hundreds of thousands of creators and millions of fans worldwide.We process tens of millions of pounds per month across a multi-acquirer, ",
-    "relevance_score": 45,
-    "matched_skills": [],
-    "score_breakdown": {
-      "Role Relevance": 15,
-      "Location Alignment": 20,
-      "Experience Match (1-3 YOE)": 10,
-      "Core Skill Overlap": 0,
-      "Freshness Velocity (<24h)": 0
-    },
-    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
-    "tailored_pitch": "Highlight 1+ year Razorpay data analytics track record driving GMV growth and automated statistical modeling for Fanvue.com.",
+    "tailored_pitch": "Highlight checkout conversion drop-off analysis, user cohort retention, and Meta/Airbnb A/B testing (+15% SR lift) for Credility's product team.",
     "gap_analysis": {
       "coincidences": [
         "1+ year Business Analyst experience at Razorpay managing $500M+ global GMV & enterprise accounts"
       ],
       "gaps_to_bridge": [
+        "Emphasize Product UX drop-off metrics & feature adoption tracking alongside payment funnel analytics."
+      ],
+      "tailored_bullets": [
+        "Led product conversion funnel analytics for enterprise accounts at Razorpay, driving a +15% checkout SR lift across Meta and Airbnb.",
+        "Authored complex GCP BigQuery SQL queries to analyze user drop-off trends, cohort retention, and checkout UX bottlenecks.",
+        "Architected real-time monitoring and Z-score anomaly alerts, compressing discrepancy detection latency by 10x."
+      ]
+    },
+    "interview_prep": {
+      "questions": [
+        "1. How do you analyze user drop-off across a multi-step checkout funnel at Credility?",
+        "2. Describe an A/B test or experiment you ran that delivered measurable conversion lift.",
+        "3. How do you prioritize product analytics features when engineering bandwidth is limited?"
+      ],
+      "star_answer": "SITUATION: At Razorpay, checkout conversion for Tier-1 accounts like Meta & Airbnb dropped during high-volume sales.\nTASK: Diagnose root causes and improve Success Rate (SR).\nACTION: Wrote GCP BigQuery SQL CTEs to isolate drop-off steps and built real-time Z-score anomaly alerts.\nRESULT: Achieved +15% SR lift across $500M+ annual GMV.",
+      "questions_to_ask": [
+        "What primary product engagement metrics is the team focusing on this quarter at Credility?",
+        "How closely does the product analytics team partner with core engineering and design?"
+      ]
+    },
+    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Credility%20recruiter%20OR%20analytics%20lead",
+    "cover_letter": "Dear Hiring Team at Credility,\n\nI am writing to express my strong interest in the Product Business Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on mysql, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Credility.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+  },
+  {
+    "title": "Assistant Manager",
+    "company": "EXL",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/assistant-manager-at-exl-4446587231",
+    "source": "LinkedIn Jobs",
+    "date": "1 week ago",
+    "description": "Assistant Manager at EXL in Bengaluru, Karnataka, India. Posted 1 week ago.\n\n\n\n\n          Title - Data AnalystLocation - Bangalore (WFO) Analyze and interpret data to support business decision\u2011making Write complex SQL queries for data extraction, validation, and analysis Design and maintain dashboards and reports (e.g., Power BI, Tableau) Identify trends, patterns, and insights from large datasets Collaborate with stakeholders to understand reporting requirements Ensure data accuracy, consistency, and timely delivery of insights\n\n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
+    "relevance_score": 50,
+    "matched_skills": [
+      "power bi",
+      "sql",
+      "tableau"
+    ],
+    "score_breakdown": {
+      "Role Relevance": 0,
+      "Location Alignment": 25,
+      "Experience Match (1-3 YOE)": 10,
+      "Core Skill Overlap": 15,
+      "Freshness Velocity (<24h)": 0
+    },
+    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
+    "tailored_pitch": "Highlight 1+ year Razorpay data analytics track record driving GMV growth and automated statistical modeling for EXL.",
+    "gap_analysis": {
+      "coincidences": [
+        "Complex SQL transformations (CTEs, window functions) on GCP BigQuery & PostgreSQL",
+        "Interactive KPI executive dashboards in Tableau & Power BI for $500M+ GMV accounts"
+      ],
+      "gaps_to_bridge": [
         "Highlight cross-functional stakeholder communication with engineering & product leads."
       ],
       "tailored_bullets": [
@@ -615,32 +561,32 @@
       ],
       "star_answer": "SITUATION: Razorpay's 15+ Tier-1 enterprise accounts required real-time visibility into $500M+ annual GMV.\nTASK: Build centralized executive dashboards for C-suite readouts.\nACTION: Designed automated Tableau & Power BI dashboards integrated with GCP BigQuery.\nRESULT: Empowered leadership with real-time GMV tracking and instant anomaly alerts.",
       "questions_to_ask": [
-        "What are the key growth drivers and analytics priorities for Fanvue.com over the next 6-12 months?",
-        "How is data success measured within the analytics team at Fanvue.com?"
+        "What are the key growth drivers and analytics priorities for EXL over the next 6-12 months?",
+        "How is data success measured within the analytics team at EXL?"
       ]
     },
-    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Fanvue.com%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at Fanvue.com,\n\nI am writing to express my strong interest in the Senior Payment Analyst role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Fanvue.com.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=EXL%20recruiter%20OR%20analytics%20lead",
+    "cover_letter": "Dear Hiring Team at EXL,\n\nI am writing to express my strong interest in the Assistant Manager role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on power bi, sql, tableau, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to EXL.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
-    "title": "Data Engineer - fully remote (working hours 5am-2pm CEST) (m/f/d)",
-    "company": "JobLeads Careers",
-    "location": "Remote",
-    "url": "https://www.arbeitnow.co.uk/jobs/companies/jobleads-careers/data-engineer-fully-remote-working-hours-5am-2pm-cest-313475",
+    "title": "AI / ML Engineer (m/w/d)",
+    "company": "Recare Deutschland GmbH",
+    "location": "Remote job",
+    "url": "https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-ai-ml-engineer-berlin-374215",
     "source": "Arbeitnow",
-    "date": "2026-08-11",
-    "description": "Find Jobs in United Kingdom on Arbeitnow",
-    "relevance_score": 45,
+    "date": "2026-08-12",
+    "description": "About RecareAs one of the leading German HealthTech companies, we are reshaping discharge management \u2013 technology-driven, patient-centered, and free from bureaucracy. In addition to our market-leading SaaS platform, we develop AI solutions that radically simplify processes in hospitals and for aftercare providers, relieve healthcare professionals, and refocus attention on patients. Today, we already connect two-thirds of all German hospitals with over 650 rehabilitation clinics and 25,000 nursin",
+    "relevance_score": 40,
     "matched_skills": [],
     "score_breakdown": {
-      "Role Relevance": 15,
+      "Role Relevance": 0,
       "Location Alignment": 20,
       "Experience Match (1-3 YOE)": 10,
       "Core Skill Overlap": 0,
-      "Freshness Velocity (<24h)": 0
+      "Freshness Velocity (<24h)": 10
     },
     "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
-    "tailored_pitch": "Focus on GCP BigQuery/PostgreSQL SQL CTEs, window functions, and Z-score automated Python ETL pipelines (10x latency drop) for JobLeads Careers.",
+    "tailored_pitch": "Highlight 1+ year Razorpay data analytics track record driving GMV growth and automated statistical modeling for Recare Deutschland GmbH.",
     "gap_analysis": {
       "coincidences": [
         "1+ year Business Analyst experience at Razorpay managing $500M+ global GMV & enterprise accounts"
@@ -662,12 +608,12 @@
       ],
       "star_answer": "SITUATION: Manual data validation at Razorpay caused 40% bandwidth drain on daily reporting.\nTASK: Automate ETL pipelines and reduce discrepancy detection latency.\nACTION: Built Python (Pandas, SciPy) ETL scripts with automated Z-score thresholding & PagerDuty alerts.\nRESULT: Reduced incident detection latency by 10x and eliminated manual workloads.",
       "questions_to_ask": [
-        "What data orchestration (Airflow/dbt) and data warehouse tech stack does JobLeads Careers currently use?",
+        "What data orchestration (Airflow/dbt) and data warehouse tech stack does Recare Deutschland GmbH currently use?",
         "What is the biggest data pipeline scaling bottleneck your team is currently solving?"
       ]
     },
-    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=JobLeads+Careers%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at JobLeads Careers,\n\nI am writing to express my strong interest in the Data Engineer - fully remote (working hours 5am-2pm CEST) (m/f/d) role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to JobLeads Careers.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Recare+Deutschland+GmbH%20recruiter%20OR%20analytics%20lead",
+    "cover_letter": "Dear Hiring Team at Recare Deutschland GmbH,\n\nI am writing to express my strong interest in the AI / ML Engineer (m/w/d) role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Recare Deutschland GmbH.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
     "title": "Project Manager",
@@ -717,24 +663,24 @@
     "cover_letter": "Dear Hiring Team at EXL,\n\nI am writing to express my strong interest in the Project Manager role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to EXL.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   },
   {
-    "title": "Manager",
-    "company": "EXL",
-    "location": "Bengaluru, Karnataka, India",
-    "url": "https://in.linkedin.com/jobs/view/manager-at-exl-4446581455",
-    "source": "LinkedIn Jobs",
-    "date": "1 week ago",
-    "description": "Manager at EXL in Bengaluru, Karnataka, India. Posted 1 week ago.\n\n\n\n\n          Collect, process, and analyze large datasets to extract actionable insights. Develop and maintain dashboards and reports, identify trends and patterns to inform business decisions, and ensure data accuracy and integrity.\n        \n\n\n        \n            Show more\n          \n\n          \n\n\n\n        \n            Show less\n          \n\n          \n\n \n",
-    "relevance_score": 35,
+    "title": "Freelance Writer",
+    "company": "IAPWE",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/writing/freelance-writer-1185979",
+    "source": "Remotive",
+    "date": "2026-08-04",
+    "description": "Our organization is seeking content writers to create articles and blog posts on a variety of topics.\n\u00a0\nThe rate of pay is $20 per 100 words (this comes out to approximately $100 per article or $50 per hour).\n\u00a0\nSome topics you may be asked to write about include the following (you can always turn down a topic if you do not feel comfortable writing about it, however if you have experience or expertise in a specific area, please let us know):\n\u00a0\n\nHealth & beauty\nFitness\nHome Decor\nFashion\nSports\nDo",
+    "relevance_score": 30,
     "matched_skills": [],
     "score_breakdown": {
       "Role Relevance": 0,
-      "Location Alignment": 25,
+      "Location Alignment": 10,
       "Experience Match (1-3 YOE)": 10,
       "Core Skill Overlap": 0,
-      "Freshness Velocity (<24h)": 0
+      "Freshness Velocity (<24h)": 10
     },
-    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
-    "tailored_pitch": "Highlight 1+ year Razorpay data analytics track record driving GMV growth and automated statistical modeling for EXL.",
+    "ctc": "$20/yr (Listed)",
+    "tailored_pitch": "Highlight 1+ year Razorpay data analytics track record driving GMV growth and automated statistical modeling for IAPWE.",
     "gap_analysis": {
       "coincidences": [
         "1+ year Business Analyst experience at Razorpay managing $500M+ global GMV & enterprise accounts"
@@ -756,11 +702,58 @@
       ],
       "star_answer": "SITUATION: Razorpay's 15+ Tier-1 enterprise accounts required real-time visibility into $500M+ annual GMV.\nTASK: Build centralized executive dashboards for C-suite readouts.\nACTION: Designed automated Tableau & Power BI dashboards integrated with GCP BigQuery.\nRESULT: Empowered leadership with real-time GMV tracking and instant anomaly alerts.",
       "questions_to_ask": [
-        "What are the key growth drivers and analytics priorities for EXL over the next 6-12 months?",
-        "How is data success measured within the analytics team at EXL?"
+        "What are the key growth drivers and analytics priorities for IAPWE over the next 6-12 months?",
+        "How is data success measured within the analytics team at IAPWE?"
       ]
     },
-    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=EXL%20recruiter%20OR%20analytics%20lead",
-    "cover_letter": "Dear Hiring Team at EXL,\n\nI am writing to express my strong interest in the Manager role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to EXL.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=IAPWE%20recruiter%20OR%20analytics%20lead",
+    "cover_letter": "Dear Hiring Team at IAPWE,\n\nI am writing to express my strong interest in the Freelance Writer role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to IAPWE.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
+  },
+  {
+    "title": "Customer Success Manager (Remote, Portugal)",
+    "company": "Easygenerator",
+    "location": "Remote",
+    "url": "https://www.arbeitnow.com/jobs/companies/easygenerator/customer-success-manager-remote-portugal-17052",
+    "source": "Arbeitnow",
+    "date": "2026-08-12",
+    "description": "Join Easygenerator and help customers unlock the full value of e-learningStep into an exciting role with an innovative e-learning software company in the EdTech space as a Customer Success Manager.Easygenerator is a fast-growing scale-up revolutionizing e-learning with our award-winning authoring tool. Join us to build trustful relationships with customers across a broad range of industries and geographies, and drive the retention, expansion, and advocacy that fuel our growth.What you will be do",
+    "relevance_score": 30,
+    "matched_skills": [],
+    "score_breakdown": {
+      "Role Relevance": 0,
+      "Location Alignment": 20,
+      "Experience Match (1-3 YOE)": 10,
+      "Core Skill Overlap": 0,
+      "Freshness Velocity (<24h)": 0
+    },
+    "ctc": "\u20b99L - \u20b918L PA (Est. Mid-Market Tech Standard)",
+    "tailored_pitch": "Highlight 1+ year Razorpay data analytics track record driving GMV growth and automated statistical modeling for Easygenerator.",
+    "gap_analysis": {
+      "coincidences": [
+        "1+ year Business Analyst experience at Razorpay managing $500M+ global GMV & enterprise accounts"
+      ],
+      "gaps_to_bridge": [
+        "Highlight cross-functional stakeholder communication with engineering & product leads."
+      ],
+      "tailored_bullets": [
+        "Managed portfolio performance analytics at Razorpay for 15+ Tier-1 enterprise accounts processing INR 2,000+ Cr annual GMV.",
+        "Authored complex SQL transformations and statistical anomaly detection models (Z-score), reducing failure detection latency by 10x.",
+        "Designed interactive KPI dashboards in Tableau and Power BI, translating high-throughput transactional data into strategic readouts."
+      ]
+    },
+    "interview_prep": {
+      "questions": [
+        "1. How do you translate complex transactional data into executive readouts for enterprise stakeholders?",
+        "2. Give an example of a SQL-driven insight that directly influenced revenue or GMV growth.",
+        "3. How do you handle conflicting requirements from sales, product, and finance leaders?"
+      ],
+      "star_answer": "SITUATION: Razorpay's 15+ Tier-1 enterprise accounts required real-time visibility into $500M+ annual GMV.\nTASK: Build centralized executive dashboards for C-suite readouts.\nACTION: Designed automated Tableau & Power BI dashboards integrated with GCP BigQuery.\nRESULT: Empowered leadership with real-time GMV tracking and instant anomaly alerts.",
+      "questions_to_ask": [
+        "What are the key growth drivers and analytics priorities for Easygenerator over the next 6-12 months?",
+        "How is data success measured within the analytics team at Easygenerator?"
+      ]
+    },
+    "recruiter_search_url": "https://www.linkedin.com/search/results/people/?keywords=Easygenerator%20recruiter%20OR%20analytics%20lead",
+    "cover_letter": "Dear Hiring Team at Easygenerator,\n\nI am writing to express my strong interest in the Customer Success Manager (Remote, Portugal) role. With over a year of experience as a Business Analyst at Razorpay driving GMV growth and funnel optimization across 15+ Tier-1 enterprise accounts ($500M+ global GMV), I have delivered tangible ROI through advanced data analytics.\n\nIn my current position, I led checkout funnel analytics for clients like Meta and Airbnb, driving a +15% Success Rate (SR) lift, authored complex SQL transformations on GCP BigQuery/PostgreSQL, and built automated statistical Z-score anomaly detection pipelines in Python. Given your focus on SQL, Python, Business Analytics, my track record in data infrastructure and decision support aligns directly with your team's goals.\n\nI would welcome the opportunity to discuss how my analytical skills and fintech experience can contribute to Easygenerator.\n\nBest regards,\nSagar Sohrab\nsagar7.sohrab@gmail.com | +91 8169052960"
   }
 ]

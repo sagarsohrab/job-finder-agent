@@ -1,12 +1,11 @@
 name: Daily Job Finder Agent
 
+# Schedule disabled per user request - run manually or via Web UI
+# on:
+#   schedule:
+#     - cron: '0 4 * * *'
+#     - cron: '30 13 * * *'
 on:
-  schedule:
-    # Optimized for Recruiter Posting Peaks:
-    # 1. Morning Wave: 9:30 AM IST (04:00 UTC) - India recruiter morning batch
-    # 2. Evening Wave: 7:00 PM IST (13:30 UTC) - US/EU remote & afternoon postings
-    - cron: '0 4 * * *'
-    - cron: '30 13 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:
@@ -33,10 +32,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Job Finder Script
-        env:
-          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        # Email dispatch disabled - dashboard updates silently
         run: |
           python job_finder.py
 
